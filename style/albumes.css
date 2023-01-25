@@ -1,0 +1,73 @@
+.albumes{
+    height: 80vh;
+    width: 75vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7vh;
+    background-color: #323232;
+    z-index: 3;
+}
+
+
+#cover_albumes{
+    /*border-radius: 50%;*/
+    width:95%;
+    height: 95%;
+    margin-left: 2em;
+    /*background-color: white;*/
+    position: absolute;
+    z-index: 4;
+
+}
+
+.nombre-album{
+    min-height: 10vh;
+    height: auto;
+    background-color: #212121;
+    padding-left: 2em;
+    font-size: 2em;
+    font-family: "Copperplate", fantasy;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.album_content {
+    height: 100%;
+    margin-left: 2%;
+    background-color: #323232;
+}
+
+#guardar_canc_lista_fav{
+    margin-left: 10em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.busq3:hover {
+    transform: scale(1.02);
+    color: black;
+    background-color: #b4c7f3;
+}
+
+.busq_container.over {
+    border: 3px dotted #000000;
+}
+
+.busq4{
+    height: 18.75%;
+    width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0.25%;
+    background-color: #4a5a6F;
+    border-top: black 1px solid;
+    display: flex;
+    cursor: move;
+    transition: transform .2s; /* Animación */
+}
+
+

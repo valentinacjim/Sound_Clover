@@ -1,0 +1,686 @@
+/*por defecto no aplicamos márgenes ni padding y los enlaces no aparecerán subrayados*/
+*{  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+/*ajustamos el boddy para que ocupe todo el espacio de la pantalla*/
+body{
+    background-color: #212121;
+    height: 99.90vh;
+    width: 99.90vw;
+    margin: 0;
+}
+
+
+/*--------------------Ediciones-generales------------------------*/
+
+/*Párrafos por defecto*/
+p{
+    font-size: 100%;
+    padding: 0;
+    /*text-align: center;*/
+    font-family: "Papyrus", fantasy;
+    color: white;
+}
+
+/*Enlaces por defecto*/
+a{
+    color: white;
+    font-family: "Copperplate", fantasy;
+    cursor: pointer;
+}
+
+
+/*Encabezados por defecto*/
+h1{
+    font-size: 100%;
+    margin-left: 0.5em; /*em -> tamaño con respecto al font-size*/
+    padding: 0;
+    text-align: left;
+    font-family: "Lucida Handwriting", "Courier New", cursive;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*-------------------Breakpoints----------------------*/
+
+/*Versión ordenador*/
+@media only screen and (min-width: 768px){
+    .encabezado{font-size: 201%;}
+
+    .navbar{height: 70vh;}
+
+    .fila div {font-size: 40px;}
+
+    h1{
+        font-size: 1em;
+        margin-left: 0.5em;}
+
+    .spacer{min-height: 25vh;}
+
+    .politicas{
+        font-size: 180%;
+        min-height: 75px;
+    }
+    .dur{
+        padding-left: 50vw;
+    }
+
+    .caratula{
+        height: 100%;
+        width: 100%;
+    }
+    .controls{
+        max-width: 70vw;
+    }
+    .controles .prev{
+        margin-left: 30vw;
+    }
+    .low{
+        font-size: 15px;
+        margin-right: 4.5vw;
+    }
+    .high{
+        font-size: 15px;
+    }
+    .nombre-playlist{
+        font-size: 2em;
+    }
+
+}
+
+/*Reajuste logo*/
+@media only screen and (max-width: 1040px){
+    .encabezado{font-size: 150%;}
+}
+
+
+/*--------------Ediciones específicas-----------------*/
+
+/*---Pie---*/
+.pie{
+    font-size:20px;
+    height: 25vh;
+    width: 100%;
+    padding: 4px;
+    color: white;
+    position:fixed;
+    border-top: black 5px;
+}
+/*---Página principal dividida en menú izquierdo y música---*/
+.marco {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #212121;
+    height: 90vh;
+}
+/*--Menú Izquierdo--*/
+.ColIzq {
+    background-color: #323232;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 85vh;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+/*-Encabezado donde se encuentra el nombre y el logo-*/
+/*Nombre y logotipo de la página colocados en un div (grid), se evita la seleccíon del contenido `por parte del usuario*/
+.encabezado{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #212121;
+    color: White;
+    user-select: none;
+    height: 7.5vh;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+/*ajustes de tamaño del logotipo*/
+.logo {
+    min-width: 20%;
+}
+
+/*Ajustes de posición del nombre de la web*/
+.nombre{
+    padding-left: 0;
+}
+
+/*-Contenido del menú-*/
+/*Div contenedor de todo el tramo medio del menú lateral*/
+.navbar{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+    padding-top: 0.5em;
+    background-color: #323232;
+}
+
+.navbar button{
+    background-color: #323232;
+    border: none;
+}
+
+/*-Enlaces de interés-*/
+/* Elementos que contienen la politica de privacidad y cookies
+colocados en un grid 50|50*/
+.politicas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    background-color: #212121;
+
+}
+.politicas div{
+    height: 100%;
+    text-align: center;
+}
+/*efecto de selección*/
+.politicas div:hover{
+    background-color: #6d6d6d;
+    color:black;
+}
+/*Sobreponemos un link a todo el div*/
+.politicas a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*--Sección de música--*/
+/*Div que contiene toda la información*/
+.ColDcha {
+    background-color: #212121;
+    padding: 0;
+    font-size: 30px;
+    max-height: 86vh;
+    /* text-align: center; */
+    color: white;
+}
+/*-Encabezado donde se encuentran los botones de log in y sign in-*/
+.cabecera {
+    width: 100%;
+    min-height: 7%;
+    float:right;
+}
+
+.cabecera ul {
+    list-style-type: none;
+    margin: 0.2%;
+    overflow: hidden;
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    width: 75%;
+}
+
+.cabecera li {float: right;}
+
+/*Botones del log in y sign in*/
+.cabecera li a {
+    display: block;
+    text-align: center;
+    padding: 0.75vh 12px;
+    text-decoration: none;
+}
+
+/*Overlay para oscurecer el botón al pasar por encima*/
+.cabecera li a:hover{
+    background-color: #6d6d6d;
+    color: black;
+}
+
+/*-Parte del lado derecho donde se muestra la música-*/
+.musica{
+    max-height: 80vh;
+    width: 75vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: visible;
+    margin-top: 7vh;
+    background-color: #323232;
+
+}
+
+/*Cada sección dentro de la página va diferenciado por un div*/
+.secciones_musica{
+    height:45%;
+    background-color: #323232;
+    margin: auto;
+}
+
+/*_Cada sección lleva su título_*/
+.titulos_secciones{
+    background-color: #323232;
+    font-size: 100%;
+    max-height: 20%;
+    width: 95%;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*_Sección donde se muestran las carátulas_*/
+.canciones{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+
+}
+
+/*Cada canción por separado tiene su propio div*/
+.cancion{
+    height: auto;
+    width: 15%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #4a5a6F;
+    margin: 1%;
+    text-align: center;
+
+}
+
+/*Cada imagen se maneja por separado al título de ella*/
+.cancion_container{position: relative;}
+.cancion_container img {width: 75%;}
+
+/*Título de la canción y nombre del artista*/
+.titulo_artista{
+    font-size: 30%;
+    text-align: center;
+    margin-left: 4%;
+}
+
+/*Overlay para cambiar de color la imagen a cada canción cuando pasas por encima de ella*/
+.overlay {
+    position: absolute;
+    /*Queremos que el overlay se ajuste a la imagen*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 95%;
+    opacity: 0;
+    transition: 0.5s ease;
+
+}
+
+/*Cuanto queremos que se oscurezca la imagen*/
+.cancion_container:hover .overlay {opacity: 0.8;}
+
+/*Para que aparezca el audio cuando se active el overlay*/
+.overlay button {
+    width: 100%;
+    height: 100%;
+    font-size: 300%;
+    background-color: #6d6d6d;
+    cursor: pointer;
+}
+
+/*Overlay para que se haga zoom a la carátula de la canción al pasar por encima*/
+.cancion:hover {
+    background-color: #b4c7f3;
+    transform: scale(1.2);
+}
+.cancion:hover p{
+    color: black;
+}
+
+/* The subnavigation menu */
+.subnav {
+    float: right;
+    overflow: hidden;
+}
+
+
+
+/* Subnav button */
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-right: 1em;
+}
+
+.subnav:hover .subnavbtn {
+    background-color: #4a5a6F;
+    border-radius: 15px;
+}
+
+.subnavbtn:hover button{
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background-color: #323232;
+    height: 7vh;
+
+}
+
+
+
+
+.subnav button:hover{
+    background-color: #6d6d6d;
+    color: black;
+
+}
+
+.subnavbtn button {
+    float: left;
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+    border: none;
+    background-color: #212121;
+    font-family: "Copperplate", fantasy;
+}
+
+
+#fotoperfil{
+    width: auto;
+    height: 3vh;
+    /*margin-right: 1em;*/
+    /*border-radius: 50%;*/
+    /*border: 1px solid #6d6d6d;*/
+    /*background-color: #6d6d6d;*/
+}
+#fotoperfil img{
+    width: auto;
+    height: 200%;
+    margin-top: -0.75em;
+    border-radius: 50%;
+}
+
+
+.subnavbtn button:hover{
+    color: black;
+    background-color: transparent;
+}
+
+/* Style the subnav links */
+.subnav-content button {
+    float: left;
+    color: white;
+    text-decoration: none;
+    height: 7vh;
+    width: auto;
+    padding: 0 1em;
+    font-size: 75%;
+    border: none;
+    background-color: #212121;
+    font-family: "Copperplate", fantasy;
+    vertical-align: middle;
+}
+
+
+/* Add a grey background color on hover */
+.subnav-content button:hover {
+    background-color: #323232;
+    color: black;
+}
+
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    height: 7vh;
+    width: auto;
+    padding: 0.51em 1em;
+    font-size: 75%;
+    border: none;
+    background-color: #212121;
+    font-family: "Copperplate", fantasy;
+    vertical-align: middle;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #323232;
+    color: black;
+}
+
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: contents;
+}
+
+
+
+
+.player {
+    height: 31vh;
+    width: 100%;
+    background-color: #4a5a6F;
+    position: absolute;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: solid black 1px;
+
+}
+.player ul {
+    list-style: none;
+}
+.player ul li {
+    display: inline-block;
+}
+
+.caratula{
+    padding: 7%;
+    margin-left: 1em;
+    height: 10vh;
+    width: 10vh;
+}
+
+
+.caratula img{
+    height: 10vh;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.caratula.active img{
+    animation: rotate-disk 5s infinite forwards linear;
+}
+
+@keyframes rotate-disk {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+
+
+.cancion-artista{
+    padding-left: 1em;
+    line-height: 1.5em;
+    height: 30vh;
+    width: 10vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cancion-artista h2 {
+    font-size: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cancion-artista h4 {
+    color: rgb(0, 0, 0);
+    font-size: 0.75em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cancion-artista h6 {
+    opacity: 0
+}
+
+.controls{
+    display: grid;
+    grid-template-columns:90% 10% ;
+    width: 80vw;
+}
+
+.favorito{
+    display: inline-block;
+    text-align: center;
+    height: 1em;
+    padding-left: 0.9em;
+    margin-left: 10vw;
+    /*padding-top: 0.5em;*/
+}
+.barra{
+
+    width: 90%;
+    height: 10%;
+    border-radius: 10%;
+    cursor: pointer;
+    background: #b1adad;
+    padding-left: 0.9em;
+    margin-left: 3vw;
+}
+
+
+.barra .progreso{
+    width: 0;
+    height: inherit;
+    background: #ffffff;
+    border-radius: inherit;
+    position:relative;
+}
+
+.progreso::before{
+    content:"";
+    position:absolute;
+    border-radius: inherit;
+    top:50%;
+    right: -1%;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.barra:hover .progreso::before{
+    opacity: 1;
+}
+
+.controles{
+    width: 70vw;
+    text-align: left;
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+    clear: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.controles .prev{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 120%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.controles .forw{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 120%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.controles .max{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.barra p{
+    color: #ffffff;
+    font-family: "Century Gothic", serif;
+    font-size: 0.75em;
+}
+
+.pro{
+    float: left;
+    margin-top: 0.5em;
+}
+
+.dur{
+    float: right;
+}
+
+.barra_volumen{
+    width: 100%;
+    margin-top: -1em;
+    margin-left: 8vw;
+}
+
+.volume{
+    width: 100%;
+    height: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+}
+
+.volume::-webkit-slider-thumb{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: rgb(29, 62, 93);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.low{
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.high{
+    text-decoration: none;
+    color: #eeeeee;
+}
+

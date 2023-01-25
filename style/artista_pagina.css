@@ -1,0 +1,113 @@
+.artistas_pagina{
+    height: 80vh;
+    width: 75vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7vh;
+    background-color: #323232;
+    z-index: 3;
+}
+
+.fondo{
+    height: 20vh;
+    width: 100%;
+    /*background-color: rebeccapurple;*/
+}
+
+/*1220.4 x 216*/
+#fondo-artista{
+    height: 100%;
+    width: 100%;
+}
+
+.pass_pag{
+    position: sticky;
+    top: 0;
+    opacity: 0.7;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 1em;
+    height: 0;
+    z-index: 4;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.pass_pag i{
+    width: 1em;
+    height: 1em;
+    border-radius: 75%;
+    background-color: black;
+    color: white;
+}
+
+
+
+.artista-foto-perfil{
+    /*background-color: white;*/
+    width:12.5%;
+    height: 25%;
+    position: absolute;
+    margin-top: -7%;
+}
+
+#perfil-artista{
+    border-radius: 50%;
+    width:100%;
+    height: auto;
+    margin-left: 25%;
+    /*background-color: white;*/
+    position: absolute;
+    z-index: 4;
+
+}
+
+.nombre-artista{
+    height: 10vh;
+    background-color: #212121;
+    font-size: 2em;
+    font-family: "Copperplate", fantasy;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 10%;
+}
+
+
+
+.artista-albumes-seccion{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+
+}
+
+
+.artista-albumes-seccion img{
+    width: 75%;
+    position: inherit;
+}
+
+.artista-canciones{
+    min-height:45%;
+    background-color: #323232;
+    margin: auto;
+    border-top: black solid 1px;
+    padding-left: 1em;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+
+}

@@ -1,0 +1,310 @@
+/*por defecto no aplicamos márgenes ni padding y los enlaces no aparecerán subrayados*/
+*{  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*ajustamos el body para que ocupe todo el espacio de la pantalla*/
+body{
+    background-color: #212121;
+    height: 99.9vh;
+    margin: 0;
+}
+
+/*--------------------Ediciones-generales------------------------*/
+
+/*Enlaces por defecto*/
+a{
+    color: white;
+    font-family: "Copperplate", fantasy;
+}
+
+/*Encabezados por defecto*/
+h1{
+    font-size: 100%;
+    margin-left: 0.5em; /*em -> tamaño con respecto al font-size*/
+    padding: 0;
+    text-align: left;
+    font-family: "Lucida Handwriting", "Courier New", cursive;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*-------------------Breakpoints----------------------*/
+
+/*Versión ordenador*/
+@media only screen and (min-width: 768px){
+    .encabezado{font-size: 201%;}
+
+    .navbar{height: 76.64vh;}
+
+    .fila div {font-size: 40px;}
+
+    h1{font-size: 40px;}
+
+    .spacer{min-height: 35vh;}
+
+    .politicas{
+        font-size: 180%;
+        min-height: 75px;
+    }
+}
+
+/*Reajuste logo*/
+@media only screen and (max-width: 1040px){
+    .encabezado{font-size: 150%;}
+}
+
+/*Versión tablet*/
+@media only screen and (max-width: 768px){
+    .encabezado{
+        font-size: 20px;
+    }
+    .navbar{
+        height: 80vh;
+    }
+    .fila div {font-size: 20px;}
+    h1{font-size: 20px;}
+    .spacer{
+        min-height: 40vh;
+    }
+    .politicas{font-size: 20px;
+        min-height: 40px;}
+}
+
+/*Versión móvil*/
+@media only screen and (max-width: 600px){
+    .encabezado{font-size: 20px;}
+
+    .navbar{height: 80vh;}
+
+    .fila div {font-size: 15px;}
+
+    h1{font-size: 15px;}
+
+    .spacer{min-height: 40vh;}
+
+    .politicas{
+        font-size: 17px;
+        min-height: 40px;
+    }
+
+    .pie p{font-size: 15px;}
+}
+
+/*--------------Ediciones específicas-----------------*/
+
+/*---Pie---*/
+.pie{
+    font-size:20px;
+    height: 5vh;
+    width: 100%;
+    padding: 4px;
+    background-color: #212121;
+    color: white;
+    position:fixed;
+}
+/*---Página principal dividida en menú izquierdo y música---*/
+.marco {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #212121;
+    height: 95vh;
+}
+/*--Menú Izquierdo--*/
+.ColIzq {
+    background-color: #323232;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 99vh;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+
+}
+/*-Encabezado donde se encuentra el nombre y el logo-*/
+/*Nombre y logotipo de la página colocados en un div (grid), se evita la seleccíon del contenido `por parte del usuario*/
+.encabezado{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #212121 ;
+    color: White;
+    user-select: none;
+    height: 7.5vh;
+    padding-left: 1em;
+    padding-top: 1em;
+    opacity: 0.25;
+
+}
+/*ajustes de tamaño del logotipo*/
+.logo{
+    min-width: 20%;
+}
+/*Ajustes de posición del nombre de la web*/
+.nombre{
+    padding-left: 0;
+}
+
+/*-Contenido del menú-*/
+/*Div contenedor de todo el tramo medio del menú lateral*/
+.navbar{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+    padding-top: 0.5em;
+    opacity: 0.25;
+
+}
+/*sub-grid que almacena cada opción con su icono*/
+.fila{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin: 0;
+    font-size: 45px;
+    color: white;
+    user-select: none;
+
+}
+
+/*ajustes de tamaño de cada fila*/
+.fila div{
+    max-height: 15vh;
+    padding-right: 5px;
+    padding-top: 0.5em;
+    padding-left: 10px;
+}
+
+/*-Enlaces de interés-*/
+/* Elementos que contienen la politica de privacidad y cookies
+colocados en un grid 50|50*/
+.politicas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    background-color: #212121;
+    user-select: none;
+    opacity: 0.25;
+
+}
+.politicas div{
+    height: 100%;
+    text-align: center;
+}
+
+
+/*--Sección de música--*/
+/*Div que contiene toda la información*/
+.ColDcha {
+    background-color: #212121;
+    padding: 0;
+    font-size: 30px;
+    max-height: 91vh;
+    text-align: center;
+    color: white;
+}
+/*-Encabezado donde se encuentran los botones de log in y sign in-*/
+.cabecera {
+    width: 100%;
+    min-height: 7%;
+    float:right;
+    opacity: 0.25;
+}
+
+.cabecera ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    width: 75%;
+}
+
+.cabecera li {float: right;}
+
+/*Botones del log in y sign in*/
+.cabecera li a {
+    display: block;
+    text-align: center;
+    padding: 0.75vh 12px;
+    text-decoration: none;
+}
+
+/*Spacer para colocar los botones a la derecha*/
+.spacer-2{min-width: 70%;}
+
+.pantalla{
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    line-height: 2em;
+    color:white;
+    background-color: #323232;
+    padding-top: 2em;
+
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*background-color: red;*/
+    font-size: 15px;
+    margin-left: 2em;
+    padding-top: 1%;
+    line-height: 3em;
+}
+.inciosesion{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    padding-bottom: 2%;
+    padding-right: 0.5em;
+    background-color: #4a5a6F;
+    text-align: center;;
+    z-index: 1000;
+    position: fixed;
+    top: 49.9%;
+    left: 49.9%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.titulo{
+    text-align: left;
+    font-size: 30px;
+    padding-left: 1em;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.spacer-3{
+    min-height: 2vh;
+}
+
+.back{
+    position: fixed;
+    width: 99.9%;
+    height: 99.9vh;
+    top: 0;
+    left: 0;
+    background: #0006;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+
+.button1{
+    background-color: white;
+    color: black;
+}
+.button2{background-color: #3b5998; }

@@ -1,0 +1,140 @@
+.lista_reproducción{
+    height: 80vh;
+    width: 75vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7vh;
+    background-color: #323232;
+    z-index: 2;
+}
+
+
+.cover_playlist{
+    /*background-color: white;*/
+    width:8%;
+    height:16%;
+    position: absolute;
+    visibility: inherit;
+    margin-top: -1%;
+}
+
+#cover_playlist{
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+    margin-left: 2em;
+    /*background-color: white;*/
+    position: absolute;
+    visibility: inherit;
+    z-index: 4;
+
+}
+
+.nombre-playlist{
+    height: 10vh;
+    background-color: #212121;
+    padding-left: 2em;
+    font-family: "Copperplate", fantasy;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.playlist_content {
+    height: 100%;
+    margin-left: 2%;
+    visibility: inherit;
+    background-color: #323232;
+}
+
+.favor{
+    margin-right: 3em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+
+.busq2{
+    height: 18.75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /*background-color: purple;*/
+}
+
+.busq3:hover {
+    transform: scale(1.02);
+    background-color: #b4c7f3;
+}
+
+.drag_and_drop{
+    height: 100%;
+    width: 2%;
+    background-color: #4a5a6F;
+    border: none;
+    cursor: move;
+}
+
+.drag_and_drop i{
+    color: white;
+    font-size: 1em;
+}
+
+.drag_and_drop:hover{
+    background-color: #b4c7f3;
+}
+
+.helper{
+    position: fixed;
+    top:-100%;
+    left: -100%;
+    background-color: #39698a;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    pointer-events: none;
+}
+.helper-line{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    top: 8%;
+    left: -0.25em;
+}
+
+.helper-line:hover {
+    transform: scale(1.02);
+    background-color: #b4c7f3;
+}
+
+
+.busq_container.over {
+    border: 3px dotted #000000;
+}
+
+.busq3{
+    height: 100%;
+    width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0.25%;
+    background-color: #4a5a6F;
+    border-top: black 1px solid;
+    display: flex;
+
+    transition: transform .2s; /* Animación */
+}
+
+#eliminar_canc{
+    margin-left: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+

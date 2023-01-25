@@ -1,0 +1,533 @@
+/*por defecto no aplicamos márgenes ni padding y los enlaces no aparecerán subrayados*/
+*{  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    }
+/*ajustamos el boddy para que ocupe todo el espacio de la pantalla*/
+body{
+    background-color: #212121;
+    height: 99.90vh;
+    width: 99.90vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    }
+
+/*--------------------Ediciones-generales------------------------*/
+
+/*Párrafos por defecto*/
+p{
+    font-size: 100%;
+    padding: 0;
+    text-align: center;
+    user-select: none;
+}
+
+/*Enlaces por defecto*/
+a, i{
+    color: #EBE0FFFF;
+}
+
+/*Encabezados por defecto*/
+h1{
+	font-size: 30px;
+    margin: 0.5em; /*em -> tamaño con respecto al font-size*/
+	padding: 0;
+	text-align: left;
+    color: #EBE0FFFF;
+}
+
+i{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+button{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+input{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/*-------------------Breakpoints----------------------*/
+
+/*Versión ordenador*/
+@media only screen and (min-width: 768px){
+    .encabezado{font-size: 201%;}
+
+    .navbar{height: 76.64vh;}
+
+    /*h1{font-size: 40px;}*/
+
+    .spacer{min-height: 50vh;}
+
+    .politicas{
+        /*font-size: 180%;*/
+        min-height: 75px;
+    }
+}
+
+/*Reajuste logo*/
+@media only screen and (max-width: 1040px){
+    .encabezado{font-size: 150%;}
+}
+
+/*Versión tablet*/
+@media only screen and (max-width: 768px){
+    .encabezado{
+        font-size: 20px;
+    }
+    .navbar{
+        height: 80vh;
+    }
+    .fila div {font-size: 20px;}
+    h1{font-size: 20px;}
+    .spacer{
+        min-height: 40vh;
+    }
+    .politicas{font-size: 20px;
+        min-height: 40px;}
+}
+
+/*Versión móvil*/
+@media only screen and (max-width: 600px){
+    .encabezado{font-size: 20px;}
+
+    .navbar{height: 80vh;}
+
+    .fila div {font-size: 15px;}
+
+    h1{font-size: 15px;}
+
+    .spacer{min-height: 40vh;}
+
+    .politicas{
+        font-size: 17px;
+        min-height: 40px;
+    }
+
+    .pie p{font-size: 15px;}
+}
+
+/*--------------Ediciones específicas-----------------*/
+
+/*---Pie---*/
+.pie{
+	font-size: 20px;
+	height: 5vh;
+	width: 100%;
+    padding: 4px;
+	background-color: #181818;
+    color: #EBE0FFFF;
+    position:fixed;
+}
+/*---Página principal dividida en menú izquierdo y música---*/
+.marco {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: #212121;
+    height: 95vh;
+}
+/*--Menú Izquierdo--*/
+.ColIzq {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 95vh;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    text-align: left;
+
+}
+/*-Encabezado donde se encuentra el nombre y el logo-*/
+/*Nombre y logotipo de la página colocados en un div (grid), se evita la seleccíon del contenido `por parte del usuario*/
+.encabezado{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #000000;
+    color: #EBE0FFFF;
+    user-select: none;
+    height: 7.5vh;
+    padding-left: 0.5em;
+    padding-top: 0.07em;
+}
+/*ajustes de tamaño del logotipo*/
+.logo{
+    min-width: 20%;
+}
+
+.logo i{
+    color: #6d00a2;
+    margin-top: 5px;
+    font-size: 1.25em;
+}
+
+/*Ajustes de posición del nombre de la web*/
+.nombre{
+    padding-top: 0.5em;
+    font-size: 23px;
+}
+
+.navbar{
+    background-color:black;
+}
+/*-Contenido del menú-*/
+/*Div contenedor de todo el tramo medio del menú lateral*/
+.navbar ul{
+    padding-top: 0.45em;
+    list-style-type: none;
+    /*margin: 7.5vh;*/
+    width: 100%;
+    overflow: hidden;
+    /*background-color: #323232;*/
+    position: relative;
+    top: 0;
+    /*width: 85%;*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.navbar ul li {
+    position: relative;
+    list-style: none;
+    float: right;
+    margin-left: 1em;
+
+}
+
+
+.navbar ul li p{
+    text-align: left;
+    position: relative;
+    font-size: 1.25em;
+    /*line-height: 1em;*/
+    margin-top: -1.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 2px;
+    margin-left: 3em;
+    text-transform: uppercase;
+    color: #EBE0FFFF;
+    -webkit-text-stroke: 1px #EBE0FFFF;
+}
+
+.navbar ul li p::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #6d00a2;
+    width: 0;
+    /*margin-top: 0.85em;*/
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid #6d00a2;
+    -webkit-text-stroke: 3px #6d00a2;
+
+}
+
+.navbar ul li p:hover::before{
+    width: 90%;
+    filter: drop-shadow(0 0 25px #6d00a2);
+}
+
+/*-Enlaces de interés-*/
+
+.politicas{
+    margin-top: -30%;
+}
+
+.politicas p {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    color: #EBE0FFFF;
+}
+.politicas a, .politicas i{
+    color: #EBE0FFFF;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+/*--Sección de música--*/
+/*Div que contiene toda la información*/
+.ColDcha {
+    background-color: #212121;
+    padding: 0;
+    font-size: 30px;
+    max-height: 89vh;
+    text-align: center;
+    color: #EBE0FFFF;
+}
+/*-Encabezado donde se encuentran los botones de log in y sign in-*/
+.cabecera {
+    width: 100%;
+    min-height: 7%;
+    float:right;
+}
+.cabecera ul{
+    z-index: 3;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #101010;
+    position: fixed;
+    top: 0;
+    width: 85%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+
+}
+
+.cabecera ul li {
+    position: relative;
+    list-style: none;
+    float: right;
+}
+
+.cabecera ul li a{
+    background-color: #EBE0FFFF;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    /*margin-left: 20px;*/
+}
+
+/*Spacer para colocar los botones a la derecha*/
+.spacer-2{min-width: 70%;}
+
+/*-Parte del lado derecho donde se muestra la música-*/
+.musica{
+    height: 87.25vh;
+    width: 85vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    /*visibility: hidden;*/
+    margin-top: 7.25vh;
+    max-height: 100%;
+}
+
+/*Cada sección dentro de la página va diferenciado por un div*/
+.secciones_musica{
+	background-color: #212121;
+	margin: auto;
+}
+
+/*_Cada sección lleva su título_*/
+.titulos_secciones{
+    background-color: #212121;
+    font-size: 100%;
+    max-height: 20%;
+    width: 95%;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*_Sección donde se muestran las carátulas_*/
+.canciones{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: #EBE0FFFF;
+}
+
+/*Cada canción por separado tiene su propio div*/
+.cancion{
+	height: 30vh;
+	width: 15%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #323232;
+    margin: 1%;
+    border-radius: 30px;
+
+}
+
+/*Cada imagen se maneja por separado al título de ella*/
+.cancion_container{position: relative;}
+.cancion_container img {width: 90%; z-index: 2}
+
+/*Título de la canción y nombre del artista*/
+.titulo_artista{
+	font-size: 37%;
+    text-align: center;
+    line-height: 1.5em;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+/*Overlay para cambiar de color la imagen a cada canción cuando pasas por encima de ella*/
+.overlay {
+    position: absolute;
+    /*Queremos que el overlay se ajuste a la imagen*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #6d6d6d;
+}
+
+/*Cuanto queremos que se oscurezca la imagen*/
+.cancion_container:hover .overlay {opacity: 0.8;}
+
+/*Para que aparezca el audio cuando se active el overlay*/
+.overlay audio {
+	width: 100%;
+	height: 100%;
+}
+
+/*Overlay para que se haga zoom a la carátula de la canción al pasar por encima*/
+.cancion:hover {
+    background-color: #6d6d6d;
+    color: black;
+}
+.cancion:hover p{
+    color: black;
+}
+
+.page{
+    height: 87.25vh;
+    width: 85vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7.25vh;
+    background-color: #212121;
+
+}
+
+.music {
+    width: 190px;
+    height: 190px;
+    border: 1px solid #333333;
+    display: inline-block;
+    margin-top: 5vh;
+    margin-right: 10px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+
+.music::before {
+    content: "";
+    background-color: var(--clr);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.music:hover::before {
+    background-color: var(--overlay);
+
+}
+
+main h1{
+    text-align: center;
+}
+
+.music img{
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    position: absolute;
+    margin: 4em 0 0 0.5em;
+    opacity: 1;
+    transform: rotate(-15deg);
+}
+
+.music p{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+}
+
+.music:after {
+    top: 2em;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 8%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.music:hover:after {
+    width: 80%;
+    /*left: 10%;*/
+}
+
+.cover{
+    /*background-color: #EBE0FFFF;*/
+    width:8%;
+    height:16%;
+    position: absolute;
+    visibility: inherit;
+    margin-top: 0.75%;
+}
+
+#cover_genero{
+    border-radius: 20%;
+    width:100%;
+    height: 100%;
+    /*margin-left: 1em;*/
+    /*background-color: #EBE0FFFF;*/
+    position: absolute;
+    visibility: inherit;
+    z-index: 4;
+
+
+}
+
+.nombre_genero{
+    height: 10vh;
+    text-align: left;
+    background-color: #181818;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left: 3em;
+    font-family: "Copperplate", fantasy;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 2em;
+
+}
+
+.content {
+    height: 100%;
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,178 @@
+.perfil{
+    height: 80vh;
+    width: 75vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7vh;
+    background-color: #323232;
+
+}
+
+.seccion_artistas{
+    height:auto;
+    background-color: #323232;
+    margin: auto;
+
+}
+
+/*Cada sección dentro de la página va diferenciado por un div*/
+.secciones_perfil{
+    height:auto;
+    background-color: #323232;
+    margin: auto;
+}
+
+.secciones_favoritos{
+    height:auto;
+    background-color: #323232;
+    margin: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+
+}
+
+/*_Sección donde se muestran las carátulas_*/
+.seccion_imagenes{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+
+}
+
+.seccion_imagenes_fav{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.seccion_imagenes_listas{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.artista{
+    height: auto;
+    width: 11.5%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #4a5a6F;
+    margin: 1%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.artista_container{position: relative;}
+.artista_container img {
+    width: 75%;
+    border-radius: 50%;
+}
+
+.artista:hover {
+    transform: scale(1.2);
+    background-color: #b4c7f3;
+}
+
+.artista:hover p{
+    color: black;
+}
+
+
+.cancion_favorita{
+    height: auto;
+    width: 15%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #4a5a6F;
+    margin: 1%;
+    position: relative;
+    text-align: center;
+}
+
+.lista_perfil{
+    height: auto;
+    width: 15%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #4a5a6F;
+    margin: 1%;
+    position: relative;
+    text-align: center;
+}
+
+
+/*Cada canción por separado tiene su propio div*/
+.division{
+    height: auto;
+    width: 15%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #4a5a6F;
+    margin: 1%;
+    position: relative;
+    text-align: center;
+
+}
+
+/*Cada imagen se maneja por separado al título de ella*/
+.cancion_container{position: relative;}
+.cancion_container img {width: 75%;}
+
+.favorita_container{position: relative;}
+.favorita_container img {width: 75%;}
+
+
+.titulo_artista_fav{
+    font-size: 30%;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.titulo_artista_fav{
+    font-size: 15%;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.favorita_container:hover .overlay {opacity: 0.8;}
+
+
+/*Overlay para que se haga zoom a la carátula de la canción al pasar por encima*/
+.division:hover {
+    transform: scale(1.2);
+    background-color: #b4c7f3;
+    color: black;
+}
+.division:hover p{
+    color: black;
+}
+
+.cancion_favorita:hover {
+    transform: scale(1.2);
+    background-color: #b4c7f3;
+    color: black;
+}
+.cancion_favorita:hover p{
+    color: black;
+}
+.titulo_artista_listas{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

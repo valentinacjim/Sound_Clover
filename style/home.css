@@ -1,0 +1,933 @@
+/*por defecto no aplicamos márgenes ni padding y los enlaces no aparecerán subrayados*/
+*{  margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*ajustamos el body para que ocupe todo el espacio de la pantalla*/
+body{
+    background-color: #212121;
+    height: 99.90vh;
+    width: 99.90vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/*--------------------Ediciones-generales------------------------*/
+
+/*Párrafos por defecto*/
+p{
+    font-size: 100%;
+    padding: 0;
+    text-align: center;
+    user-select: none;
+}
+
+/*Enlaces por defecto*/
+a, i{
+    color: #ebe0ff;
+}
+
+/*Encabezados por defecto*/
+h1{
+    font-size: 30px;
+    margin: 0.5em; /*em -> tamaño con respecto al font-size*/
+    padding: 0;
+    text-align: left;
+    color: #ebe0ff;
+}
+
+button{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+input{
+    /*background-color: transparent;*/
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/*--------------Ediciones específicas-----------------*/
+
+/*---Pie---*/
+.pie{
+    font-size: 20px;
+    height: 5vh;
+    width: 100%;
+    padding: 4px;
+    background-color: #181818;
+    color: #EBE0FFFF;
+    position:fixed;
+}
+/*---Página principal dividida en menú izquierdo y música---*/
+.marco {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: #212121;
+    height: 100vh;
+}
+/*--Menú Izquierdo--*/
+.ColIzq {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 100vh;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    text-align: left;
+
+}
+/*-Encabezado donde se encuentra el nombre y el logo-*/
+/*Nombre y logotipo de la página colocados en un div (grid), se evita la seleccíon del contenido `por parte del usuario*/
+.encabezado{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #000000;
+    color: #EBE0FFFF;
+    user-select: none;
+    height: 7.5vh;
+    padding-left: 0.5em;
+    padding-top: 0.07em;
+}
+/*ajustes de tamaño del logotipo*/
+.logo{
+    min-width: 20%;
+}
+
+.logo i{
+    color: #6d00a2;
+    margin-top: 5px;
+    font-size: 2.5em;
+    margin-left: 7px;
+}
+
+/*Ajustes de posición del nombre de la web*/
+.nombre{
+    padding-top: 0.5em;
+    padding-left: 5px;
+    font-size: 23px;
+}
+
+.navbar{
+    background-color:black;
+}
+
+.navbar i{
+    font-size: 35px;
+    margin-top: 10px;
+}
+/*-Contenido del menú-*/
+/*Div contenedor de todo el tramo medio del menú lateral*/
+.navbar ul{
+    padding-top: 0.45em;
+    list-style-type: none;
+    /*margin: 7.5vh;*/
+    width: 100%;
+    overflow: hidden;
+    /*background-color: #323232;*/
+    position: relative;
+    top: 0;
+    /*width: 85%;*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.navbar ul li {
+    position: relative;
+    list-style: none;
+    float: right;
+    margin-left: 1em;
+
+}
+
+
+.navbar ul li p{
+    text-align: left;
+    position: relative;
+    font-size: 1.25em;
+    /*line-height: 1em;*/
+    margin-top: -1.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 2px;
+    margin-left: 3em;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.navbar ul li p::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #6d00a2;
+    width: 0;
+    /*margin-top: 0.85em;*/
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid #6d00a2;
+    -webkit-text-stroke: 3px #6d00a2;
+
+}
+
+.navbar ul li p:hover::before{
+    width: 90%;
+    filter: drop-shadow(0 0 25px #6d00a2);
+}
+
+/*-Enlaces de interés-*/
+
+.politicas{
+    margin-top: -30%;
+}
+
+.politicas p {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    color: #EBE0FFFF;
+}
+.politicas a, .politicas i{
+    color: #ebe0ff;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+/*--Sección de música--*/
+/*Div que contiene toda la información*/
+.ColDcha {
+    background-color: #212121;
+    padding: 0;
+    font-size: 30px;
+    max-height: 89vh;
+    text-align: center;
+    color: #EBE0FFFF;
+
+}
+/*-Encabezado donde se encuentran los botones de log in y sign in-*/
+.cabecera {
+    width: 100%;
+    min-height: 7vh;
+    float:right;
+}
+.cabecera ul{
+    z-index: 3;
+    padding-top: 0.25em;
+    /*padding-bottom: 0.3em;*/
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #101010;
+    position: fixed;
+    top: 0;
+    width: 85%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+
+}
+
+/*.cabecera ul li {*/
+/*    position: relative;*/
+/*    list-style: none;*/
+/*    float: right;*/
+/*}*/
+
+.cabecera ul li a{
+    background-color: #EBE0FFFF;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/*Spacer*/
+.spacer{min-height: 27vh;}
+.spacer-2{min-width: 70%;}
+.spacer-3{height: 13vh;}
+
+
+
+
+
+
+
+
+
+
+/* The subnavigation menu */
+.subnav {
+    float: right;
+    overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+    /*background-color: #EBE0FFFF;*/
+    /*color: #000000;*/
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 8px;
+    /*margin-top: 0.25em;*/
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+    /*height: 7vh;*/
+    /*font-size: 16px;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /*color: #EBE0FFFF;*/
+    /*padding: 14px 16px;*/
+    /*background-color: inherit;*/
+    /*font-family: inherit;*/
+    /*margin-right: 1em;*/
+}
+
+
+/*.subnav:hover .subnavbtn {*/
+/*    background-color: #4a5a6F;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+.subnavbtn:hover button{
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    /*background-color: #323232;*/
+    height: 7vh;
+    /*margin-bottom: 1em;*/
+
+}
+
+
+
+
+/*.subnav button:hover{*/
+/*    background-color: #6d6d6d;*/
+/*    color: black;*/
+
+/*}*/
+
+
+
+
+#fotoperfil{
+    width: 5vh;
+    height: 5vh;
+    padding-bottom: 0.2em;
+    /*size: 500px;*/
+    /*position: relative;*/
+    margin-right: 1em;
+    /*border-radius: 50%;*/
+    /*border: 1px solid #6d6d6d;*/
+    background-color: #ebe0ff;
+}
+#fotoperfil img{
+    width: auto;
+    height: 165%;
+    margin-top: -0.55em;
+    /*margin-bottom: -0.25em;*/
+    border-radius: 50%;
+    margin-left: -0.65em;
+}
+
+#fotoperfil i{
+    color: black;
+}
+
+
+/*.subnavbtn button:hover{*/
+/*    color: black;*/
+/*    background-color: transparent;*/
+/*}*/
+
+/* Style the subnav links */
+.subnav-content button {
+    float: left;
+    background-color: #EBE0FFFF;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 0 5px;
+    /*color: #EBE0FFFF;*/
+    /*text-decoration: none;*/
+    /*height: 7vh;*/
+    /*width: auto;*/
+    /*padding: 0 1em;*/
+    /*font-size: 75%;*/
+    /*border: none;*/
+    /*background-color: #212121;*/
+    /*font-family: "Copperplate", fantasy;*/
+    vertical-align: middle;
+}
+
+
+/* Add a grey background color on hover */
+/*.subnav-content button:hover {*/
+/*    background-color: #323232;*/
+/*    color: black;*/
+/*}*/
+
+
+.subnav-content a {
+    float: left;
+    margin-left: 5px;
+/*    color: #EBE0FFFF;*/
+/*    text-decoration: none;*/
+/*    height: 7vh;*/
+/*    width: auto;*/
+/*    padding: 0.51em 1em;*/
+/*    font-size: 75%;*/
+/*    border: none;*/
+/*    background-color: #aa47f8;*/
+/*    font-family: "Copperplate", fantasy;*/
+/*    vertical-align: middle;*/
+}
+
+.search{
+    position:relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid #ebe0ff;
+    overflow: hidden;
+    background-image: url(../../Web3/images/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 45% 50%;
+    background-color: transparent;
+    margin-bottom: 0.3em;
+
+}
+
+
+.search:hover{
+    border: 1px solid #6d6d6d;
+}
+
+.search:focus{
+    width: 200px;
+    cursor: text;
+    padding-left: 40px;
+    color: #EBE0FFFF;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #EBE0FFFF;
+    border-radius: 40px;
+    background-image: url(../../Web3/images/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 10px 50%;
+}
+
+/* Add a grey background color on hover */
+/*.subnav-content a:hover {*/
+/*    background-color: #323232;*/
+/*    color: black;*/
+/*}*/
+
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: contents;
+}
+
+
+/*-Parte del lado derecho donde se muestra la música-*/
+.musica{
+    height: 92.75vh;
+    width: 85vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    /*visibility: hidden;*/
+    margin-top: 7.25vh;
+    max-height: 100%;
+    /*padding-bottom: 7%;*/
+}
+
+/*Cada sección dentro de la página va diferenciado por un div*/
+.secciones_musica{
+    background-color: #212121;
+    margin: auto;
+}
+
+/*_Cada sección lleva su título_*/
+.titulos_secciones{
+    background-color: #212121;
+    font-size: 100%;
+    max-height: 20%;
+    width: 95%;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*_Sección donde se muestran las carátulas_*/
+.canciones{
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    color: #EBE0FFFF;
+}
+
+/*Cada canción por separado tiene su propio div*/
+.cancion{
+    height: 30vh;
+    width: 15%;
+    transition: transform .2s; /* Animación */
+    background-position: center center;
+    min-width: 100px;
+    padding: 15px;
+    background-color: #323232;
+    margin: 1%;
+    border-radius: 30px;
+
+}
+
+/*Cada imagen se maneja por separado al título de ella*/
+.cancion_container{position: relative;}
+.cancion_container:hover button{opacity: 1;}
+.cancion_container img {width: 90%; z-index: 2}
+
+/*Título de la canción y nombre del artista*/
+.titulo_artista{
+    font-size: 37%;
+    text-align: center;
+    line-height: 1.5em;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.cancion_container button{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    /*transform: translate(-50%, -50%);*/
+    background-color: #3c005d;
+    /*circle size*/
+    width: 67px;
+    height: 66px;
+    border-radius: 50%;
+    font-size: 200%;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+
+
+/*Overlay para que se haga zoom a la carátula de la canción al pasar por encima*/
+.cancion:hover {
+    background-color: #ebe0ff;
+    color: black;
+}
+.cancion:hover p{
+    color: black;
+}
+
+.page{
+    height: 92.5vh;
+    width: 85vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7.25vh;
+    background-color: #212121;
+
+}
+
+.music {
+    width: 190px;
+    height: 190px;
+    border: 1px solid #333333;
+    display: inline-block;
+    margin-top: 5vh;
+    margin-right: 10px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+
+.music::before {
+    content: "";
+    background-color: var(--clr);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.music:hover::before {
+    background-color: var(--overlay);
+
+}
+
+main h1{
+    text-align: center;
+}
+
+.music img{
+    width: 90px;
+    height: 90px;
+    /*z-index: 1;*/
+    position: absolute;
+    margin: 4em 0 0 0.5em;
+    opacity: 1;
+    transform: rotate(-15deg);
+}
+
+.music p{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    /*z-index: 2;*/
+    position: absolute;
+}
+
+.music:after {
+    top: 2em;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 8%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.music:hover:after {
+    width: 80%;
+    /*left: 10%;*/
+}
+
+.cover{
+    /*background-color: #EBE0FFFF;*/
+    width:4%;
+    height:8%;
+    position: absolute;
+    visibility: inherit;
+    margin-top: 0.25%;
+    margin-left: 2em;
+}
+
+#cover_genero{
+    border-radius: 20%;
+    width:100%;
+    height: 100%;
+    /*margin-left: 1em;*/
+    /*background-color: #EBE0FFFF;*/
+    position: absolute;
+    visibility: inherit;
+    z-index: 4;
+}
+
+.nombre_genero{
+    height: 5vh;
+    text-align: left;
+    background-color: #181818;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left: 5em;
+    /*font-family: "Copperplate", fantasy;*/
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 1em;
+
+}
+
+.content {
+    /*height: 77vh;*/
+    margin: 2%;
+    /*La disposición de las carátulas se ajusta al tamaño de la pantalla*/
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.player {
+    height: 15vh;
+    width: 97%;
+    border-radius: 40px;
+    background-color: #212121;
+    position: absolute;
+    user-select: none;
+    top: -140%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border: solid black 1px;
+    z-index: 999;
+
+}
+.player ul {
+    list-style: none;
+}
+.player ul li {
+    display: inline-block;
+}
+
+.caratula{
+    padding: 7%;
+    margin-left: 1em;
+    height: 10vh;
+    width: 10vh;
+}
+
+
+.caratula img{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: -0.5em;
+    height: 10vh;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.caratula.active img{
+    animation: rotate-disk 5s infinite forwards linear;
+}
+
+@keyframes rotate-disk {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+.cancion-artista{
+    padding-left: 1.5em;
+    line-height: 1.5em;
+    height: 30vh;
+    width: 11vw;
+    white-space: nowrap;
+}
+
+.cancion-artista h2 {
+    font-size: 1em;
+    /*text-overflow: ellipsis;*/
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    position: relative;
+    color: #aa00ff;
+}
+
+.cancion-artista h4 {
+    color: #6d00a2;
+    font-size: 0.75em;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    position: relative;
+}
+
+.cancion-artista h2::after, .cancion-artista h4::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    /*margin-top: 0.1em;*/
+    background: linear-gradient(to right, transparent, #212121);
+}
+
+.cancion-artista h6 {
+    opacity: 0
+}
+
+.controls{
+    display: grid;
+    grid-template-columns:87% 10% ;
+    width: 60vw;
+}
+
+.favorito{
+    display: inline-block;
+    text-align: center;
+    height: 1em;
+    padding-left: 0.5em;
+    margin-left: 13vw;
+    font-size: 1.25em;
+    padding-top: 0.25em;
+}
+
+.favorito i{
+    /*color: #6d00a2;*/
+
+}
+
+.barra{
+    width: 100%;
+    height: 10%;
+    border-radius: 10%;
+    cursor: pointer;
+    background: #b1adad;
+    padding-left: 0.9em;
+    margin-left: 3vw;
+}
+
+
+.barra .progreso{
+    width: 0;
+    height: inherit;
+    background: #EBE0FFFF;
+    border-radius: inherit;
+    position:relative;
+}
+
+.progreso::before{
+    content:"";
+    position:absolute;
+    border-radius: inherit;
+    top:50%;
+    right: -1%;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.barra:hover .progreso::before{
+    opacity: 1;
+}
+
+.controles{
+    width: 70vw;
+    text-align: left;
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+    clear: left;
+    margin-left: 20em;
+    /*font-size: 100%;*/
+    justify-content: center;
+}
+
+.controles i{
+    /*color: #6d00a2;*/
+}
+
+.controles .prev{
+    text-decoration: none;
+    /*font-size: 100%;*/
+    font-size: 150%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.controles .forw{
+    text-decoration: none;
+    font-size: 150%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.controles .max{
+    text-decoration: none;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.barra p{
+    color: #6d00a2;
+    font-family: "Century Gothic", serif;
+    font-size: 0.75em;
+}
+
+.pro{
+    float: left;
+    margin-top: 0.5em;
+}
+
+.dur{
+    float: right;
+    margin-left: 48em;
+}
+
+.barra_volumen{
+    width: 200px;
+    margin-top: -1em;
+    margin-left: 8vw;
+}
+
+.volume{
+    width: 100%;
+    height: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.volume::-webkit-slider-thumb{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #6f009f;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.low i{
+    text-decoration: none;
+    /*color: #6d00a2;*/
+}
+
+.high i{
+    text-decoration: none;
+    /*color: #6d00a2;*/
+    margin-left: 7.5em;
+}
+
+

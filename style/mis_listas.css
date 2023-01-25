@@ -1,0 +1,95 @@
+.mis_listas{
+    height: 80vh;
+    width: 75vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 7vh;
+    float: left;
+    text-align: left;
+    /*background-color: #323232;*/
+
+}
+
+.playlists{
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+    /*background-color: #323232;*/
+}
+
+.playlist {
+    height: 18.75%;
+    width: 96%;
+    background-color: #6d00a2;
+    border-top: black 1px solid;
+    display: flex;
+    margin-top: 1%;
+
+}
+
+.lista{
+    width: 70%;
+    margin-bottom: 1%;
+    display: flex;
+}
+
+.playlist:hover {
+    /*color: black;*/
+    background-color: #7a00b2;
+
+}
+
+
+.play_canc_container{
+    height: 100%;
+    width: 12%;
+    top:0;
+    left: 0;
+    /*position: relative;*/
+}
+
+.play_canc_container img{
+    height: 99%;
+    margin: 0;
+    width: auto;
+    float: left;
+    vertical-align: middle;
+    box-shadow: black 0 0 10px;
+}
+
+/*Cuanto queremos que se oscurezca la imagen*/
+.play_canc_container:hover .overlay_fav {opacity: 0.8;}
+
+
+.titulo_playlist{
+    /*width:90%;*/
+    padding-top: 1%;
+    cursor: pointer;
+    float: left;
+    left:0;
+}
+
+/*.titulo_playlist:hover{*/
+/*    color: black;*/
+/*}*/
+
+.minus_list{
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
