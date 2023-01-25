@@ -337,17 +337,19 @@
     </div>
     <div class="page">
       <h1> Nueva lista de reproducción </h1>
-      <form>
+<!--      <form>-->
         <div class = nombre_listas>
           <input id="nombre_lista"
                  name="Nombre de la playlist"
-                 autofocus
-                 value="">
+                 autocomplete="off"
+                 type="text"
+                 required>
           <label for="nombre_lista" class="label-wrapper">
             <span class="label-text">Nombre de la playlist</span>
           </label>
-          <button type="button" onclick="anadir_nombre_lista()">Nombrar</button>
         </div>
+<!--        <button type="button" onclick="anadir_nombre_lista()">Nombrar</button>-->
+
         <div class="buscador_canciones">
           <!-- <form class="buscador_canciones_btn"> -->
           <label for="search_for_list"> Añadir canciones: </label><br>
@@ -356,7 +358,7 @@
           <input type="file" id="imagen_playlist" oninput="anadir_imagen()">
           <!-- </form> -->
         </div>
-      </form>
+<!--      </form>-->
       <!-- Div que contiene las canciones que se pueden añadir a la lista-->
       <div class="resultados_1"></div>
     </div>
