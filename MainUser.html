@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+  <title>Sound Clover - Inicio</title>
+<!--  <link rel = "stylesheet" href="style/style.css">-->
+  <link rel = "stylesheet" href="style/home.css">
+  <link rel = "stylesheet" href="style/mis_listas.css">
+    <link rel = "stylesheet" href="style/crear_lista.css">
+  <script src="https://kit.fontawesome.com/cb1b141342.js" crossorigin="anonymous"></script>
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="marco">
+  <!--Div que agrupa la columna izquierda-->
+  <div class = "ColIzq">
+    <!--Grid que contiene el logo junto al nombre de la página-->
+    <div class = "encabezado">
+      <div class = "logo">
+        <a href="Main.html"><i class="fa-solid fa-clover"></i></a>
+      </div>
+      <div class = "nombre">
+        Sound Clover
+      </div>
+    </div>
+    <!--Grid contenedor de las opciones del menu lateral-->
+    <div class="navbar">
+      <ul>
+
+        <li onclick="see_page(0)"><i class="fa-solid fa-house"></i><p data-text="&nbsp;Home">&nbsp;Home</p></li>
+
+        <li onclick="see_page(1)"><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>
+        <li onclick="see_page(2)"><i class="fa-solid fa-compact-disc"></i><p data-text="&nbsp;Playlists">&nbsp;Playlists</p></li>
+        <li onclick="see_page(3)"><i class="fa-solid fa-add"></i><p data-text="&nbsp;Create">&nbsp;Create</p></li>
+<!--        <li onclick=""><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>-->
+<!--        <li onclick=""><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>-->
+        <!--elemento del menu lateral, formado por un enlace que cubre todo el elemento
+        y el texto se contiene en u h1 por razones de estilo-->
+      </ul>
+
+      <!--espaciador entre el menu lateral y los enlaces de interés-->
+      <div class = "spacer"></div>
+
+    </div>
+    <!--enlaces de interes, organizados en un grid-->
+    <div class="politicas">
+      <p> © Sound Clover - <br> </p>
+      <p> All Rights Reserved <br></p>
+      <p><i class="fa-solid fa-phone"></i><a href="contacto.html"> Contact <br></a></p>
+      <p><a href="privacidad.html"> Privacy policy <br></a></p>
+      <p><a href="cookies.html"> Cookies policy <br></a></p>
+
+    </div>
+  </div>
+
+  <div class="ColDcha">
+    <!--Encabezado donde se colocan los botones-->
+    <div class= "cabecera">
+      <ul>
+        <li><div class="subnav">
+          <button class="subnavbtn" id="fotoperfil"></button>
+          <div class="subnav-content">
+            <button  id = 'cuenta' onclick="cuenta()">Cuenta</button>
+            <button  id = 'perfil' onclick="perfil()">Perfil</button>
+            <a href="#" id = 'cerrar_sesion' onclick="cerrar_sesion()">Cerrar sesión </a>
+          </div>
+        </div>
+        </li>
+        <li><div class="subnav">
+          <input class="search">
+        </div>
+
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="musica">
+      <!--Cada sección viene definida con un div donde se incluye los títulos de las secciones y
+      las canciones de dicha sección-->
+      <div class= "secciones_musica">
+        <!--Para los títulos de las secciones se utiliza el encabezado h1-->
+        <div class = "titulos_secciones">
+          <h1>Recomendados</h1>
+          <!-- Cuenta atrás para el lanzamiento de la nueva canción de la semana-->
+        </div>
+        <!--La disposición de canciones de cada sección-->
+        <div class = "canciones">
+
+          <!--Cada canción sigue la misma estructura de imagen con su título más el audio a escuchar-->
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/black_parade.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(1)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Welcome to the Black Parade <br> My Chemical Romance </p>
+            </div>
+
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/migraine.png" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(2)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Migraine <br> Twenty Øne Piløts </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/inmortales.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(3)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Inmortales <br> Funzo & Baby Loud </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/5-seconds-of-summer-youngblood.jpg.opdownload" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(4)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Youngblood <br> 5 Seconds of Summer </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/queen_the_game.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(5)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Another One Bites the Dust <br> Queen </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class= "secciones_musica">
+        <div class = "titulos_secciones"> <h1> Popular ahora mismo </h1> </div>
+        <div class = "canciones">
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/as_it_was.png" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(6)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> As It Was <br> Harry Styles </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/quevedo_music_session.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(7)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Quevedo: Bzrp Music Session #52 <br> Bzrp, Quevedo </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(8)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Tití me preguntó <br> Bad Bunny </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(9)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Me Porto Bonito <br> Bad Bunny ft. Chencho Corleone </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/mary_on_a_cross.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(10)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Mary on a cross <br> Ghost </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class= "secciones_musica">
+        <div class = "titulos_secciones">
+          <h1> Nuevos lanzamientos </h1>
+        </div>
+        <div class = "canciones">
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(11)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Ojitos Lindos <br> Bad Bunny ft. Bomba Estéreo </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/motomami.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(12)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Chicken Teriyaki <br> Rosalía </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/seven.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(13)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Seven <br> Natalie Jane </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/motomami.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(14)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Saoko <br> Rosalía </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/SUPERACHE.jfif" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(15)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Memories <br> Conan Gray </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer-3"></div>
+    </div>
+    <div class="page">
+      <main>
+        <h1> Genres & Moods </h1>
+      </main>
+      <div class="music" style="--clr:#00ade1; --overlay:#00c3ff" onclick = 'genre_page(0)'><img src="images/genres/pop.jpg" alt="pop"><p class="c">Pop</p></div>
+      <div class="music" style="--clr:#8f0fe1; --overlay:#a111ff" onclick = 'genre_page(1)'><img src="images/genres/mood.jpg" alt="mood"><p class="c">Mood</p></div>
+      <div class="music" style="--clr:#e10000; --overlay:#ff0000" onclick = 'genre_page(2)'><img src="images/genres/hip_hop.jpg" alt="hip_hop"><p class="c">Hip Hop</p></div>
+      <div class="music" style="--clr:#e1b400; --overlay:#ffcd02" onclick = 'genre_page(3)'><img src="images/genres/chill.jpg" alt="chill"><p class="c">Chill</p></div>
+      <div class="music" style="--clr:#00e10b; --overlay:#00ff0b" onclick = 'genre_page(4)'><img src="images/genres/latino.jpg" alt="latino"><p class="c">Latino</p></div>
+      <div class="music" style="--clr:#e14400; --overlay:#ff5000" onclick = 'genre_page(5)'><img src="images/genres/dance.jpg" alt="dance"><p class="c">Dance</p></div>
+      <div class="music" style="--clr:#5300e1; --overlay:#5f00ff" onclick = 'genre_page(6)'><img src="images/genres/country.jpg" alt="country"><p class="c">Country</p></div>
+      <div class="music" style="--clr:#d3a698; --overlay:#ffccb6" onclick = 'genre_page(7)'><img src="images/genres/rock.jpg" alt="rock"><p class="c">Rock</p></div>
+      <div class="music" style="--clr:#c072c7; --overlay:#f690ff" onclick = 'genre_page(8)'><img src="images/genres/focus.jpg" alt="focus"><p class="c">Focus</p></div>
+      <div class="music" style="--clr:#a12acb; --overlay:#ce37ff" onclick = 'genre_page(9)'><img src="images/genres/rnb.jpg" alt="rnb"><p class="c">R&B</p></div>
+      <div class="music" style="--clr:#5e3b1c; --overlay:#7a4925" onclick = 'genre_page(10)'><img src="images/genres/party.jpg" alt="party"><p class="c">Party</p></div>
+      <div class="music" style="--clr:#5C119F; --overlay:#7e18da" onclick = 'genre_page(11)'><img src="images/genres/indie.jpg" alt="indie"><p class="c">Indie</p></div>
+      <div class="music" style="--clr:#a8a8a8; --overlay:#ececec" onclick = 'genre_page(12)'><img src="images/genres/practice.jpg" alt="practice"><p class="c">Practice</p></div>
+      <div class="music" style="--clr:#a843d0; --overlay:#c951ff" onclick = 'genre_page(13)'><img src="images/genres/gaming.jpg" alt="gaming"><p class="c">Gaming</p></div>
+      <div class="music" style="--clr:#1f9f11; --overlay:#2bda18" onclick = 'genre_page(14)'><img src="images/genres/relax.jpg" alt="relax"><p class="c">Relax</p></div>
+      <div class="music" style="--clr:#9f7811; --overlay:#da7818" onclick = 'genre_page(15)'><img src="images/genres/kpop.jpg" alt="kpop"><p class="c">K-pop</p></div>
+      <div class="music" style="--clr:#11399f; --overlay:#0827ff" onclick = 'genre_page(16)'><img src="images/genres/metal.jpg" alt="metal"><p class="c">Metal</p></div>
+      <div class="music" style="--clr:#51a100; --overlay:#71dc00" onclick = 'genre_page(17)'><img src="images/genres/anime.jpg" alt="kpop"><p class="c">Anime</p></div>
+      <div class="music" style="--clr:#96119f; --overlay:#c018da" onclick = 'genre_page(18)'><img src="images/genres/jazz.jpg" alt="jazz"><p class="c">Jazz</p></div>
+      <div class="music" style="--clr:#119f9f; --overlay:#18dac3" onclick = 'genre_page(19)'><img src="images/genres/classic.jpg" alt="classic"><p class="c">Classic</p></div>
+      <div class="music" style="--clr:#9f1172; --overlay:#da18d0" onclick = 'genre_page(20)'><img src="images/genres/folk.jpg" alt="folk"><p class="c">Folk</p></div>
+      <div class="music" style="--clr:#9f5811; --overlay:#da6918" onclick = 'genre_page(21)'><img src="images/genres/blues.jpg" alt="blues"><p class="c">Blues</p></div>
+      <div class="music" style="--clr:#9f117e; --overlay:#da18d7" onclick = 'genre_page(22)'><img src="images/genres/funk.jpg" alt="funk"><p class="c">Funk</p></div>
+      <div class="music" style="--clr:#9f9811; --overlay:#dac018" onclick = 'genre_page(23)'><img src="images/genres/salsa.jpg" alt="salsa"><p class="c">Salsa</p></div>
+      <div class="music" style="--clr:#119f24; --overlay:#18da22" onclick = 'genre_page(24)'><img src="images/genres/pride.jpg" alt="pride"><p class="c">Pride</p></div>
+      <div class="music" style="--clr:#40119f; --overlay:#4f18da" onclick = 'genre_page(25)'><img src="images/genres/punk.jpg" alt="punk"><p class="c">Punk</p></div>
+      <div class="music" style="--clr:#9f5111; --overlay:#da7918" onclick = 'genre_page(26)'><img src="images/genres/summer.jpg" alt="summer"><p class="c">Summer</p></div>
+      <div class="music" style="--clr:#119f7e; --overlay:#18da96" onclick = 'genre_page(27)'><img src="images/genres/tv.jpg" alt="tv"><p class="c">TV e film</p></div>
+      <div class="music" style="--clr:#bead00; --overlay:#ffed00" onclick = 'genre_page(28)'><img src="images/genres/lol.jpg" alt="lol"><p class="c">LOL</p></div>
+      <div class="music" style="--clr:#9f1111; --overlay:#da1818" onclick = 'genre_page(29)'><img src="images/genres/flamenco.jpg" alt="flamenco"><p class="c">Flamenco</p></div>
+      <div class="spacer-3"></div>
+    </div>
+    <div class="page">
+      <div class="cover"> <img id="cover_genero"  src="" alt="cover_genero"> </div>
+      <div class="nombre_genero"></div>
+      <div class="content"></div>
+<!--      <div class="spacer-3"></div>-->
+    </div>
+    <div class="page">
+      <div class = "titulos_secciones"> <h1>Listas de reproducción</h1></div>
+      <div class = 'playlists'></div>
+    </div>
+    <div class="page">
+      <h1> Nueva lista de reproducción </h1>
+      <form>
+        <div class = nombre_listas>
+          <input id="nombre_lista"
+                 name="Nombre de la playlist"
+                 autofocus
+                 value="">
+          <label for="nombre_lista" class="label-wrapper">
+            <span class="label-text">Nombre de la playlist</span>
+          </label>
+          <button type="button" onclick="anadir_nombre_lista()">Nombrar</button>
+        </div>
+        <div class="buscador_canciones">
+          <!-- <form class="buscador_canciones_btn"> -->
+          <label for="search_for_list"> Añadir canciones: </label><br>
+          <input type="search" value="" placeholder="Search.." id="search_for_list" oninput="buscar_anadir()"><br>
+          <label for="imagen_playlist"> Añadir imagen </label>
+          <input type="file" id="imagen_playlist" oninput="anadir_imagen()">
+          <!-- </form> -->
+        </div>
+      </form>
+      <!-- Div que contiene las canciones que se pueden añadir a la lista-->
+      <div class="resultados_1"></div>
+    </div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+  </div>
+</div>
+<!--Reproductor-->
+<div class = "pie">
+  <div class="player">
+    <audio src="" id="main_audio"></audio>
+    <ul>
+      <!-- Carátula de la canción-->
+      <li> <div class= "caratula">
+        <img id="caratula"  src="" alt="caratula">
+      </div></li>
+      <!-- Título de la canción-->
+      <li><div class="cancion-artista">
+        <h2 id="cancion_actual"> Canción actual </h2>
+        <h4 id="artista">Artista actual</h4>
+      </div></li>
+      <li>
+        <!-- Botones de control-->
+        <div class="controls">
+          <div class="controles">
+            <ul>
+              <!-- Botón de repetir-->
+              <li class="prev"> <i class="fa-solid fa-backward-step"></i></li>
+              <!-- Botón de play/pause-->
+              <li class="max"> <i class="fa-solid fa-play" id="estado"></i></li>
+              <!-- Botón de siguiente-->
+              <li class="forw"> <i class="fa-solid fa-forward-step"></i></li>
+
+            </ul>
+
+          </div>
+          <p class="favorito">
+            <a href="#"> <i class="fa-regular fa-heart" id="fav"></i></a>
+          </p>
+        </div>
+        <div class="controls">
+          <!-- Barra de progreso-->
+          <div class= "barra">
+            <div class = "progreso">
+              <span></span>
+            </div>
+            <ul>
+              <li><p class="pro">0:00</p></li>
+              <li><p class="dur">0:00</p></li>
+            </ul>
+
+          </div>
+          <!-- Botón de volumen-->
+          <div class= "barra_volumen">
+            <input type="range" max ='1' min="0" step = '0.01' class = 'volume'>
+            <ul>
+              <li class="low"> <i class="fa-solid fa-volume-low"></i></li>
+              <li class="high"> <i class="fa-solid fa-volume-high"></i></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+  <!---->
+</div>
+
+</body>
+<!--<script src="scripts/no_account.js"></script>-->
+<script src="../Sound_Clover/scripts/canciones_artistas.js"></script>
+<script src="../Sound_Clover/scripts/mainuser.js"></script>
+<script src="../Sound_Clover/scripts/player.js"></script>
+<script src="../Sound_Clover/scripts/ver_listas.js"></script>
+<script src="../Sound_Clover/scripts/crear_listas.js"></script>
+</html>

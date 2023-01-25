@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+  <title>Sound Clover - Inicio</title>
+  <link rel = "stylesheet" href="style/style.css">
+  <link rel = "stylesheet" href="style/signin.css">
+  <script src="https://kit.fontawesome.com/cb1b141342.js" crossorigin="anonymous"></script>
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+<body>
+<a href="Main.html" class = "back"></a>
+<section class = pantalla>
+  <!--    <section class="user"> aaa-->
+  <div class="cancel"> <a href="Main.html"> <i class="fa-solid fa-xmark"></i> </a></div>
+  <div class="user_options-container">
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">Welcome back!</h2>
+        <p class="user_unregistered-text"> Don't have an account? Sign up for enjoy music.</p>
+        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+      </div>
+
+      <div class="user_options-registered">
+        <h2 class="user_registered-title">Pleasure to have you</h2>
+        <p class="user_registered-text">Already have an account? Nice to see you again</p>
+        <button class="user_registered-login" id="login-button">Login</button>
+      </div>
+    </div>
+
+    <div class="user_options-forms" id="user_options-forms">
+      <div class="user_forms-login">
+        <h2 class="forms_title">Login</h2>
+        <form class="forms_form">
+          <!--                                <fieldset class="forms_fieldset">-->
+          <div class="forms_field">
+            <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+          </div>
+          <div class="forms_field">
+            <input type="password" placeholder="Password" class="forms_field-input" required />
+          </div>
+          <!--                                </fieldset>-->
+          <div class="forms_buttons">
+            <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+            <input type="submit" value="Log In" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+      <div class="user_forms-signup">
+        <h2 class="forms_title">Sign Up</h2>
+        <form class="forms_form">
+          <!--                                <fieldset class="forms_fieldset">-->
+          <div class="forms_field">
+            <input id="femail" type="email" placeholder="Email" class="forms_field-input" required />
+          </div>
+          <div class="forms_field">
+            <input autofocus id="fusername" type="text" placeholder="Username" class="forms_field-input" required />
+          </div>
+          <div class="forms_field">
+            <input id="fpassword" type="password" placeholder="Password" class="forms_field-input" required />
+            <input id="fpassword2" type="password" placeholder="Repeat password" class="forms_field-input" required />
+          </div>
+          <br>
+          <div class="forms_field">
+            <input autofocus id="fnombre" type="text" placeholder="Full Name" class="forms_field-input" required />
+          </div>
+          <div class="forms_field">
+            <input id="fapellidos" type="text" placeholder="Last Name" class="forms_field-input" required />
+          </div>
+
+          <div class="forms_field">
+            <input id="ffechanac" type="date" placeholder="Date of birth" class="forms_field-input" required />
+          </div>
+          <br>
+          <div class="forms_field">
+            <input id="ffotoperfil" type="file" class="forms_field-input"/>
+          </div>
+          <!--                                </fieldset>-->
+          <div class="forms_buttons">
+            <input type="submit" value="Sign up" class="forms_buttons-action">
+          </div>
+          <br>
+          <div class="forms_field">
+            <input id="fEULA" type="checkbox" class="forms_field-input" required>
+            Yes, I have read and accept the general terms and conditions.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--    </section>-->
+</section>
+<div class="marco">
+  <!--Div que agrupa la columna izquierda-->
+  <div class = "ColIzq">
+    <!--Grid que contiene el logo junto al nombre de la página-->
+    <div class = "encabezado">
+      <div class = "logo">
+        <a href="Main.html"><i class="fa-solid fa-clover"></i></a>
+      </div>
+      <div class = "nombre">
+        Sound Clover
+      </div>
+    </div>
+    <!--Grid contenedor de las opciones del menu lateral-->
+    <div class="navbar">
+      <ul>
+
+        <li onclick="home_page()"><i class="fa-solid fa-house"></i><p data-text="&nbsp;Home">&nbsp;Home</p></li>
+
+        <li onclick="discover_page()"><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>
+        <!--elemento del menu lateral, formado por un enlace que cubre todo el elemento
+        y el texto se contiene en u h1 por razones de estilo-->
+      </ul>
+
+      <!--espaciador entre el menu lateral y los enlaces de interés-->
+      <div class = "spacer"></div>
+
+    </div>
+    <!--enlaces de interes, organizados en un grid-->
+    <div class="politicas">
+      <p> © Sound Clover - <br> </p>
+      <p> All Rights Reserved <br></p>
+      <p><i class="fa-solid fa-phone"></i><a href="contacto.html"> Contact <br></a></p>
+      <p><a href="privacidad.html"> Privacy policy <br></a></p>
+      <p><a href="cookies.html"> Cookies policy <br></a></p>
+
+    </div>
+  </div>
+
+  <div class="ColDcha">
+    <!--Encabezado donde se colocan los botones-->
+    <div class= "cabecera">
+      <ul>
+        <li><p class = "spacer-2"></p></li>
+        <li><a href="SignUp.html">&nbsp;Página de usuario</a></li>
+      </ul>
+
+    </div>
+
+
+    <div class="musica">
+      <!--Cada sección viene definida con un div donde se incluye los títulos de las secciones y
+      las canciones de dicha sección-->
+      <div class= "secciones_musica">
+        <!--Para los títulos de las secciones se utiliza el encabezado h1-->
+        <div class = "titulos_secciones">
+          <h1>Recomendados</h1>
+          <!-- Cuenta atrás para el lanzamiento de la nueva canción de la semana-->
+        </div>
+        <!--La disposición de canciones de cada sección-->
+        <div class = "canciones">
+
+          <!--Cada canción sigue la misma estructura de imagen con su título más el audio a escuchar-->
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/black_parade.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Welcome_To_The_Black_Parade.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Welcome to the Black Parade <br> My Chemical Romance </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/migraine.png" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Migraine.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Migraine <br> Twenty Øne Piløts </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/inmortales.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Inmortales.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Inmortales <br> Funzo & Baby Loud </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/5-seconds-of-summer-youngblood.jpg.opdownload" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/5SOS_Youngblood.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Youngblood <br> 5 Seconds of Summer </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/queen_the_game.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Another_One_Bites_the_Dust.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Another One Bites the Dust <br> Queen </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class= "secciones_musica">
+        <div class = "titulos_secciones"> <h1> Popular ahora mismo </h1> </div>
+        <div class = "canciones">
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/as_it_was.png" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Harry_Styles_As_It_Was.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> As It Was <br> Harry Styles </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/quevedo_music_session.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/QUEVEDO_BZRP_Music_Sessions_52.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Quevedo: Bzrp Music Session #52 <br> Bzrp, Quevedo </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/titi_me_pregunto.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Tití me preguntó <br> Bad Bunny </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Bad_Bunny_Me_Porto_Bonito_(ft._Chencho_Corleone).mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Me Porto Bonito <br> Bad Bunny ft. Chencho Corleone </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/mary_on_a_cross.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Ghost_Mary_on_a_cross.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Mary on a cross <br> Ghost </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class= "secciones_musica">
+        <div class = "titulos_secciones">
+          <h1> Nuevos lanzamientos </h1>
+        </div>
+        <div class = "canciones">
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/Ojitos_lindos.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Ojitos Lindos <br> Bad Bunny ft. Bomba Estéreo </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/motomami.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/ROSALÍA_CHICKEN_TERIYAKI.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Chicken Teriyaki <br> Rosalía </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/seven.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/natalie-jane-seven.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Seven <br> Natalie Jane </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/motomami.jpg" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/ROSALÍA_SAOKO.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Saoko <br> Rosalía </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/SUPERACHE.jfif" alt="cancion" >
+              <div class="overlay">
+                <audio controls>
+                  <source src = "audio/conan-gray-memories.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class = "titulo_artista">
+              <p> Memories <br> Conan Gray </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!--Pie con mensaje para atraer audiencia-->
+<div class = "pie">
+  <p> For special recommendations, sign up right now</p>
+</div>
+</body>
+<script src="../Sound_Clover/scripts/canciones_artistas.js"></script>
+<script src="../Sound_Clover/scripts/registro.js"></script>
+
+</html>
