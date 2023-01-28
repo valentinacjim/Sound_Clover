@@ -47,6 +47,15 @@ function see_page(page) {
             if (i===2){
                 listas_display();
             }
+            if (i===3){
+                let search = document.getElementsByClassName("resultados_1")[0];
+                search.innerHTML='';
+
+                // Crear lista de reproducción
+                misListas.push({nombre: "Nueva lista de reproducción " + (misListas.length+1),
+                    canciones: [],
+                    imagen:'images/playlist.png'});
+            }
         }else {
             allPages[i].style.visibility = 'hidden';
         }

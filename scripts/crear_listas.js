@@ -1,42 +1,36 @@
 // Módulo para añadir canciones a la lista de reproducción
 let misListas =[]
 
-function crear_listas(){
-    let home = document.getElementsByClassName('musica')[0];
-    let mis_listas = document.getElementsByClassName('mis_listas')[0];
-    let crear_lista = document.getElementsByClassName('crear_lista')[0];
-    let perfil = document.getElementsByClassName('perfil')[0];
-    let seguidos = document.getElementsByClassName('artistas_pagina')[0];
-    let artista_pag = document.getElementsByClassName('artistas_pagina')[1];
-    let resultados = document.getElementsByClassName('busqueda')[0];
-    let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
-    let albumes = document.getElementsByClassName('albumes')[0];
-    let cuenta = document.getElementsByClassName('cuenta')[0];
-
-    home.style.visibility = 'hidden';
-    mis_listas.style.visibility = 'hidden';
-    crear_lista.style.visibility = 'visible';
-    perfil.style.visibility = 'hidden';
-    artista_pag.style.visibility = 'hidden';
-    seguidos.style.visibility = 'hidden';
-    resultados.style.visibility = 'hidden';
-    lista_reproduccion.style.visibility = 'hidden';
-    albumes.style.visibility = 'hidden';
-    cuenta.style.visibility = 'hidden';
-
-    // Crear estructura del formulario
-    document.getElementById("nombre_lista").value = '';
-    document.getElementById("search_for_list").value = '';
-    document.getElementById("imagen_playlist").value = '';
-
-    let search = document.getElementsByClassName("resultados_1")[0];
-    search.innerHTML='';
-
-    // Crear lista de reproducción
-    misListas.push({nombre: "Nueva lista de reproducción " + (misListas.length+1),
-                    canciones: [],
-                    imagen:'images/playlist.png'});
-}
+// function crear_listas(){
+//     let home = document.getElementsByClassName('musica')[0];
+//     let mis_listas = document.getElementsByClassName('mis_listas')[0];
+//     let crear_lista = document.getElementsByClassName('crear_lista')[0];
+//     let perfil = document.getElementsByClassName('perfil')[0];
+//     let seguidos = document.getElementsByClassName('artistas_pagina')[0];
+//     let artista_pag = document.getElementsByClassName('artistas_pagina')[1];
+//     let resultados = document.getElementsByClassName('busqueda')[0];
+//     let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
+//     let albumes = document.getElementsByClassName('albumes')[0];
+//     let cuenta = document.getElementsByClassName('cuenta')[0];
+//
+//     home.style.visibility = 'hidden';
+//     mis_listas.style.visibility = 'hidden';
+//     crear_lista.style.visibility = 'visible';
+//     perfil.style.visibility = 'hidden';
+//     artista_pag.style.visibility = 'hidden';
+//     seguidos.style.visibility = 'hidden';
+//     resultados.style.visibility = 'hidden';
+//     lista_reproduccion.style.visibility = 'hidden';
+//     albumes.style.visibility = 'hidden';
+//     cuenta.style.visibility = 'hidden';
+//
+//     // Crear estructura del formulario
+//     document.getElementById("nombre_lista").value = '';
+//     document.getElementById("search_for_list").value = '';
+//     document.getElementById("imagen_playlist").value = '';
+//
+//
+// }
 
 // Función para añaadir una imagen a la lista de reproducción
 function anadir_imagen(){
@@ -94,12 +88,13 @@ function buscar_anadir(){
             (allMusic[i].name !== misListas[misListas.length-1].canciones)){
             search.innerHTML += "<div class='busq1'>\n" +
                 "    <div class='busq_container1'>\n" +
-                "        <img alt='cancion' src=" + allMusic[i].img+ " >\n" +
-                "            <div class='overlay_fav'>\n" +
+                "    <div class='cancion_container'>" +
+                "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
+                // "            <div class='overlay_fav'>\n" +
                 "                <button type='button' onclick='chooseMusic(" +(i+1)+ ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
-                "            </div>\n" +
+                "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
                 "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +

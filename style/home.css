@@ -436,7 +436,7 @@ input{
     background-color: transparent;
     border: 1px solid #EBE0FFFF;
     border-radius: 40px;
-    background-image: url(../../Web3/images/search-icon.png);
+    background-image: url(../../Sound_Clover/images/search-icon.png);
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: 10px 50%;
@@ -554,7 +554,7 @@ input{
 .page{
     height: 92.5vh;
     width: 85vw;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
     visibility: hidden;
@@ -674,26 +674,6 @@ main h1{
     padding-bottom: 8%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .player {
     height: 15vh;
     width: 97%;
@@ -704,7 +684,7 @@ main h1{
     top: -140%;
     left: 49%;
     transform: translate(-50%, -50%);
-    border: solid black 1px;
+    border: solid #ebe0ff 1px;
     z-index: 999;
 
 }

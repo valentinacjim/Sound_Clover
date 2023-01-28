@@ -2,11 +2,12 @@
 <html lang = "es">
 
 <head>
-  <title>Sound Clover - Inicio</title>
+  <title>Sound Clover</title>
 <!--  <link rel = "stylesheet" href="style/style.css">-->
   <link rel = "stylesheet" href="style/home.css">
   <link rel = "stylesheet" href="style/mis_listas.css">
-    <link rel = "stylesheet" href="style/crear_lista.css">
+  <link rel = "stylesheet" href="style/crear_lista.css">
+  <link rel = "stylesheet" href="style/search.css">
   <script src="https://kit.fontawesome.com/cb1b141342.js" crossorigin="anonymous"></script>
   <meta name = "viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -84,7 +85,7 @@
       <div class= "secciones_musica">
         <!--Para los títulos de las secciones se utiliza el encabezado h1-->
         <div class = "titulos_secciones">
-          <h1>Recomendados</h1>
+          <h1>Recommended</h1>
           <!-- Cuenta atrás para el lanzamiento de la nueva canción de la semana-->
         </div>
         <!--La disposición de canciones de cada sección-->
@@ -155,7 +156,7 @@
       </div>
 
       <div class= "secciones_musica">
-        <div class = "titulos_secciones"> <h1> Popular ahora mismo </h1> </div>
+        <div class = "titulos_secciones"> <h1> Popular right now </h1> </div>
         <div class = "canciones">
 
           <div class = "cancion">
@@ -222,7 +223,7 @@
 
       <div class= "secciones_musica">
         <div class = "titulos_secciones">
-          <h1> Nuevos lanzamientos </h1>
+          <h1> New Hits </h1>
         </div>
         <div class = "canciones">
 
@@ -332,32 +333,44 @@
 <!--      <div class="spacer-3"></div>-->
     </div>
     <div class="page">
-      <div class = "titulos_secciones"> <h1>Listas de reproducción</h1></div>
+      <div class = "titulos_secciones"> <h1>Playlists</h1></div>
       <div class = 'playlists'></div>
     </div>
     <div class="page">
-      <h1> Nueva lista de reproducción </h1>
+      <h1> New playlist </h1>
 <!--      <form>-->
+      <div class="crear_lista">
         <div class = nombre_listas>
+          <div>
           <input id="nombre_lista"
                  name="Nombre de la playlist"
                  autocomplete="off"
                  type="text"
                  required>
-          <label for="nombre_lista" class="label-wrapper">
-            <span class="label-text">Nombre de la playlist</span>
-          </label>
-        </div>
-<!--        <button type="button" onclick="anadir_nombre_lista()">Nombrar</button>-->
 
+          </div>
+          <div>
+          <label for="nombre_lista">
+            <span class="label-text">Playlist name:</span>
+          </label>
+          </div>
+        </div>
+
+        <div>
+          <label for="imagen_playlist"> Add image: </label> <br>
+          <input type="file" id="imagen_playlist" oninput="anadir_imagen()">
+        </div>
         <div class="buscador_canciones">
           <!-- <form class="buscador_canciones_btn"> -->
-          <label for="search_for_list"> Añadir canciones: </label><br>
+          <div>
+          <label for="search_for_list"> Add songs: </label>
+            </div>
+            <div>
           <input type="search" value="" placeholder="Search.." id="search_for_list" oninput="buscar_anadir()"><br>
-          <label for="imagen_playlist"> Añadir imagen </label>
-          <input type="file" id="imagen_playlist" oninput="anadir_imagen()">
+            </div>
           <!-- </form> -->
         </div>
+      </div>
 <!--      </form>-->
       <!-- Div que contiene las canciones que se pueden añadir a la lista-->
       <div class="resultados_1"></div>
@@ -439,4 +452,6 @@
 <script src="../Sound_Clover/scripts/player.js"></script>
 <script src="../Sound_Clover/scripts/ver_listas.js"></script>
 <script src="../Sound_Clover/scripts/crear_listas.js"></script>
+<script src="../Sound_Clover/scripts/search.js"></script>
+
 </html>

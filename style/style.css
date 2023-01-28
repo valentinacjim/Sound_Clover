@@ -412,7 +412,7 @@ input{
 .page{
     height: 87.25vh;
     width: 85vw;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
     visibility: hidden;
