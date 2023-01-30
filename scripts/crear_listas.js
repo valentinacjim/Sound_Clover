@@ -48,12 +48,12 @@ function anadir_nombre_lista(){
     for (let i = 0; i<misListas.length; i++)
     if (name !=='' && !misListas[i].nombre.includes(name)){
         misListas[(misListas.length - 1)].nombre = document.getElementById("nombre_lista").value;
-        //console.log(misListas);
+        alert("Playlist created successfully");
     }
     else if(name ===''){
-        alert("Añade un nombre válido");
+        alert("Add a name to the playlist");
     }else{
-        alert("Playlist ya existente");
+        alert("Playlist already exists");
     }
 
 }
@@ -113,7 +113,7 @@ function buscar_anadir(){
 function agregar_a_lista(index){
     let eliminar = document.getElementById(allMusic[index].name +"_agregar");
     misListas[misListas.length-1].canciones.push(allMusic[index].name);
-    alert("Cancion agregada a la lista de reproducción");
+    alert("Song added to the playlist");
     eliminar.className = 'fa-solid fa-check';
 }
 

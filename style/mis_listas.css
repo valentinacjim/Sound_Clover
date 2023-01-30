@@ -1,16 +1,16 @@
-.mis_listas{
-    height: 80vh;
-    width: 75vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    visibility: hidden;
-    margin-top: 7vh;
-    float: left;
-    text-align: left;
-    /*background-color: #323232;*/
+/*.mis_listas{*/
+/*    height: 80vh;*/
+/*    width: 75vw;*/
+/*    overflow-y: scroll;*/
+/*    overflow-x: hidden;*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    margin-top: 7vh;*/
+/*    float: left;*/
+/*    text-align: left;*/
+/*    !*background-color: #323232;*!*/
 
-}
+/*}*/
 
 .playlists{
     height: 100%;
@@ -22,7 +22,7 @@
 .playlist {
     height: 18.75%;
     width: 96%;
-    background-color: #6d00a2;
+    background-color: #ebe0ff;
     border-top: black 1px solid;
     display: flex;
     margin-top: 1%;
@@ -37,10 +37,16 @@
 
 .playlist:hover {
     /*color: black;*/
-    background-color: #7a00b2;
+    background-color: #D6C3FAFF;
 
 }
 
+.playlist .titulo_playlist{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    margin-top: 1%;
+}
 
 .play_canc_container{
     height: 100%;
@@ -76,8 +82,14 @@
 /*}*/
 
 .minus_list{
-    margin-top: 1em;
+    margin-top: 1.35em;
     cursor: pointer;
+    margin-left: 29em;
+}
+
+.minus_list i{
+    color: black;
+    font-size: 1.5em;
 }
 
 

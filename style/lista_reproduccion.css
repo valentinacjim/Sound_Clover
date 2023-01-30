@@ -1,60 +1,83 @@
-.lista_reproducción{
-    height: 80vh;
-    width: 75vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    visibility: hidden;
-    margin-top: 7vh;
-    background-color: #323232;
-    z-index: 2;
-}
+/*.lista_reproducción{*/
+/*    height: 80vh;*/
+/*    width: 75vw;*/
+/*    overflow-y: scroll;*/
+/*    overflow-x: hidden;*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    margin-top: 7vh;*/
+/*    background-color: #323232;*/
+/*    z-index: 2;*/
+/*}*/
 
 
 .cover_playlist{
     /*background-color: white;*/
-    width:8%;
-    height:16%;
+    width:5%;
+    height:10%;
     position: absolute;
     visibility: inherit;
-    margin-top: -1%;
+    margin-left: 1em;
+    /*margin-top: -0.25%;*/
 }
 
 #cover_playlist{
     border-radius: 50%;
     width:100%;
     height: 100%;
-    margin-left: 2em;
-    /*background-color: white;*/
+    /*margin-left: 1em;*/
+    /*background-color: #EBE0FFFF;*/
     position: absolute;
     visibility: inherit;
     z-index: 4;
+    box-shadow: black 0 0 10px;
+
 
 }
 
+
 .nombre-playlist{
     height: 10vh;
-    background-color: #212121;
     padding-left: 2em;
-    font-family: "Copperplate", fantasy;
+    filter: blur(2px);
+    /*background: no-repeat;*/
+    opacity: 0.8;
+
     position: sticky;
     top: 0;
     text-align: center;
     z-index: 2;
+    /*width: 1080px;*/
+}
 
+#nombre-playlist{
+    filter: none;
+    font-size: 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-family: "Copperplate", fantasy;
+
+    margin-top: -1.75em;
 }
 
 .playlist_content {
     height: 100%;
-    margin-left: 2%;
+    margin: 1.5%;
+
     visibility: inherit;
-    background-color: #323232;
+    /*background-color: #323232;*/
 }
 
 .favor{
-    margin-right: 3em;
+    margin-right: 1.5em;
     margin-top: 1em;
     cursor: pointer;
+}
+
+.favor i{
+    color: #000000;
+    font-size: 1.5em;
 }
 
 
@@ -68,32 +91,32 @@
 }
 
 .busq3:hover {
-    transform: scale(1.02);
-    background-color: #b4c7f3;
+    /*transform: scale(1.02);*/
+    background-color: #D6C3FAFF;
 }
 
 .drag_and_drop{
     height: 100%;
     width: 2%;
-    background-color: #4a5a6F;
+    background-color: #ebe0ff;
     border: none;
     cursor: move;
 }
 
 .drag_and_drop i{
-    color: white;
+    color: #000000;
     font-size: 1em;
 }
 
 .drag_and_drop:hover{
-    background-color: #b4c7f3;
+    background-color: #D6C3FAFF;
 }
 
 .helper{
     position: fixed;
     top:-100%;
     left: -100%;
-    background-color: #39698a;
+    background-color: #8f0fe1;
     padding: 0.25rem 0.5rem;
     border-radius: 0.2rem;
     transform: translate(-50%, -50%);
@@ -110,8 +133,8 @@
 }
 
 .helper-line:hover {
-    transform: scale(1.02);
-    background-color: #b4c7f3;
+    /*transform: scale(1.02);*/
+    background-color: #D6C3FAFF;
 }
 
 
@@ -125,7 +148,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 0.25%;
-    background-color: #4a5a6F;
+    background-color: #ebe0ff;
     border-top: black 1px solid;
     display: flex;
 
@@ -138,3 +161,25 @@
     cursor: pointer;
 }
 
+.busq3 .busq_container1 .cancion_container{
+    height: 90%;
+    margin: 5%;
+    width: 135%;
+    float: left;
+    vertical-align: middle;
+
+}
+
+.busq3 p{
+    color: black;
+}
+.minus{
+    margin-right: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.minus i{
+    color: #000000;
+    font-size: 1.5em;
+}

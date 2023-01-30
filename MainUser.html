@@ -8,6 +8,8 @@
   <link rel = "stylesheet" href="style/mis_listas.css">
   <link rel = "stylesheet" href="style/crear_lista.css">
   <link rel = "stylesheet" href="style/search.css">
+    <link rel = "stylesheet" href="style/lista_reproduccion.css">
+    <link rel = "stylesheet" href="style/artista_pagina.css">
   <script src="https://kit.fontawesome.com/cb1b141342.js" crossorigin="anonymous"></script>
   <meta name = "viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -343,7 +345,7 @@
         <div class = nombre_listas>
           <div>
           <input id="nombre_lista"
-                 name="Nombre de la playlist"
+                 name="Name of playlist"
                  autocomplete="off"
                  type="text"
                  required>
@@ -353,6 +355,7 @@
           <label for="nombre_lista">
             <span class="label-text">Playlist name:</span>
           </label>
+            <button onclick="anadir_nombre_lista()">Create</button>
           </div>
         </div>
 
@@ -375,9 +378,19 @@
       <!-- Div que contiene las canciones que se pueden añadir a la lista-->
       <div class="resultados_1"></div>
     </div>
+    <div class="page">
+
+    </div>
     <div class="page"></div>
-    <div class="page"></div>
-    <div class="page"></div>
+    <div class="page">
+      <div class="cover_playlist"> <img id="cover_playlist"  src="" alt="cover_playlist"> </div>
+      <div class="nombre-playlist"></div>
+      <p id="nombre-playlist"></p>
+
+      <div class="playlist_content">
+
+      </div>
+    </div>
     <div class="page"></div>
     <div class="page"></div>
     <div class="page"></div>
@@ -447,11 +460,17 @@
 
 </body>
 <!--<script src="scripts/no_account.js"></script>-->
-<script src="../Sound_Clover/scripts/canciones_artistas.js"></script>
+<script src="scripts/info/canciones_artistas.js"></script>
+<script src="scripts/info/genres.js"></script>
+<script src="scripts/info/images.js"></script>
 <script src="../Sound_Clover/scripts/mainuser.js"></script>
 <script src="../Sound_Clover/scripts/player.js"></script>
 <script src="../Sound_Clover/scripts/ver_listas.js"></script>
 <script src="../Sound_Clover/scripts/crear_listas.js"></script>
 <script src="../Sound_Clover/scripts/search.js"></script>
+<script src="../Sound_Clover/scripts/lista_reproduccion.js"></script>
+<script src="../Sound_Clover/scripts/perfil.js"></script>
+<script src="../Sound_Clover/scripts/drag_and_drop.js"></script>
+<script src="../Sound_Clover/scripts/artista_pagina.js"></script>
 
 </html>

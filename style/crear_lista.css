@@ -28,7 +28,7 @@
     max-width: 2000px;
     height: 52px;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*color: #6d00a2;*/
     display: grid;
     grid-template-columns: 10% 80%;
@@ -37,7 +37,7 @@
 .nombre_listas input{
     position: absolute;
     /*height: 100%;*/
-    width: 100%;
+    width: 75%;
     box-sizing: border-box;
     /*line-height: 52px;*/
     outline: 0;
@@ -58,9 +58,11 @@
 }
 
 .nombre_listas button{
-    padding: 2px;
-    background-color: #6d00a2;
+    padding: 10px;
+    background-color: #ebe0ff;
     cursor: pointer;
+    margin-top: 7.5em;
+    margin-left: 70em;
 }
 
 .nombre_listas button:hover{
@@ -152,12 +154,12 @@
     position: relative;
 }
 
-/*.busq1:hover {*/
-/*    transform: scale(1.02);*/
-/*    color: black;*/
-/*    background-color: #b4c7f3;*/
+.busq1:hover {
+    /*transform: scale(1.02);*/
+    /*color: black;*/
+    background-color: #d6c3fa;
 
-/*}*/
+}
 
 .busq1 p{
     color: black;
@@ -170,7 +172,7 @@
 /*    position: relative;*/
 /*}*/
 
-.busq_container1 .cancion_container{
+.busq1 .busq_container1 .cancion_container{
     height: 90%;
     margin: 5%;
     width: 160%;

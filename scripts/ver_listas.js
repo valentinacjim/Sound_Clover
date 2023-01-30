@@ -13,18 +13,17 @@ function listas_display() {
         "        </div>";
     for (let index = 0; index < misListas.length; index++) {
         if (misListas[index].canciones.length > 0) {
-            playlist.innerHTML += "<div class='playlist'>" +
-                "       <div class='lista' onclick='lista_reproduccion(" + (index) + ")'>\n" +
+            playlist.innerHTML += "<div class='playlist' onclick='lista_reproduccion(" + (index) + ")'>\n" +
                 "          <div class='play_canc_container'>\n" +
                 "          <img alt='playlist' src=" + misListas[index].imagen + ">\n" +
                 "          </div>\n" +
                 "          <div class='titulo_playlist'>\n" +
                 "            <p>" + misListas[index].nombre + "<p>\n" +
                 "          </div>\n" +
-                "        </div>" +
                 "          <p class='minus_list'>\n" +
                 "           <i class='fa-solid fa-minus' onclick='eliminar_list(" + index + ")'></i>\n" +
                 "          </p>\n" +
+                "        </div>" +
                 "       </div>"
         }
     }
