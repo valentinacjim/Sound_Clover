@@ -87,16 +87,16 @@ function buscar(){
 
 function agregar_fav(index){
     let fav = document.getElementById(allMusic[index].name +"_search");
-    console.log(document.getElementsByClassName(allMusic[index].name +"_search"))
+    // console.log(document.getElementsByClassName(allMusic[index].name +"_search"))
     if(allMusic[index].fav === true){
         fav.className = "fa-regular fa-heart";
         allMusic[index].fav = false;
-        alert('Canción eliminada de favoritos');
+        alert('Removed from favorites');
 
     }else{
         fav.className = "fa-solid fa-heart";
         allMusic[index].fav = true;
-        alert('Canción agregada a favoritos');
+        alert('Added to favorites');
 
     }
 }

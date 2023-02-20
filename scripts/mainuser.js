@@ -11,33 +11,16 @@ let playlist = document.getElementsByClassName("page")[6];
 let artista_pag = document.getElementsByClassName("page")[7];
 let usuarios = document.getElementsByClassName("page")[8];
 let cuenta_pag = document.getElementsByClassName("page")[9];
-let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag];
+let lyrics_pag = document.getElementsByClassName("page")[10];
+let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag, lyrics_pag];
 
-// function home(){
-//     let home = document.getElementsByClassName('musica')[0];
-//     let mis_listas = document.getElementsByClassName('mis_listas')[0];
-//     let crear_lista = document.getElementsByClassName('crear_lista')[0];
-//     let cuenta = document.getElementsByClassName('cuenta')[0];
-//     let perfil = document.getElementsByClassName('perfil')[0];
-//     let seguidos = document.getElementsByClassName('artistas_pagina')[0];
-//     let artista_pag = document.getElementsByClassName('artistas_pagina')[1];
-//     let resultados = document.getElementsByClassName('busqueda')[0];
-//     let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
-//     let albumes = document.getElementsByClassName('albumes')[0];
-//
-//
-//     home.style.visibility = 'visible';
-//     mis_listas.style.visibility = 'hidden';
-//     crear_lista.style.visibility = 'hidden';
-//     cuenta.style.visibility = 'hidden';
-//     perfil.style.visibility = 'hidden';
-//     seguidos.style.visibility = 'hidden';
-//     artista_pag.style.visibility = 'hidden';
-//     resultados.style.visibility = 'hidden';
-//     lista_reproduccion.style.visibility = 'hidden';
-//     albumes.style.visibility = 'hidden';
-// }
 
+let player = document.getElementsByClassName("pie")[0];
+let player_cancion = document.getElementById("cancion_actual");
+console.log(player_cancion.innerHTML);
+if (player_cancion.innerHTML === "Canción actual"){
+    player.style.visibility = 'hidden';
+}
 
 // Funciones de cambiar de página
 function see_page(page) {
@@ -67,6 +50,9 @@ function see_page(page) {
             if (i===9){
                 cuenta();
             }
+            if (i===10){
+                displaylyrics();
+            }
         }else {
             allPages[i].style.visibility = 'hidden';
         }
@@ -95,6 +81,10 @@ function elementos(list){
     let musicPlaying = document.getElementById("main_audio");
     let volumen = document.querySelector('.volume');
     let fotoperfil = document.getElementById('fotoperfil');
+    let shuffle = document.getElementById('shuffle');
+    let lyrics = document.getElementById('lyrics');
+    let queue = document.getElementById('queue');
+
 
     try{
         if (JSON.parse(getCookie(getCookie('Activa'))).imagen === 'images/fotoperfil/'){
@@ -107,6 +97,9 @@ function elementos(list){
 
     estado.addEventListener('click', reproduccion);
     favorito.addEventListener('click', agregar);
+    shuffle.addEventListener('click', mode);
+    // lyrics.addEventListener('click', see_page(10));
+    // queue.addEventListener('click', displayqueue);
     proximo.addEventListener('click', ()=>{nextMusic(list);})
     anterior.addEventListener('click', ()=>{prevMusic(list);})
     volumen.addEventListener('input', function(){
@@ -152,34 +145,12 @@ function elementos(list){
     });
 }
 
-// Función para agregar canciones a favoritos
-function agregar(){
-    if( allMusic[musicIndex-1].fav === true){
-        fav.className = "fa-regular fa-heart";
-        allMusic[musicIndex-1].fav = false;
-        alert('Canción eliminada de favoritos');
 
-    }else{
-        fav.className = "fa-solid fa-heart";
-        allMusic[musicIndex-1].fav = true;
-        alert('Canción agregada a favoritos');
 
-    }
-}
-
-// Función para mostrar favorito
-function favorito(){
-    if( allMusic[musicIndex-1].fav === true){
-        fav.className = "fa-solid fa-heart";
-
-    }else{
-        fav.className = "fa-regular fa-heart";
-    }
-}
 
 // Función para cerrar sesión
 function cerrar_sesion() {
-    let respuesta = confirm('¿Seguro que quieres cerrar sesión?');
+    let respuesta = confirm('Are you sure you want to log out?');
     if (respuesta === true) {
         window.location.href = "Main.html";
     }else{
@@ -188,10 +159,8 @@ function cerrar_sesion() {
 }
 
 
-window.addEventListener("load", ()=>{
-    loadMusic(allMusic, musicIndex);
-    elementos(allMusic);
-})
+
+
 
 window.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {

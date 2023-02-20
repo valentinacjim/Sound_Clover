@@ -1,4 +1,4 @@
-// Canciopnes y artistas incluídos
+// Canciones y artistas incluídos
 let allMusic = [
 
     {

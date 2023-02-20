@@ -651,6 +651,10 @@
         </form>
       </div>
     </div>
+    <div class="page" id="letra">
+      <div class="playlist_content"></div>
+<!--      <div class="spacer-3"></div>-->
+    </div>
   </div>
 </div>
 <!--Reproductor-->
@@ -664,7 +668,7 @@
       </div></li>
       <!-- Título de la canción-->
       <li><div class="cancion-artista">
-        <h2 id="cancion_actual"> Canción actual </h2>
+        <h2 id="cancion_actual">Canción actual</h2>
         <h4 id="artista">Artista actual</h4>
       </div></li>
       <li>
@@ -684,6 +688,13 @@
           </div>
           <p class="favorito">
             <a href="#"> <i class="fa-regular fa-heart" id="fav"></i></a>
+          </p>
+          <p id="options">
+            <a href="#"> <i class="fa-solid fa-shuffle" id="shuffle"></i></a>
+            <br>
+            <a href="#"> <i class="fa-solid fa-microphone" id="lyrics" onclick="see_page(10)"></i></a>
+            <br>
+            <a href="#"> <i class="fa-solid fa-bars-staggered" id="queue"></i></a>
           </p>
         </div>
         <div class="controls">
@@ -720,6 +731,7 @@
 <script src="scripts/info/canciones_artistas.js"></script>
 <script src="scripts/info/genres.js"></script>
 <script src="scripts/info/images.js"></script>
+<script src="scripts/info/lyrics.js"></script>
 <script src="../Sound_Clover/scripts/mainuser.js"></script>
 <script src="../Sound_Clover/scripts/player.js"></script>
 <script src="../Sound_Clover/scripts/ver_listas.js"></script>
@@ -731,5 +743,6 @@
 <script src="../Sound_Clover/scripts/artista_pagina.js"></script>
 <script src="../Sound_Clover/scripts/cuenta.js"></script>
 <script src="../Sound_Clover/scripts/albumes.js"></script>
+
 
 </html>

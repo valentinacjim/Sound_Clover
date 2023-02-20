@@ -141,7 +141,7 @@ function playlist_contenido(index, playlist_content) {
                 "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista' onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
+                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
                 "    </div>\n" +
                 "    <p class='favor'>\n" +
                 "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
@@ -191,7 +191,7 @@ function reproduccion_playlist(){
             playlist.push(allMusic[i]);
         }
     }
-    console.log(playlist);
+    // console.log(playlist);
     loadMusic(playlist, 1)
     elementos(playlist)
 }
