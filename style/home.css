@@ -93,6 +93,7 @@ input{
     height: 7.5vh;
     padding-left: 0.5em;
     padding-top: 0.07em;
+    cursor: pointer;
 }
 /*ajustes de tamaño del logotipo*/
 .logo{
@@ -419,7 +420,7 @@ input{
     background-position: 45% 50%;
     background-color: transparent;
     margin-bottom: 0.3em;
-
+    color: transparent;
 }
 
 
@@ -741,11 +742,11 @@ main h1{
     text-overflow: clip;
     overflow: hidden;
     position: relative;
-    color: #aa00ff;
+    color: #ebe0ff;
 }
 
 .cancion-artista h4 {
-    color: #6d00a2;
+    color: #a38eb7;
     font-size: 0.75em;
     white-space: nowrap;
     text-overflow: clip;
@@ -860,7 +861,7 @@ main h1{
 }
 
 .barra p{
-    color: #6d00a2;
+    color: #ebe0ff;
     font-family: "Century Gothic", serif;
     font-size: 0.75em;
 }
@@ -868,11 +869,14 @@ main h1{
 .pro{
     float: left;
     margin-top: 0.5em;
+    /*color: #ebe0ff;*/
+
 }
 
 .dur{
     float: right;
     margin-left: 48em;
+    /*color: #ebe0ff;*/
 }
 
 .barra_volumen{

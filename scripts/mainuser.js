@@ -5,13 +5,13 @@ let discover = document.getElementsByClassName("page")[0];
 let genre = document.getElementsByClassName("page")[1];
 let mis_playlists = document.getElementsByClassName("page")[2];
 let crear = document.getElementsByClassName("page")[3];
-let cuenta_pag = document.getElementsByClassName("page")[4];
+let search = document.getElementsByClassName("page")[4];
 let perfil_pag = document.getElementsByClassName("page")[5];
 let playlist = document.getElementsByClassName("page")[6];
 let artista_pag = document.getElementsByClassName("page")[7];
 let usuarios = document.getElementsByClassName("page")[8];
-// let genre = document.getElementsByClassName("page")[1];
-let allPages = [home_pag, discover, mis_playlists, crear, cuenta_pag, perfil_pag, playlist, artista_pag, usuarios];
+let cuenta_pag = document.getElementsByClassName("page")[9];
+let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag];
 
 // function home(){
 //     let home = document.getElementsByClassName('musica')[0];
@@ -54,7 +54,18 @@ function see_page(page) {
                 // Crear lista de reproducción
                 misListas.push({nombre: "Nueva lista de reproducción " + (misListas.length+1),
                     canciones: [],
+                    audio: [],
                     imagen:'images/playlist.png'});
+            }
+            if (i===4){
+                buscar()
+            }
+
+            if (i===5){
+                perfil();
+            }
+            if (i===9){
+                cuenta();
             }
         }else {
             allPages[i].style.visibility = 'hidden';
@@ -72,7 +83,7 @@ function genre_page(gen) {
 }
 
 
-function elementos(){
+function elementos(list){
     let barra = document.getElementsByClassName('barra')[0];
     let progreso = document.getElementsByClassName('progreso')[0];
     let proximo = document.getElementsByClassName("forw")[0];
@@ -96,8 +107,8 @@ function elementos(){
 
     estado.addEventListener('click', reproduccion);
     favorito.addEventListener('click', agregar);
-    proximo.addEventListener('click', ()=>{nextMusic();})
-    anterior.addEventListener('click', ()=>{prevMusic();})
+    proximo.addEventListener('click', ()=>{nextMusic(list);})
+    anterior.addEventListener('click', ()=>{prevMusic(list);})
     volumen.addEventListener('input', function(){
         musicPlaying.volume = this.value
     })
@@ -178,8 +189,8 @@ function cerrar_sesion() {
 
 
 window.addEventListener("load", ()=>{
-    loadMusic(musicIndex);
-    elementos();
+    loadMusic(allMusic, musicIndex);
+    elementos(allMusic);
 })
 
 window.addEventListener('click', (e) => {

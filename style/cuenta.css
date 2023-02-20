@@ -1,13 +1,4 @@
-.cuenta{
-    height: 80vh;
-    width: 75vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    visibility: hidden;
-    position: absolute;
-    margin-top: 7vh;
-    background-color: #323232;
-}
+
 
 #imagen_perfil{
     margin-left: 2em;
@@ -15,6 +6,8 @@
 }
 
 #formulario{
+    height: 80vh;
+    width: 75vw;
     margin: 1em;
     display: flex;
     flex-wrap: wrap;

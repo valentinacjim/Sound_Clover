@@ -1,25 +1,25 @@
 // Módulo para el reproductor
 
 // Cargar información de la canción
-function loadMusic(indexNumb){
+function loadMusic(list, indexNumb){
     let musicImg = document.getElementById("caratula");
     let musicName = document.getElementById("cancion_actual");
     let musicArtist = document.getElementById("artista");
     let musicPlaying = document.getElementById("main_audio")
-    musicName.innerHTML = allMusic[indexNumb-1].name;
-    musicArtist.innerHTML = allMusic[indexNumb-1].artist;
-    musicImg.src = allMusic[indexNumb-1].img;
-    musicPlaying.src = allMusic[indexNumb-1].audio;
+    musicName.innerHTML = list[indexNumb-1].name;
+    musicArtist.innerHTML = list[indexNumb-1].artist;
+    musicImg.src = list[indexNumb-1].img;
+    musicPlaying.src = list[indexNumb-1].audio;
 }
 
 // Función para pasar a la siguiente canción
-function nextMusic() {
-    if (musicIndex === allMusic.length){
+function nextMusic(list) {
+    if (musicIndex === list.length){
         musicIndex = 1;
     }else{
         musicIndex++;
     }
-    loadMusic(musicIndex);
+    loadMusic(list, musicIndex);
     play = false;
     favorito()
     reproduccion();
@@ -27,13 +27,13 @@ function nextMusic() {
 }
 
 // Función para pasar a la canción anterior
-function prevMusic() {
+function prevMusic(list) {
     if (musicIndex === 1){
-        musicIndex = allMusic.length;
+        musicIndex = list.length;
     }else{
         musicIndex--;
     }
-    loadMusic(musicIndex);
+    loadMusic(list, musicIndex);
     play = false;
     favorito()
     reproduccion();
@@ -41,7 +41,7 @@ function prevMusic() {
 
 // Función para seleccionar una canción
 function chooseMusic(indexNumb){
-    loadMusic(indexNumb);
+    loadMusic(list, indexNumb);
     play = false;
     reproduccion();
     musicIndex = indexNumb;

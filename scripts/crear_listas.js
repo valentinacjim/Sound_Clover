@@ -1,38 +1,7 @@
 // Módulo para añadir canciones a la lista de reproducción
 let misListas =[]
 
-// function crear_listas(){
-//     let home = document.getElementsByClassName('musica')[0];
-//     let mis_listas = document.getElementsByClassName('mis_listas')[0];
-//     let crear_lista = document.getElementsByClassName('crear_lista')[0];
-//     let perfil = document.getElementsByClassName('perfil')[0];
-//     let seguidos = document.getElementsByClassName('artistas_pagina')[0];
-//     let artista_pag = document.getElementsByClassName('artistas_pagina')[1];
-//     let resultados = document.getElementsByClassName('busqueda')[0];
-//     let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
-//     let albumes = document.getElementsByClassName('albumes')[0];
-//     let cuenta = document.getElementsByClassName('cuenta')[0];
-//
-//     home.style.visibility = 'hidden';
-//     mis_listas.style.visibility = 'hidden';
-//     crear_lista.style.visibility = 'visible';
-//     perfil.style.visibility = 'hidden';
-//     artista_pag.style.visibility = 'hidden';
-//     seguidos.style.visibility = 'hidden';
-//     resultados.style.visibility = 'hidden';
-//     lista_reproduccion.style.visibility = 'hidden';
-//     albumes.style.visibility = 'hidden';
-//     cuenta.style.visibility = 'hidden';
-//
-//     // Crear estructura del formulario
-//     document.getElementById("nombre_lista").value = '';
-//     document.getElementById("search_for_list").value = '';
-//     document.getElementById("imagen_playlist").value = '';
-//
-//
-// }
-
-// Función para añaadir una imagen a la lista de reproducción
+// Función para añadir una imagen a la lista de reproducción
 function anadir_imagen(){
     let imagen = document.getElementById("imagen_playlist").value.substring(12);
     if (imagen!=='') {
@@ -113,6 +82,7 @@ function buscar_anadir(){
 function agregar_a_lista(index){
     let eliminar = document.getElementById(allMusic[index].name +"_agregar");
     misListas[misListas.length-1].canciones.push(allMusic[index].name);
+    misListas[misListas.length-1].canciones.push(allMusic[index].audio);
     alert("Song added to the playlist");
     eliminar.className = 'fa-solid fa-check';
 }

@@ -10,6 +10,7 @@
   <link rel = "stylesheet" href="style/search.css">
     <link rel = "stylesheet" href="style/lista_reproduccion.css">
     <link rel = "stylesheet" href="style/artista_pagina.css">
+    <link rel = "stylesheet" href="style/perfil.css">
   <script src="https://kit.fontawesome.com/cb1b141342.js" crossorigin="anonymous"></script>
   <meta name = "viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -20,9 +21,9 @@
   <!--Div que agrupa la columna izquierda-->
   <div class = "ColIzq">
     <!--Grid que contiene el logo junto al nombre de la página-->
-    <div class = "encabezado">
+    <div class = "encabezado" onclick="see_page(0)">
       <div class = "logo">
-        <a href="Main.html"><i class="fa-solid fa-clover"></i></a>
+        <i class="fa-solid fa-clover"></i>
       </div>
       <div class = "nombre">
         Sound Clover
@@ -65,14 +66,14 @@
         <li><div class="subnav">
           <button class="subnavbtn" id="fotoperfil"></button>
           <div class="subnav-content">
-            <button  id = 'cuenta' onclick="cuenta()">Cuenta</button>
-            <button  id = 'perfil' onclick="perfil()">Perfil</button>
+            <button  id = 'cuenta' onclick="see_page(9)">Cuenta</button>
+            <button  id = 'perfil' onclick="see_page(5)">Perfil</button>
             <a href="#" id = 'cerrar_sesion' onclick="cerrar_sesion()">Cerrar sesión </a>
           </div>
         </div>
         </li>
         <li><div class="subnav">
-          <input class="search">
+          <input class="search" oninput="see_page(4)">
         </div>
 
         </li>
@@ -329,6 +330,9 @@
       <div class="spacer-3"></div>
     </div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick="see_page(1)" class="fa-solid fa-chevron-left"></i>
+      </div>
       <div class="cover"> <img id="cover_genero"  src="" alt="cover_genero"> </div>
       <div class="nombre_genero"></div>
       <div class="content"></div>
@@ -348,6 +352,7 @@
                  name="Name of playlist"
                  autocomplete="off"
                  type="text"
+                 value=""
                  required>
 
           </div>
@@ -379,13 +384,223 @@
       <div class="resultados_1"></div>
     </div>
     <div class="page">
+<!--      <div class="busqueda">-->
+        <div class="resultados">
 
-    </div>
-    <div class="page"></div>
+        </div>
+      </div>
     <div class="page">
+      <div class="perfil">
+      <!--Para los títulos de las secciones se utiliza el encabezado h1-->
+      <div class = "titulos_secciones"> <h1>Artistas más escuchados</h1></div>
+      <!--Cada sección viene definida con un div donde se incluye los títulos de las secciones y
+      las canciones de dicha sección-->
+      <div class= "seccion_artistas">
+
+        <!--La disposición de canciones de cada sección-->
+        <div class = "seccion_imagenes">
+
+          <!--Cada canción sigue la misma estructura de imagen con su título más el audio a escuchar-->
+          <div class = "cancion" onclick="artista_pagina(1)">
+            <div class="cancion_container">
+              <img src="images/artist_profile/mcr.jpg" alt="artista">
+            </div>
+            <div class = "titulo_artista">
+              <p> My Chemical Romance </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="artista_pagina(2)">
+            <div class="cancion_container">
+              <img src="images/artist_profile/top.png" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> Twenty Øne Piløts </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="artista_pagina(3)">
+            <div class="cancion_container">
+              <img src="images/artist_profile/bad_bunny.jpg" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> Bad Bunny </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="artista_pagina(4)">
+            <div class="cancion_container">
+              <img src="images/artist_profile/5sos.jpg" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> 5 Seconds of Summer </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="artista_pagina(5)">
+            <div class="cancion_container">
+              <img src="images/artist_profile/queen.jpg" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> Queen </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="artista_pagina(6)">
+            <div class="cancion_container">
+              <img src="images/artist_profile/harry_styles.jfif" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> Harry Styles </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class = "titulos_secciones" id="favoritos"> <h1> Canciones favoritas </h1> </div>
+      <div class= "secciones_perfil">
+        <div class = "seccion_imagenes_fav">
+        </div>
+      </div>
+
+      <div class = "titulos_secciones"> <h1> Canciones más escuchadas </h1> </div>
+      <div class= "secciones_perfil">
+        <div class = "seccion_imagenes">
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/un_verano_sin_ti.jfif" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(11)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Ojitos Lindos <br> Bad Bunny ft. Bomba Estéreo </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/motomami.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(12)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Chicken Teriyaki <br> Rosalía </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/seven.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(13)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Seven <br> Natalie Jane </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/motomami.jpg" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(14)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Saoko <br> Rosalía </p>
+            </div>
+          </div>
+
+          <div class = "cancion">
+            <div class="cancion_container">
+              <img src="images/SUPERACHE.jfif" alt="cancion" >
+                <button type = 'button' onclick="chooseMusic(15)">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+            </div>
+            <div class = "titulo_artista">
+              <p> Memories <br> Conan Gray </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "titulos_secciones" id="listas"> <h1> Mis listas </h1> </div>
+      <div class= "secciones_perfil">
+        <div class = "seccion_imagenes_listas">
+        </div>
+      </div>
+
+      <div class = "titulos_secciones"> <h1> Seguidos </h1> </div>
+      <div class= "seccion_artistas">
+
+        <!--La disposición de canciones de cada sección-->
+        <div class = "seccion_imagenes">
+
+          <!--Cada canción sigue la misma estructura de imagen con su título más el audio a escuchar-->
+          <div class = "cancion" onclick="perfil_seguidos(1)">
+            <div class="cancion_container">
+              <img src="images/fotoperfil/fotoperfil_aesthetic_boy.jpg" alt="artista">
+            </div>
+            <div class = "titulo_artista">
+              <p> usuario01 </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="perfil_seguidos(2)">
+            <div class="cancion_container">
+              <img src="images/fotoperfil/fotoperfil_aesthetic_girl.jpg" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> usuario02 </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="perfil_seguidos(3)">
+            <div class="cancion_container">
+              <img src="images/fotoperfil/fotoperfil_animal_crossing.jpg" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> usuario03 </p>
+            </div>
+          </div>
+
+          <div class = "cancion" onclick="perfil_seguidos(4)">
+            <div class="cancion_container">
+              <img src="images/fotoperfil/fotoperfil_stitch.jpg" alt="artista" >
+            </div>
+            <div class = "titulo_artista">
+              <p> usuario04 </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="page">
+      <!--Lista de reproducción-->
+      <div class="pass_pag">
+        <i  onclick="see_page(2)" class="fa-solid fa-chevron-left"></i>
+      </div>
       <div class="cover_playlist"> <img id="cover_playlist"  src="" alt="cover_playlist"> </div>
       <div class="nombre-playlist"></div>
       <p id="nombre-playlist"></p>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#"><i class="fa-solid fa-circle-play" onclick="reproduccion_playlist()"></i></a>
+          <a href="#"><i class="fa-solid fa-add"></i></a>
+          <a href="#"><i class="fa-solid fa-trash"></i></a>
+        </div>
+      </div>
+
 
       <div class="playlist_content">
 
@@ -393,7 +608,49 @@
     </div>
     <div class="page"></div>
     <div class="page"></div>
-    <div class="page"></div>
+    <div class="page">
+      <div id = formulario >
+
+        <div>
+          <h1 id="fusername"></h1> <br>
+          <div id="cuenta_info">
+
+            Correo electrónico: <p id="femail"></p> <br>
+
+            Constraseña: <input type="password" id="fpassword" name="password" placeholder="Contraseña" required> <br> <br>
+
+            Nombre completo: <p id="fnombre"></p><br>
+            Fecha de nacimiento <p id="ffechanac"></p>
+
+          </div>
+          <form id="info_pers">
+            Nuevo nombre de usuario: <input autofocus id="new_username" placeholder="Nombre de usuario" required type="text"><br>
+            Nueva contraseña: <br>
+            <input id="new_password" placeholder="Contraseña" required type="password">
+            <input id="new_password2" placeholder="Repite la contraseña" required type="password"><br>
+            Nuevo correo electrónico: <input id="new_email" placeholder="Correo electrónico" required type="email"><br>
+
+            Nombre completo: <br>
+            <input id="new_nombre" placeholder="Nombre completo" required type="text">
+            <input id="new_apellidos" placeholder="Apellidos" required type="text"><br>
+
+            <label for="new_fechanac"> <h2> Fecha de nacimiento: </h2></label>
+            <input type="date" id="new_fechanac"><br><br>
+          </form>
+          <i class="fa-solid fa-user-pen" onclick="edit()" id="edit_button"></i>
+          <button id="save_button" type="button" onclick="changeCookie()">Guardar</button>
+        </div>
+
+
+        <form id = "imagen_perfil">
+          <div class="caratula">
+            <img src="" alt="artista" id ="ffotoperfil">
+          </div>
+          <input type="file" id="ffotoperfil_none" name="ffotoperfil" oninput="changeImage()"><br>
+          <button id="subir" type="button" onclick="changeImage()">Subir</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 <!--Reproductor-->
@@ -472,5 +729,7 @@
 <script src="../Sound_Clover/scripts/perfil.js"></script>
 <script src="../Sound_Clover/scripts/drag_and_drop.js"></script>
 <script src="../Sound_Clover/scripts/artista_pagina.js"></script>
+<script src="../Sound_Clover/scripts/cuenta.js"></script>
+<script src="../Sound_Clover/scripts/albumes.js"></script>
 
 </html>

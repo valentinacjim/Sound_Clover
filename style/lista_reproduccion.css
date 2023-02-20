@@ -37,7 +37,7 @@
 
 
 .nombre-playlist{
-    height: 10vh;
+    height: 11vh;
     padding-left: 2em;
     filter: blur(2px);
     /*background: no-repeat;*/
@@ -47,6 +47,7 @@
     top: 0;
     text-align: center;
     z-index: 2;
+    margin-top: -0.5%;
     /*width: 1080px;*/
 }
 
@@ -62,9 +63,8 @@
 }
 
 .playlist_content {
-    height: 100%;
-    margin: 1.5%;
-
+    height: 85%;
+    margin: 1.5% 1.5% 17%;
     visibility: inherit;
     /*background-color: #323232;*/
 }
@@ -93,6 +93,20 @@
 .busq3:hover {
     /*transform: scale(1.02);*/
     background-color: #D6C3FAFF;
+}
+
+.busq3 .cancion_container button{
+    height: 50%;
+    width: 50%;
+    /*font-size: 1.5em;*/
+}
+
+.busq3 .cancion_container button i{
+    /*top: -1em;*/
+    position: absolute;
+    top: 0.05em;
+    left: 0.05em;
+    font-size: 0.75em;
 }
 
 .drag_and_drop{
@@ -183,3 +197,49 @@
     color: #000000;
     font-size: 1.5em;
 }
+
+
+.dropbtn {
+    /*background-color: #3498DB;*/
+    position: absolute;
+    /*color: white;*/
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    margin-left: 18em;
+    margin-top: -2.5em;
+    /*z-index: 4;*/
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4c4b4b;
+    margin-left: 17.9em;
+    margin-top: -0.5em;
+    z-index: 3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

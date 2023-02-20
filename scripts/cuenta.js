@@ -21,27 +21,6 @@ let new_inputs = {
 }
 
 function cuenta() {
-    let home = document.getElementsByClassName('musica')[0];
-    let mis_listas = document.getElementsByClassName('mis_listas')[0];
-    let crear_lista = document.getElementsByClassName('crear_lista')[0];
-    let perfil = document.getElementsByClassName('perfil')[0];
-    let seguidos = document.getElementsByClassName('artistas_pagina')[0];
-    let artista_pag = document.getElementsByClassName('artistas_pagina')[1];
-    let resultados = document.getElementsByClassName('busqueda')[0];
-    let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
-    let albumes = document.getElementsByClassName('albumes')[0];
-    let cuenta = document.getElementsByClassName('cuenta')[0];
-
-    home.style.visibility = 'hidden';
-    mis_listas.style.visibility = 'hidden';
-    crear_lista.style.visibility = 'hidden';
-    perfil.style.visibility = 'hidden';
-    seguidos.style.visibility = 'hidden';
-    artista_pag.style.visibility = 'hidden';
-    resultados.style.visibility = 'hidden';
-    lista_reproduccion.style.visibility = 'hidden';
-    albumes.style.visibility = 'hidden';
-    cuenta.style.visibility = 'visible';
 
     // Rellenar los campos de la página de cuenta
     rellenar_campos_texto();

@@ -10,40 +10,41 @@ function filter(text) {
 }
 
 function buscar(){
-    let home = document.getElementsByClassName('musica')[0];
-    let mis_listas = document.getElementsByClassName('mis_listas')[0];
-    let crear_lista = document.getElementsByClassName('crear_lista')[0];
-    let perfil = document.getElementsByClassName('perfil')[0];
-    let artista_pag = document.getElementsByClassName('artistas_pagina')[0];
-    let seguidos = document.getElementsByClassName('artistas_pagina')[1];
-    let resultados = document.getElementsByClassName('busqueda')[0];
-    let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
-    let albumes = document.getElementsByClassName('albumes')[0];
-    let cuenta = document.getElementsByClassName('cuenta')[0];
-
-    home.style.visibility = 'hidden';
-    mis_listas.style.visibility = 'hidden';
-    crear_lista.style.visibility = 'hidden';
-    perfil.style.visibility = 'hidden';
-    artista_pag.style.visibility = 'hidden';
-    seguidos.style.visibility = 'hidden';
-    resultados.style.visibility = 'visible';
-    lista_reproduccion.style.visibility = 'hidden';
-    albumes.style.visibility = 'hidden';
-    cuenta.style.visibility = 'hidden';
+    // let home = document.getElementsByClassName('musica')[0];
+    // let mis_listas = document.getElementsByClassName('mis_listas')[0];
+    // let crear_lista = document.getElementsByClassName('crear_lista')[0];
+    // let perfil = document.getElementsByClassName('perfil')[0];
+    // let artista_pag = document.getElementsByClassName('artistas_pagina')[0];
+    // let seguidos = document.getElementsByClassName('artistas_pagina')[1];
+    // let resultados = document.getElementsByClassName('busqueda')[0];
+    // let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
+    // let albumes = document.getElementsByClassName('albumes')[0];
+    // let cuenta = document.getElementsByClassName('cuenta')[0];
+    //
+    // home.style.visibility = 'hidden';
+    // mis_listas.style.visibility = 'hidden';
+    // crear_lista.style.visibility = 'hidden';
+    // perfil.style.visibility = 'hidden';
+    // artista_pag.style.visibility = 'hidden';
+    // seguidos.style.visibility = 'hidden';
+    // resultados.style.visibility = 'visible';
+    // lista_reproduccion.style.visibility = 'hidden';
+    // albumes.style.visibility = 'hidden';
+    // cuenta.style.visibility = 'hidden';
 
 
     let search = document.getElementsByClassName("resultados")[0];
-    let value = document.getElementById('search').value;
+    let value = document.getElementsByClassName("search")[0];
     search.innerHTML='';
-
-    value = filter(value);
+    console.log(value.value)
+    value = filter(value.value);
 
     if(["*"].includes(value)){
         value = '';
     }
 
     for(let i=0; i<allMusic.length; i++){
+        console.log(allMusic[i].name)
         let fav ='';
         let index_artist = 0;
         if( allMusic[i].fav === true){
@@ -58,22 +59,27 @@ function buscar(){
                 index_artist = allArtistas[j].index;
             }
         }
+        console.log(filter(allMusic[i].name));
+        console.log(value);
         if (filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value)){
             search.innerHTML += "<div class='busq'>\n" +
-                "    <div class='busq_container'>\n" +
-                "        <img src=" + allMusic[i].img+ " alt='cancion'>\n" +
-                "            <div class='overlay_fav'>\n" +
+                "    <div class='busq_container1'>\n" +
+                "    <div class='cancion_container'>" +
+                "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
+                // "            <div class='overlay_fav'>\n" +
                 "                <button type='button' onclick='chooseMusic(" +(i+1)+ ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
-                "            </div>\n" +
+                "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
                 "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
                 "    </div>\n" +
-                "    <p class='info'>\n" +
-                "        <i class='"+ fav + "' id='"+ allMusic[i].name +"_search' onclick='agregar_fav(" +(i)+ ")'></i>\n" +
+                "    <div class='guardar_lista'>\n" +
+                "    <p>\n" +
+                "        <i class='"+fav+"' id='"+ allMusic[i].name+"_search' onclick='agregar_fav("+i+")'>  </i>\n" +
                 "    </p>\n" +
+                "    </div>\n" +
                 "</div>"
         }
     }

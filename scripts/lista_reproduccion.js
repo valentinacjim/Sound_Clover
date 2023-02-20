@@ -20,6 +20,7 @@ function lista_reproduccion(index) {
         // background.style.backgroundSize = "cover";
         // nombre_playlist.style.backfaceVisibility = "";
         playlist_content.innerHTML = ""
+        // crear.style.backgroundColor = "#9396B0";
 
         for (let i = 0; i < allMusic.length; i++) {
             let fav = '';
@@ -70,9 +71,13 @@ function lista_reproduccion(index) {
 
     cover_playlist.src = misListas[index].imagen;
     nombre_playlist.innerHTML = misListas[index].nombre;
-    for(let i=0; i<allImagePlaylists.length; i++){
+    for(let i=0; i<(allImagePlaylists.length-1); i++){
+        // console.log(misListas[index].imagen);
         if(misListas[index].imagen === allImagePlaylists[i].name){
+
             background.style.backgroundColor = allImagePlaylists[i].color;
+            // crear.style.backgroundColor = allImagePlaylists[i].color;
+            break;
         }
     }
 
@@ -148,4 +153,45 @@ function playlist_contenido(index, playlist_content) {
                 "</div>"
         }
     }
+}
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn i')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function reproduccion_playlist(){
+    let nombre_lista = document.getElementById('nombre_lista').value;
+    // buscar el nombre en misListas
+    let index = 0;
+    for(let i=0; i<misListas.length; i++){
+        if(misListas[i].nombre === nombre_lista){
+            index = i;
+            break;
+        }
+    }
+    let playlist = []
+    for(let i=0; i<allMusic.length; i++){
+        if(misListas[index].canciones.includes(allMusic[i].name)){
+            playlist.push(allMusic[i]);
+        }
+    }
+    console.log(playlist);
+    loadMusic(playlist, 1)
+    elementos(playlist)
 }

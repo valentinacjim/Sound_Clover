@@ -1,19 +1,20 @@
-.busqueda{
-    height: 80vh;
-    width: 75vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    visibility: hidden;
-    margin-top: 7vh;
-    background-color: #323232;
-}
+/*.busqueda{*/
+/*    height: 80vh;*/
+/*    width: 75vw;*/
+/*    overflow-y: scroll;*/
+/*    overflow-x: hidden;*/
+/*    position: absolute;*/
+/*    !*visibility: hidden;*!*/
+/*    margin-top: 7vh;*/
+/*    background-color: #323232;*/
+/*}*/
 
 .resultados{
     height: 100%;
     margin-left: 2%;
-    background-color: #323232;
+    /*background-color: #323232;*/
     /*overflow-y: auto;*/
+    margin-bottom: 11%;
 
 }
 
@@ -23,59 +24,70 @@
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 0.25%;
-    background-color: #4a5a6F;
+    background-color: #ebe0ff;
     border-top: black 1px solid;
     display: flex;
     transition: transform .2s; /* Animación */
 }
 
 .busq:hover {
-    transform: scale(1.02);
+    /*transform: scale(1.02);*/
+    /*color: black;*/
+    background-color: #d6c3fa;
+
+}
+
+.busq p{
     color: black;
-    background-color: #b4c7f3;
-
+    font-size: 1.5em;
 }
 
-.busq:hover p{
-    color: black;
-}
-
-
-.busq_container{
-    height: 100%;
-    position: relative;
-}
-
-.busq_container {
+.busq .busq_container1 .cancion_container{
     height: 90%;
-    margin: 5%;
-    width: auto;
+    margin: 7%;
+    width: 160%;
     float: left;
     vertical-align: middle;
 
 }
 
-.overlay_fav {
-    position: absolute;
-    /*Queremos que el overlay se ajuste a la imagen*/
-    margin: 5%;
-    /*width: 100%;*/
-    height: 90%;
-    opacity: 0;
-    transition: 0.5s ease;
 
-}
-/*Cuanto queremos que se oscurezca la imagen*/
-.busq_container:hover .overlay_fav {
-    text-align: center;
-    opacity: 0.8;}
 
-.overlay_fav button {
-    width: 100%;
-    height: 100%;
-    font-size: 300%;
-    background-color: #6d6d6d;
-}
+/*.busq_container{*/
+/*    height: 100%;*/
+/*    position: relative;*/
+/*}*/
+
+/*.busq_container {*/
+/*    height: 90%;*/
+/*    margin: 5%;*/
+/*    width: auto;*/
+/*    float: left;*/
+/*    vertical-align: middle;*/
+
+/*}*/
+
+/*.overlay_fav {*/
+/*    position: absolute;*/
+/*    !*Queremos que el overlay se ajuste a la imagen*!*/
+/*    margin: 5%;*/
+/*    !*width: 100%;*!*/
+/*    height: 90%;*/
+/*    opacity: 0;*/
+/*    transition: 0.5s ease;*/
+
+/*}*/
+/*!*Cuanto queremos que se oscurezca la imagen*!*/
+/*.busq_container:hover .overlay_fav {*/
+/*    text-align: center;*/
+/*    opacity: 0.8;}*/
+
+/*.overlay_fav button {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    font-size: 300%;*/
+/*    background-color: #6d6d6d;*/
+/*}*/
 
 .titulo_artista_busq{
     width: 100%;
@@ -89,14 +101,14 @@
     cursor: pointer;
 }
 
-.info{
-    width : 10%;
-    margin-top: 1em;
-    cursor: pointer;
-    margin-right: 1em;
-}
+/*.info{*/
+/*    width : 10%;*/
+/*    margin-top: 1em;*/
+/*    cursor: pointer;*/
+/*    margin-right: 1em;*/
+/*}*/
 
-.favor{
-    margin-top: 1em;
-    cursor: pointer;
-}
+/*.favor{*/
+/*    margin-top: 1em;*/
+/*    cursor: pointer;*/
+/*}*/

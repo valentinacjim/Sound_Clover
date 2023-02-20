@@ -48,9 +48,3 @@ function artista_pagina(indexFav){
         }
     }
 }
-
-// Función para mostrar la página anterior
-function back_page(){
-    let artista_pag = document.getElementsByClassName('artistas_pagina')[1];
-    artista_pag.style.visibility = 'hidden';
-}
