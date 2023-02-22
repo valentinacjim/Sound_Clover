@@ -12,7 +12,7 @@ let artista_pag = document.getElementsByClassName("page")[7];
 let usuarios = document.getElementsByClassName("page")[8];
 let cuenta_pag = document.getElementsByClassName("page")[9];
 let lyrics_pag = document.getElementsByClassName("page")[10];
-let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag, lyrics_pag];
+let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag];
 
 
 let player = document.getElementsByClassName("pie")[0];
@@ -37,8 +37,17 @@ function see_page(page) {
                 // Crear lista de reproducción
                 misListas.push({nombre: "Nueva lista de reproducción " + (misListas.length+1),
                     canciones: [],
-                    audio: [],
+                    // audio: [],
                     imagen:'images/playlist.png'});
+            }
+            else{
+                //limpiar campos
+                let nombre = document.getElementById("nombre_lista");
+                let descripcion = document.getElementById("search_for_list");
+                let imagen = document.getElementById("imagen_playlist");
+                nombre.value = '';
+                descripcion.value = '';
+                imagen.value = '';
             }
             if (i===4){
                 buscar()
@@ -49,9 +58,6 @@ function see_page(page) {
             }
             if (i===9){
                 cuenta();
-            }
-            if (i===10){
-                displaylyrics();
             }
         }else {
             allPages[i].style.visibility = 'hidden';
@@ -100,6 +106,7 @@ function elementos(list){
     shuffle.addEventListener('click', mode);
     // lyrics.addEventListener('click', see_page(10));
     // queue.addEventListener('click', displayqueue);
+    console.log("dah", list);
     proximo.addEventListener('click', ()=>{nextMusic(list);})
     anterior.addEventListener('click', ()=>{prevMusic(list);})
     volumen.addEventListener('input', function(){
@@ -201,7 +208,7 @@ function genre_content(genero){
             contenido.innerHTML += "<div class='cancion'\n>\n" +
                 " <div class='cancion_container'>\n" +
                 "    <img src=" + allMusic[i].img + " alt='cancion_"+ allMusic[i].name +"' onclick='alertas()'>\n" +
-                "<button type='button' onclick='chooseMusic("+(i+1)+")'>"+
+                "<button type='button' onclick='chooseMusic(allMusic"+(i+1)+")'>"+
                 "    <i class='fa-regular fa-circle-play'></i>"+
                 "</button>"+
                 " </div>\n" +

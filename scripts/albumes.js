@@ -42,7 +42,7 @@ function album_contenido(artista, album, album_content) {
                 "    <div class='busq_container'>\n" +
                 "        <img src=" + allMusic[i].img + " alt='cancion'>\n" +
                 "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(" + (i + 1) + ")'>\n" +
+                "                <button type='button' onclick='chooseMusic(allMusic" + (i + 1) + ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
                 "            </div>\n" +

@@ -811,10 +811,12 @@ main h1{
 
 .barra .progreso{
     width: 0;
-    height: inherit;
-    background: #EBE0FFFF;
+    left: -0.9em;
+    height: 100%;
+    background: #6f009f;
     border-radius: inherit;
     position:relative;
+
 }
 
 .progreso::before{

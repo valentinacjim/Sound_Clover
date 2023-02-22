@@ -76,6 +76,296 @@ let allLyrics = [
             "We want it all, we wanna play this part (we'll carry on!) "
     },
     {
-
+        name: "Migraine",
+        lyrics: "Am I the only one I know<br>" +
+            "Waging my wars behind my face and above my throat?<br>" +
+            "Shadows will scream that I'm alone, oh, oh<br>" +
+            "<br>" +
+            "I-I-I-I've got a migraine<br>" +
+            "And my pain will range from up, down, and sideways<br>" +
+            "Thank God it's Friday 'cause Fridays will always be better than Sundays<br>" +
+            "'Cause Sundays are my suicide days<br>" +
+            "I don't know why they always seem so dismal<br>" +
+            "Thunderstorms, clouds, snow, and a slight drizzle<br>" +
+            "Whether it's the weather or the letters by my bed<br>" +
+            "Sometimes death seems better than the migraine in my head<br>" +
+            "<br>" +
+            "Let it be said what the headache represents<br>" +
+            "It's me defending in suspense, it's me suspended in a defenseless test<br>" +
+            "Being tested by a ruthless examinant<br>" +
+            "That's represented best by my depressing thoughts<br>" +
+            "I do not have writer's block, my writer just hates the clock<br>" +
+            "It will not let me sleep, I guess I'll sleep when I'm dead<br>" +
+            "And sometimes death seems better than the migraine in my head<br>" +
+            "<br>" +
+            "Am I the only one I know<br>" +
+            "Waging my wars behind my face and above my throat?<br>" +
+            "Shadows will scream that I'm alone<br>" +
+            "But I know, we've made it this far, kid<br>" +
+            "<br>" +
+            "Yeah, yeah, yeah<br>" +
+            "<br>" +
+            "I am not as fine as I seem, pardon<br>" +
+            "Me for yelling, I'm telling you green gardens<br>" +
+            "Are not what's growing in my psyche, it's a different me<br>" +
+            "A difficult beast, feasting on burnt down trees<br>" +
+            "Freeze frame, please, let me paint a mental picture portrait<br>" +
+            "Something you won't forget, it's all about my forehead<br>" +
+            "And how it is a door that holds back contents<br>" +
+            "That makes Pandora's box contents look non-violent<br>" +
+            "<br>" +
+            "Behind my eyelids are islands of violence<br>" +
+            "My mind ship-wrecked, this is the only land my mind could find<br>" +
+            "I did not know it was such a violent island<br>" +
+            "Full of tidal waves, suicidal crazed lions<br>" +
+            "They're trying to eat me, blood running down their chin<br>" +
+            "And I know that I can fight, or I can let the lion win<br>" +
+            "I begin to assemble what weapons I can find<br>" +
+            "'Cause sometimes to stay alive, you gotta kill your mind<br>" +
+            "<br>" +
+            "Am I the only one I know<br>" +
+            "Waging my wars behind my face and above my throat?<br>" +
+            "Shadows will scream that I'm alone<br>" +
+            "But I know, we've made it this far kid<br>" +
+            "<br>" +
+            "(Ah, yeah) yeah, yeah, yeah<br>" +
+            "(Oh, oh) yeah, yeah, yeah<br>" +
+            "<br>" +
+            "And I will say that we should take a day to break away<br>" +
+            "From all the pain our brain has made, the game is not played alone<br>" +
+            "And I will say that we should take a moment and hold it<br>" +
+            "And keep it frozen and know that life has a hopeful undertone<br>" +
+            "<br>" +
+            "And I will say that we should take a day to break away<br>" +
+            "From all the pain our brain has made, the game is not played alone<br>" +
+            "And I will say that we should take a moment and hold it<br>" +
+            "And keep it frozen and know that life has a hopeful undertone<br>" +
+            "<br>" +
+            "Am I the only one I know, oh<br>" +
+            "Waging my wars behind my face and above my throat?<br>" +
+            "Shadows will scream that I'm alone<br>" +
+            "But I know, we've made it this far kid<br>" +
+            "<br>" +
+            "Made it this far<br>" +
+            "Made it this f-"
+    },
+    {
+        name: "Inmortales",
+        lyrics: "Quizás me habré hecho mayor\n" +
+            "Pero siento yo\n" +
+            "Que la vida es muy corta pa'l dolor\n" +
+            "\n" +
+            "Me reí de mí\n" +
+            "De lo que lloré\n" +
+            "Me quité el polvo y me hice el amor\n" +
+            "\n" +
+            "Porque, a veces, me siento perdido\n" +
+            "Vacío y sin aliento\n" +
+            "Sin ganas de nada\n" +
+            "Jugando con el tiempo\n" +
+            "\n" +
+            "Pero hay una energía\n" +
+            "Que sale de mi cuerpo\n" +
+            "Y me hace inmortal\n" +
+            "\n" +
+            "Porque nadie nos joderá esta noche\n" +
+            "Nadie vuelve a romperme el corazón\n" +
+            "Y gritamos al cielo: ¡Que le follen!\n" +
+            "Que nos seque las lágrimas el Sol\n" +
+            "\n" +
+            "(Oh, yeah!)\n" +
+            "\n" +
+            "¿Y si nos vamos de aquí?\n" +
+            "Cabalgando bajo la lluvia\n" +
+            "Si quieres hacerte feliz\n" +
+            "Deja que tu corazón fluya\n" +
+            "\n" +
+            "Con tu cuerpo y el mío\n" +
+            "Subiendo y bajando\n" +
+            "Siento escalofríos\n" +
+            "De solo pensarlo\n" +
+            "\n" +
+            "Fumando el porrito de la paz\n" +
+            "Y quitarnos el antifaz\n" +
+            "Prometerle a mamá y a papá\n" +
+            "Que les voy a llamar un poquito más\n" +
+            "\n" +
+            "Celebrar que estamos vivos\n" +
+            "Aunque sea duro el camino\n" +
+            "Y tatuarme el nombre\n" +
+            "De este puto temazo contigo\n" +
+            "\n" +
+            "Porque, a veces, me siento perdido\n" +
+            "Vacío y sin aliento\n" +
+            "Sin ganas de nada\n" +
+            "Jugando con el tiempo\n" +
+            "\n" +
+            "Pero hay una energía\n" +
+            "Que sale de mi cuerpo\n" +
+            "Y me hace inmortal\n" +
+            "\n" +
+            "Porque nadie nos joderá esta noche\n" +
+            "Nadie vuelve a romperme el corazón\n" +
+            "Y gritamos al cielo: ¡Que le follen!\n" +
+            "Que nos seque las lágrimas el Sol\n" +
+            "\n" +
+            "(Oh, yeah!)\n" +
+            "\n" +
+            "Porque nadie nos joderá esta noche\n" +
+            "Nadie vuelve a romperme el corazón\n" +
+            "Y gritamos al cielo: ¡Que le follen!\n" +
+            "Que nos seque las lágrimas el Sol\n" +
+            "\n" +
+            "Inmortales, somos inmortales\n" +
+            "Esta noche, no habrá nada que nos pare\n" +
+            "Porque, inmortales, somos inmortales\n" +
+            "Esta noche, no habrá nada que nos pare, yo'"
+    },
+    {
+        name: "Youngblood",
+        lyrics: "Remember the words you told me\n" +
+            "Love me 'til the day I die\n" +
+            "Surrender my everything\n" +
+            "'Cause you made me believe you're mine\n" +
+            "\n" +
+            "Yeah, you used to call me baby\n" +
+            "Now you're calling me by name\n" +
+            "Takes one to know one, yeah\n" +
+            "You beat me at my own damn game\n" +
+            "\n" +
+            "You push and you push and I’m pulling away\n" +
+            "Pulling away from you\n" +
+            "I give and I give and I give and you take\n" +
+            "Give and you take\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me out of your life\n" +
+            "And I'm just a dead man walking tonight\n" +
+            "But you need it, yeah, you need it all of the time\n" +
+            "Yeah, ooh, ooh, ooh\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me back in your life\n" +
+            "So I'm just a dead man crawling tonight\n" +
+            "'Cause I need it, yeah, I need it all of time\n" +
+            "Yeah, ooh, ooh, ooh\n" +
+            "\n" +
+            "Lately our conversations end\n" +
+            "Like it's the last goodbye\n" +
+            "Then one of us gets too drunk and\n" +
+            "Calls about a hundred times\n" +
+            "So, who you been calling baby?\n" +
+            "Nobody could take my place\n" +
+            "When you're looking at those strangers\n" +
+            "Hope to God you see my face\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me out of your life\n" +
+            "And I’m just a dead man walking tonight\n" +
+            "But you need it, yeah, you need it all of the time\n" +
+            "Yeah ooh, ooh, ooh\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me back in your life\n" +
+            "So I'm just a dead man crawling tonight\n" +
+            "'Cause I need it, yeah, I need it all of time\n" +
+            "Yeah, ooh, ooh, ooh\n" +
+            "\n" +
+            "You're push and push I’m pulling away\n" +
+            "Pulling away from you\n" +
+            "I'm give and give I'm give and you take\n" +
+            "Give and you take\n" +
+            "You’re running around and running I’m running away\n" +
+            "Running away from you, ooh from you\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me out of your life\n" +
+            "And I’m just a dead man walking tonight\n" +
+            "But you need it, yeah, you need it all of the time\n" +
+            "Yeah ooh, ooh, ooh\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me back in your life\n" +
+            "So I'm just a dead man crawling tonight\n" +
+            "'Cause I need it, yeah, I need it all of time\n" +
+            "Yeah ooh, ooh, ooh\n" +
+            "\n" +
+            "You're push and push I’m pulling away\n" +
+            "Pulling away from you\n" +
+            "I'm give and give I'm give and you take\n" +
+            "Give and you take\n" +
+            "\n" +
+            "Youngblood\n" +
+            "Say you want me, say you want me out of your life\n" +
+            "And I’m just a dead man walking tonight"
+    },
+    {
+        name: "Another one bites the dust",
+        lyrics: "Uh, let's go\n" +
+            "\n" +
+            "Steve walks warily down the street\n" +
+            "With his brim pulled way down low\n" +
+            "Ain't no sound but the sound of his feet\n" +
+            "Machine guns ready to go\n" +
+            "\n" +
+            "Are you ready, hey, are you ready for this?\n" +
+            "Are you hanging on the edge of your seat?\n" +
+            "Out of the doorway the bullets rip\n" +
+            "To the sound of the beat, yeah\n" +
+            "\n" +
+            "Another one bites the dust\n" +
+            "Another one bites the dust\n" +
+            "And another one gone, and another one gone\n" +
+            "Another one bites the dust\n" +
+            "Hey, I'm gonna get you too\n" +
+            "Another one bites the dust\n" +
+            "\n" +
+            "How do you think I'm going to get along\n" +
+            "Without you when you're gone\n" +
+            "You took me for everything that I had\n" +
+            "And kicked me out on my own\n" +
+            "\n" +
+            "Are you happy, are you satisfied?\n" +
+            "How long can you stand the heat?\n" +
+            "Out of the doorway the bullets rip\n" +
+            "To the sound of the beat, look out\n" +
+            "\n" +
+            "Another one bites the dust\n" +
+            "Another one bites the dust\n" +
+            "And another one gone, and another one gone\n" +
+            "Another one bites the dust\n" +
+            "Hey, I'm gonna get you too\n" +
+            "Another one bites the dust\n" +
+            "\n" +
+            "Hey\n" +
+            "\n" +
+            "Oh, take it, bite the dust, bite the dust\n" +
+            "Hey, another one bites the dust\n" +
+            "Another one bites the dust, ow\n" +
+            "Another one bites the dust, hey, hey\n" +
+            "Another one bites the dust, hah\n" +
+            "Oh, shoot out\n" +
+            "\n" +
+            "There are plenty of ways that you can hurt a man\n" +
+            "And bring him to the ground\n" +
+            "You can beat him, you can cheat him\n" +
+            "You can treat him bad and leave him\n" +
+            "When he's down\n" +
+            "\n" +
+            "But I'm ready, yes I'm ready for you\n" +
+            "I'm standing on my own two feet\n" +
+            "Out of the doorway the bullets rip\n" +
+            "Repeating to the sound of the beat\n" +
+            "\n" +
+            "Another one bites the dust\n" +
+            "Another one bites the dust\n" +
+            "And another one gone, and another one gone\n" +
+            "Another one bites the dust, yeah\n" +
+            "Hey, I'm gonna get you too\n" +
+            "Another one bites the dust\n" +
+            "Shoot out\n" +
+            "\n" +
+            "Yeah, alright"
     }
-    ];
+
+];

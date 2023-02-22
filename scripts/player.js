@@ -9,8 +9,12 @@ function loadMusic(list, indexNumb){
     let musicArtist = document.getElementById("artista");
     let musicPlaying = document.getElementById("main_audio")
     console.log(list);
+    console.log(indexNumb);
     console.log(list[indexNumb-1]);
     console.log(list[indexNumb-1].name);
+    if (indexNumb === 0){
+        indexNumb = list.length;
+    }
     musicName.innerHTML = list[indexNumb-1].name;
     musicArtist.innerHTML = list[indexNumb-1].artist;
     musicImg.src = list[indexNumb-1].img;
@@ -19,6 +23,7 @@ function loadMusic(list, indexNumb){
 
 // Función para pasar a la siguiente canción
 function nextMusic(list) {
+    console.log(list)
     if (musicIndex === list.length){
         musicIndex = 1;
     }else{
@@ -46,13 +51,13 @@ function prevMusic(list) {
 }
 
 // Función para seleccionar una canción
-function chooseMusic(indexNumb){
+function chooseMusic(list, indexNumb){
     lyrics_pag.style.visibility = 'hidden';
     let player = document.getElementsByClassName("pie")[0];
     player.style.visibility = 'visible';
 
-    loadMusic(allMusic, indexNumb);
-    elementos(allMusic);
+    loadMusic(list, indexNumb);
+    elementos(list);
     play = false;
     reproduccion();
     musicIndex = indexNumb;
@@ -114,7 +119,12 @@ function mode(){
 
 function displaylyrics(){
     let lyrics = document.getElementsByClassName('playlist_content')[1];
-    console.log(lyrics);
-    lyrics.innerHTML=allLyrics[musicIndex-1].lyrics;
+    // console.log(lyrics);
+    if (lyrics_pag.style.visibility === 'hidden'){
+        lyrics_pag.style.visibility = 'visible';
+        lyrics.innerHTML=allLyrics[musicIndex-1].lyrics + "<br><br><br><br>.";
+    } else {
+        lyrics_pag.style.visibility = 'hidden';
+    }
 
 }

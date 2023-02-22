@@ -27,7 +27,7 @@ function perfil(){
                 '            <div class="cancion_container">\n' +
                 '              <img alt="cancion" src=' + canciones_favoritas[index-1].img + ' class = "can_fav">\n' +
                 // '              <div class="overlay">\n' +
-                '                <button type = "button" onclick= "chooseMusic('+ index +')">\n' +
+                '                <button type = "button" onclick= "chooseMusic(allMusic'+ index +')">\n' +
                 '                  <i class="fa-regular fa-circle-play"></i>\n' +
                 '                </button>\n' +
                 // '              </div>\n' +

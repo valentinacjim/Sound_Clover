@@ -67,13 +67,13 @@ function buscar(){
                 "    <div class='cancion_container'>" +
                 "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
                 // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(" +(i+1)+ ")'>\n" +
+                "                <button type='button' onclick='chooseMusic(allMusic" +(i+1)+ ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
                 "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
+                "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista_search' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
                 "    </div>\n" +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +

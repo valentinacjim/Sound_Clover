@@ -36,7 +36,7 @@ function artista_pagina(indexFav){
                 '            <div class="favorita_container">\n' +
                 '              <img alt="cancion" src=' + allMusic[index-1].img + ' class = "can_fav">\n' +
                 '              <div class="overlay">\n' +
-                '                <button type = "button" onclick= "chooseMusic('+ index +')">\n' +
+                '                <button type = "button" onclick= "chooseMusic(allMusic'+ index +')">\n' +
                 '                  <i class="fa-regular fa-circle-play"></i>\n' +
                 '                </button>\n' +
                 '              </div>\n' +

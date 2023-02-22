@@ -8,7 +8,7 @@ function listas_display() {
         "          <img alt='playlist' src=\"images/playlist_fav.png\">\n" +
         "          </div>\n" +
         "          <div class=\"titulo_playlist\">\n" +
-        "            <p>Canciones favoritas</p>\n" +
+        "            <p>Favorites songs</p>\n" +
         "          </div>\n" +
         "        </div>";
     for (let index = 0; index < misListas.length; index++) {

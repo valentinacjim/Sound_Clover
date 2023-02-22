@@ -60,7 +60,7 @@ function buscar_anadir(){
                 "    <div class='cancion_container'>" +
                 "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
                 // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(" +(i+1)+ ")'>\n" +
+                "                <button type='button' onclick='chooseMusic(allMusic" +(i+1)+ ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
                 "    </div>\n" +
@@ -81,8 +81,10 @@ function buscar_anadir(){
 // Función para agregar canciones a la lista de reproducción
 function agregar_a_lista(index){
     let eliminar = document.getElementById(allMusic[index].name +"_agregar");
+    // let agregar = []
     misListas[misListas.length-1].canciones.push(allMusic[index].name);
-    misListas[misListas.length-1].canciones.push(allMusic[index].audio);
+    // misListas[misListas.length-1].audio.push(allMusic[index].audio);
+    // console.log(misListas[misListas.length-1].canciones);
     alert("Song added to the playlist");
     eliminar.className = 'fa-solid fa-check';
 }
