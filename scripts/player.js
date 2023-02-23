@@ -119,7 +119,7 @@ function shuffle_music(){
         icono.style.color = '#8f0fe1'
         shuffle = true;
     }else{
-        icono.style.color = '#d0abda';
+        icono.style.color = '#ebe0ff';
         shuffle = false;
     }
 }
@@ -134,7 +134,7 @@ function mode(){
         repeat_song.style.visibility = 'visible';
         mode_player = 'repeat song';
     } else if (mode_player === 'repeat song'){
-        icono.style.color = '#d0abda';
+        icono.style.color = '#ebe0ff';
         repeat_song.style.visibility = 'hidden';
         mode_player = 'no repeat';
     }
@@ -147,18 +147,21 @@ function queue(){
         icono.style.color = '#8f0fe1'
         queue_pag.style.visibility = 'visible';
     } else {
-        icono.style.color = '#d0abda';
+        icono.style.color = '#ebe0ff';
         queue_pag.style.visibility = 'hidden';
     }
 }
 
 function displaylyrics(){
     let lyrics = document.getElementsByClassName('playlist_content')[1];
+    let icono = document.getElementById('lyrics');
     // console.log(lyrics);
     if (lyrics_pag.style.visibility === 'hidden'){
+        icono.style.color = '#8f0fe1'
         lyrics_pag.style.visibility = 'visible';
         lyrics.innerHTML=allLyrics[musicIndex-1].lyrics + "<br><br><br><br>.";
     } else {
+        icono.style.color = '#ebe0ff';
         lyrics_pag.style.visibility = 'hidden';
     }
 

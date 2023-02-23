@@ -676,12 +676,12 @@ colocados en un grid 50|50*/
 
 .low{
     text-decoration: none;
-    color: #eeeeee;
+    color: #ebe0ff;
 }
 
 .high{
     text-decoration: none;
-    color: #eeeeee;
+    color: #ebe0ff;
 }
 
 #letra{
@@ -689,5 +689,5 @@ colocados en un grid 50|50*/
 }
 
 #repeat{
-    color: #d0abda;
+    color: #ebe0ff;
 }
