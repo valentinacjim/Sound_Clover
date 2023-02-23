@@ -655,6 +655,7 @@
       <div class="playlist_content"></div>
 <!--      <div class="spacer-3"></div>-->
     </div>
+    <div class="page"></div>
   </div>
 </div>
 <!--Reproductor-->
@@ -679,9 +680,9 @@
               <!-- Botón de repetir-->
               <li class="prev"> <i class="fa-solid fa-backward-step"></i></li>
               <!-- Botón de play/pause-->
-              <li class="max"> <i class="fa-solid fa-play" id="estado" onclick="nextMusic()"></i></li>
+              <li class="max"> <i class="fa-solid fa-play" id="estado"></i></li>
               <!-- Botón de siguiente-->
-              <li class="forw"> <i class="fa-solid fa-forward-step" onclick="prevMusic()"></i></li>
+              <li class="forw"> <i class="fa-solid fa-forward-step"></i></li>
 
             </ul>
 
@@ -689,13 +690,19 @@
           <p class="favorito">
             <a href="#"> <i class="fa-regular fa-heart" id="fav"></i></a>
           </p>
-          <p id="options">
+          <div id="options">
+            <div>
             <a href="#"> <i class="fa-solid fa-shuffle" id="shuffle"></i></a>
             <br>
             <a href="#"> <i class="fa-solid fa-microphone" id="lyrics" onclick="displaylyrics()"></i></a>
-            <br>
+            </div>
+<!--            <br>-->
+            <div id="options2">
             <a href="#"> <i class="fa-solid fa-bars-staggered" id="queue"></i></a>
-          </p>
+            <br>
+            <a href="#"> <i class="fa-solid fa-repeat" id="repeat"></i> <p id="repeat_song">1</p></a>
+            </div>
+          </div>
         </div>
         <div class="controls">
           <!-- Barra de progreso-->

@@ -66,7 +66,7 @@ function buscar_anadir(){
                 "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
+                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
                 "    </div>\n" +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +

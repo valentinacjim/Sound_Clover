@@ -1,5 +1,6 @@
 let musicIndex = 1;
 let play = false;
+let list;
 let home_pag = document.getElementsByClassName("musica")[0];
 let discover = document.getElementsByClassName("page")[0];
 let genre = document.getElementsByClassName("page")[1];
@@ -75,7 +76,7 @@ function genre_page(gen) {
 }
 
 
-function elementos(list){
+function elementos(){
     let barra = document.getElementsByClassName('barra')[0];
     let progreso = document.getElementsByClassName('progreso')[0];
     let proximo = document.getElementsByClassName("forw")[0];
@@ -88,6 +89,7 @@ function elementos(list){
     let volumen = document.querySelector('.volume');
     let fotoperfil = document.getElementById('fotoperfil');
     let shuffle = document.getElementById('shuffle');
+    let repeat = document.getElementById('repeat');
     let lyrics = document.getElementById('lyrics');
     let queue = document.getElementById('queue');
 
@@ -103,12 +105,12 @@ function elementos(list){
 
     estado.addEventListener('click', reproduccion);
     favorito.addEventListener('click', agregar);
-    shuffle.addEventListener('click', mode);
+    shuffle.addEventListener('click', shuffle_music);
+    repeat.addEventListener('click', mode);
     // lyrics.addEventListener('click', see_page(10));
     // queue.addEventListener('click', displayqueue);
-    console.log("dah", list);
-    proximo.addEventListener('click', ()=>{nextMusic(list);})
-    anterior.addEventListener('click', ()=>{prevMusic(list);})
+    proximo.addEventListener('click', ()=>{nextMusic();})
+    anterior.addEventListener('click', ()=>{prevMusic();})
     volumen.addEventListener('input', function(){
         musicPlaying.volume = this.value
     })

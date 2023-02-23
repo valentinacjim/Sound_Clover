@@ -1,5 +1,7 @@
 // Módulo para las listas de reproducción
 
+let play_reproducir
+
 function lista_reproduccion(index) {
 
     // let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
@@ -82,6 +84,7 @@ function lista_reproduccion(index) {
     }
 
     // Contenido de la lista de reproducción
+    play_reproducir = index;
     playlist_contenido(index, playlist_content);
     }
 }
@@ -176,21 +179,8 @@ window.onclick = function(event) {
 }
 
 function reproduccion_playlist(){
-    let nombre_playlist = document.getElementById('nombre-playlist');
-    console.log(nombre_playlist);
-    // buscar el nombre en misListas
-    let index = -1;
-
-    for (let i = 0; i < misListas.length; i++) {
-       if (misListas[i].nombre === nombre_playlist) {
-            index = i;
-            break;
-       }
-    }
-
     let playlist = []
-    console.log(index);
-    if (index === -1){
+    if (play_reproducir === -1){
         for(let i=0; i<allMusic.length; i++){
             if(allMusic[i].fav === true){
                 playlist.push(allMusic[i]);
@@ -199,7 +189,7 @@ function reproduccion_playlist(){
     }
     else{
     for(let i=0; i<allMusic.length; i++){
-        if(misListas[index].canciones.includes(allMusic[i].name)){
+        if(misListas[play_reproducir].canciones.includes(allMusic[i].name)){
             playlist.push(allMusic[i]);
         }
     }

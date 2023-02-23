@@ -48,7 +48,7 @@ function album_contenido(artista, album, album_content) {
                 "            </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista' onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
+                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
                 "    </div>\n" +
                 "    <p class='favor'>\n" +
                 "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
