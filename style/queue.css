@@ -1,0 +1,26 @@
+.queue_element {
+    height: 15%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 2em;
+    /*background-color: purple;*/
+}
+
+.queue_container .cancion_container img{
+    width: 100%;
+    height: 100%;
+    /*margin: 5%;*/
+    /*float: left;*/
+    /*vertical-align: middle;*/
+}
+
+.busq3 .queue_container .cancion_container{
+    height: 90%;
+    margin: 5%;
+    width: 120%;
+    float: left;
+    vertical-align: middle;
+
+}
