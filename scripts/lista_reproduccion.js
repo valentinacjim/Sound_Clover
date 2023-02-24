@@ -1,6 +1,6 @@
 // Módulo para las listas de reproducción
 
-let play_reproducir
+let play_reproducir = -1
 
 function lista_reproduccion(index) {
 
@@ -179,6 +179,7 @@ window.onclick = function(event) {
 }
 
 function reproduccion_playlist(){
+    console.log(play_reproducir);
     let playlist = []
     if (play_reproducir === -1){
         for(let i=0; i<allMusic.length; i++){

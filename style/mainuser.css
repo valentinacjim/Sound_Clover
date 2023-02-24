@@ -482,7 +482,7 @@ colocados en un grid 50|50*/
     background-color: #4a5a6F;
     position: absolute;
     user-select: none;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-top: solid black 1px;

@@ -33,6 +33,8 @@ function nextMusic() {
             musicIndex = Math.floor(Math.random() * list.length) + 1;
         } else if (musicIndex === list.length && mode_player !== "repeat song") {
             musicIndex++;
+        } else{
+            musicIndex++;
         }
     }
 
@@ -55,6 +57,8 @@ function prevMusic() {
             musicIndex = Math.floor(Math.random() * list.length) + 1;
         }
         else if (musicIndex === 1 && mode_player !== "repeat song") {
+            musicIndex--;
+        } else {
             musicIndex--;
         }
     }
@@ -191,26 +195,21 @@ function displaylyrics(){
 }
 
 function queue_content(){
-    console.log(musicIndex);
+    // console.log(musicIndex);
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
-        console.log(i)
-        if (i >= 50) {
-            continue;
-        } else if (i < musicIndex - 1) {
-            continue;
-        } else if (i === musicIndex-1) {
+        if (i === musicIndex-1) {
             let fav = '';
             let index_artist = 0;
-            if (allMusic[i].fav === true) {
+            if (list[i].fav === true) {
                 fav = "fa-solid fa-heart";
 
             } else {
                 fav = "fa-regular fa-heart";
             }
             for (let j = 0; j < allArtistas.length; j++) {
-                if (allMusic[i].artist === allArtistas[j].name) {
+                if (list[i].artist === allArtistas[j].name) {
                     index_artist = allArtistas[j].index;
                 }
             }
@@ -223,34 +222,37 @@ function queue_content(){
                 "    <div class='queue_container'>\n" +
 
                 "    <div class='cancion_container'>" +
-                "        <img alt='cancion' src=" + allMusic[i].img + ">\n" +
+                "        <img alt='cancion' src=" + list[i].img + ">\n" +
                 // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(allMusic" + (i + 1) + ")'>\n" +
+                "                <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
                 "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
+                "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +
                 "    </div>\n" +
                 "    <p class='favor'>\n" +
-                "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
+                "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                 "    </p>\n" +
                 "</div>" +
                 "</div>"
-        } else {
+
+
+        } else if( i > musicIndex-1 && i<=50){
+
 
             let fav = '';
             let index_artist = 0;
 
-            if (allMusic[i].fav === true) {
+            if (list[i].fav === true) {
                 fav = "fa-solid fa-heart";
 
             } else {
                 fav = "fa-regular fa-heart";
             }
             for (let j = 0; j < allArtistas.length; j++) {
-                if (allMusic[i].artist === allArtistas[j].name) {
+                if (list[i].artist === allArtistas[j].name) {
                     index_artist = allArtistas[j].index;
                 }
             }
@@ -262,21 +264,27 @@ function queue_content(){
                 "    <div class='queue_container'>\n" +
 
                 "    <div class='cancion_container'>" +
-                "        <img alt='cancion' src=" + allMusic[i].img + ">\n" +
+                "        <img alt='cancion' src=" + list[i].img + ">\n" +
                 // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(allMusic" + (i + 1) + ")'>\n" +
+                "                <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
                 "                    <i class='fa-regular fa-circle-play'></i>\n" +
                 "                </button>\n" +
                 "    </div>\n" +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
+                "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +
                 "    </div>\n" +
                 "    <p class='favor'>\n" +
-                "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
+                "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                 "    </p>\n" +
                 "</div>" +
                 "</div>"
+
         }
     }
+    queue_content.innerHTML += "" +
+        "<br>" +
+        "<br>" +
+        "<br>" +
+        "<br>"
 }

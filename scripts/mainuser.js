@@ -13,7 +13,8 @@ let artista_pag = document.getElementsByClassName("page")[7];
 let usuarios = document.getElementsByClassName("page")[8];
 let cuenta_pag = document.getElementsByClassName("page")[9];
 let lyrics_pag = document.getElementsByClassName("page")[10];
-let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag];
+let queue_pag = document.getElementsByClassName("page")[11];
+let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag, lyrics_pag, queue_pag];
 
 
 let player = document.getElementsByClassName("pie")[0];
@@ -60,6 +61,7 @@ function see_page(page) {
             if (i===9){
                 cuenta();
             }
+
         }else {
             allPages[i].style.visibility = 'hidden';
         }

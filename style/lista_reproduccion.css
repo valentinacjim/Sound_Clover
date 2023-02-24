@@ -65,7 +65,7 @@
 .playlist_content {
     height: 85%;
     margin: 1.5% 1.5% 17%;
-    visibility: inherit;
+    /*visibility: inherit;*/
     /*background-color: #323232;*/
 }
 
@@ -95,13 +95,13 @@
     background-color: #D6C3FAFF;
 }
 
-.busq3 .cancion_container button{
+.busq_container1 .cancion_container button{
     height: 50%;
     width: 50%;
     /*font-size: 1.5em;*/
 }
 
-.busq3 .cancion_container button i{
+.busq_container1 .cancion_container button i{
     /*top: -1em;*/
     position: absolute;
     top: 0.05em;

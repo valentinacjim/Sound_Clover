@@ -151,221 +151,220 @@ let allLyrics = [
     },
     {
         name: "Inmortales",
-        lyrics: "Quizás me habré hecho mayor\n" +
-            "Pero siento yo\n" +
-            "Que la vida es muy corta pa'l dolor\n" +
-            "\n" +
-            "Me reí de mí\n" +
-            "De lo que lloré\n" +
-            "Me quité el polvo y me hice el amor\n" +
-            "\n" +
-            "Porque, a veces, me siento perdido\n" +
-            "Vacío y sin aliento\n" +
-            "Sin ganas de nada\n" +
-            "Jugando con el tiempo\n" +
-            "\n" +
-            "Pero hay una energía\n" +
-            "Que sale de mi cuerpo\n" +
-            "Y me hace inmortal\n" +
-            "\n" +
-            "Porque nadie nos joderá esta noche\n" +
-            "Nadie vuelve a romperme el corazón\n" +
-            "Y gritamos al cielo: ¡Que le follen!\n" +
-            "Que nos seque las lágrimas el Sol\n" +
-            "\n" +
-            "(Oh, yeah!)\n" +
-            "\n" +
-            "¿Y si nos vamos de aquí?\n" +
-            "Cabalgando bajo la lluvia\n" +
-            "Si quieres hacerte feliz\n" +
-            "Deja que tu corazón fluya\n" +
-            "\n" +
-            "Con tu cuerpo y el mío\n" +
-            "Subiendo y bajando\n" +
-            "Siento escalofríos\n" +
-            "De solo pensarlo\n" +
-            "\n" +
-            "Fumando el porrito de la paz\n" +
-            "Y quitarnos el antifaz\n" +
-            "Prometerle a mamá y a papá\n" +
-            "Que les voy a llamar un poquito más\n" +
-            "\n" +
-            "Celebrar que estamos vivos\n" +
-            "Aunque sea duro el camino\n" +
-            "Y tatuarme el nombre\n" +
-            "De este puto temazo contigo\n" +
-            "\n" +
-            "Porque, a veces, me siento perdido\n" +
-            "Vacío y sin aliento\n" +
-            "Sin ganas de nada\n" +
-            "Jugando con el tiempo\n" +
-            "\n" +
-            "Pero hay una energía\n" +
-            "Que sale de mi cuerpo\n" +
-            "Y me hace inmortal\n" +
-            "\n" +
-            "Porque nadie nos joderá esta noche\n" +
-            "Nadie vuelve a romperme el corazón\n" +
-            "Y gritamos al cielo: ¡Que le follen!\n" +
-            "Que nos seque las lágrimas el Sol\n" +
-            "\n" +
-            "(Oh, yeah!)\n" +
-            "\n" +
-            "Porque nadie nos joderá esta noche\n" +
-            "Nadie vuelve a romperme el corazón\n" +
-            "Y gritamos al cielo: ¡Que le follen!\n" +
-            "Que nos seque las lágrimas el Sol\n" +
-            "\n" +
-            "Inmortales, somos inmortales\n" +
-            "Esta noche, no habrá nada que nos pare\n" +
-            "Porque, inmortales, somos inmortales\n" +
+        lyrics: "Quizás me habré hecho mayor<br>" +
+            "Pero siento yo<br>" +
+            "Que la vida es muy corta pa'l dolor<br>" +
+            "<br>" +
+            "Me reí de mí<br>" +
+            "De lo que lloré<br>" +
+            "Me quité el polvo y me hice el amor<br>" +
+            "<br>" +
+            "Porque, a veces, me siento perdido<br>" +
+            "Vacío y sin aliento<br>" +
+            "Sin ganas de nada<br>" +
+            "Jugando con el tiempo<br>" +
+            "<br>" +
+            "Pero hay una energía<br>" +
+            "Que sale de mi cuerpo<br>" +
+            "Y me hace inmortal<br>" +
+            "<br>" +
+            "Porque nadie nos joderá esta noche<br>" +
+            "Nadie vuelve a romperme el corazón<br>" +
+            "Y gritamos al cielo: ¡Que le follen!<br>" +
+            "Que nos seque las lágrimas el Sol<br>" +
+            "<br>" +
+            "(Oh, yeah!)<br>" +
+            "<br>" +
+            "¿Y si nos vamos de aquí?<br>" +
+            "Cabalgando bajo la lluvia<br>" +
+            "Si quieres hacerte feliz<br>" +
+            "Deja que tu corazón fluya<br>" +
+            "<br>" +
+            "Con tu cuerpo y el mío<br>" +
+            "Subiendo y bajando<br>" +
+            "Siento escalofríos<br>" +
+            "De solo pensarlo<br>" +
+            "<br>" +
+            "Fumando el porrito de la paz<br>" +
+            "Y quitarnos el antifaz<br>" +
+            "Prometerle a mamá y a papá<br>" +
+            "Que les voy a llamar un poquito más<br>" +
+            "<br>" +
+            "Celebrar que estamos vivos<br>" +
+            "Aunque sea duro el camino<br>" +
+            "Y tatuarme el nombre<br>" +
+            "De este puto temazo contigo<br>" +
+            "<br>" +
+            "Porque, a veces, me siento perdido<br>" +
+            "Vacío y sin aliento<br>" +
+            "Sin ganas de nada<br>" +
+            "Jugando con el tiempo<br>" +
+            "<br>" +
+            "Pero hay una energía<br>" +
+            "Que sale de mi cuerpo<br>" +
+            "Y me hace inmortal<br>" +
+            "<br>" +
+            "Porque nadie nos joderá esta noche<br>" +
+            "Nadie vuelve a romperme el corazón<br>" +
+            "Y gritamos al cielo: ¡Que le follen!<br>" +
+            "Que nos seque las lágrimas el Sol<br>" +
+            "<br>" +
+            "(Oh, yeah!)<br>" +
+            "<br>" +
+            "Porque nadie nos joderá esta noche<br>" +
+            "Nadie vuelve a romperme el corazón<br>" +
+            "Y gritamos al cielo: ¡Que le follen!<br>" +
+            "Que nos seque las lágrimas el Sol<br>" +
+            "<br>" +
+            "Inmortales, somos inmortales<br>" +
+            "Esta noche, no habrá nada que nos pare<br>" +
+            "Porque, inmortales, somos inmortales<br>" +
             "Esta noche, no habrá nada que nos pare, yo'"
     },
     {
         name: "Youngblood",
-        lyrics: "Remember the words you told me\n" +
-            "Love me 'til the day I die\n" +
-            "Surrender my everything\n" +
-            "'Cause you made me believe you're mine\n" +
-            "\n" +
-            "Yeah, you used to call me baby\n" +
-            "Now you're calling me by name\n" +
-            "Takes one to know one, yeah\n" +
-            "You beat me at my own damn game\n" +
-            "\n" +
-            "You push and you push and I’m pulling away\n" +
-            "Pulling away from you\n" +
-            "I give and I give and I give and you take\n" +
-            "Give and you take\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me out of your life\n" +
-            "And I'm just a dead man walking tonight\n" +
-            "But you need it, yeah, you need it all of the time\n" +
-            "Yeah, ooh, ooh, ooh\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me back in your life\n" +
-            "So I'm just a dead man crawling tonight\n" +
-            "'Cause I need it, yeah, I need it all of time\n" +
-            "Yeah, ooh, ooh, ooh\n" +
-            "\n" +
-            "Lately our conversations end\n" +
-            "Like it's the last goodbye\n" +
-            "Then one of us gets too drunk and\n" +
-            "Calls about a hundred times\n" +
-            "So, who you been calling baby?\n" +
-            "Nobody could take my place\n" +
-            "When you're looking at those strangers\n" +
-            "Hope to God you see my face\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me out of your life\n" +
-            "And I’m just a dead man walking tonight\n" +
-            "But you need it, yeah, you need it all of the time\n" +
-            "Yeah ooh, ooh, ooh\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me back in your life\n" +
-            "So I'm just a dead man crawling tonight\n" +
-            "'Cause I need it, yeah, I need it all of time\n" +
-            "Yeah, ooh, ooh, ooh\n" +
-            "\n" +
-            "You're push and push I’m pulling away\n" +
-            "Pulling away from you\n" +
-            "I'm give and give I'm give and you take\n" +
-            "Give and you take\n" +
-            "You’re running around and running I’m running away\n" +
-            "Running away from you, ooh from you\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me out of your life\n" +
-            "And I’m just a dead man walking tonight\n" +
-            "But you need it, yeah, you need it all of the time\n" +
-            "Yeah ooh, ooh, ooh\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me back in your life\n" +
-            "So I'm just a dead man crawling tonight\n" +
-            "'Cause I need it, yeah, I need it all of time\n" +
-            "Yeah ooh, ooh, ooh\n" +
-            "\n" +
-            "You're push and push I’m pulling away\n" +
-            "Pulling away from you\n" +
-            "I'm give and give I'm give and you take\n" +
-            "Give and you take\n" +
-            "\n" +
-            "Youngblood\n" +
-            "Say you want me, say you want me out of your life\n" +
+        lyrics: "Remember the words you told me<br>" +
+            "Love me 'til the day I die<br>" +
+            "Surrender my everything<br>" +
+            "'Cause you made me believe you're mine<br>" +
+            "<br>" +
+            "Yeah, you used to call me baby<br>" +
+            "Now you're calling me by name<br>" +
+            "Takes one to know one, yeah<br>" +
+            "You beat me at my own damn game<br>" +
+            "<br>" +
+            "You push and you push and I’m pulling away<br>" +
+            "Pulling away from you<br>" +
+            "I give and I give and I give and you take<br>" +
+            "Give and you take<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me out of your life<br>" +
+            "And I'm just a dead man walking tonight<br>" +
+            "But you need it, yeah, you need it all of the time<br>" +
+            "Yeah, ooh, ooh, ooh<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me back in your life<br>" +
+            "So I'm just a dead man crawling tonight<br>" +
+            "'Cause I need it, yeah, I need it all of time<br>" +
+            "Yeah, ooh, ooh, ooh<br>" +
+            "<br>" +
+            "Lately our conversations end<br>" +
+            "Like it's the last goodbye<br>" +
+            "Then one of us gets too drunk and<br>" +
+            "Calls about a hundred times<br>" +
+            "So, who you been calling baby?<br>" +
+            "Nobody could take my place<br>" +
+            "When you're looking at those strangers<br>" +
+            "Hope to God you see my face<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me out of your life<br>" +
+            "And I’m just a dead man walking tonight<br>" +
+            "But you need it, yeah, you need it all of the time<br>" +
+            "Yeah ooh, ooh, ooh<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me back in your life<br>" +
+            "So I'm just a dead man crawling tonight<br>" +
+            "'Cause I need it, yeah, I need it all of time<br>" +
+            "Yeah, ooh, ooh, ooh<br>" +
+            "<br>" +
+            "You're push and push I’m pulling away<br>" +
+            "Pulling away from you<br>" +
+            "I'm give and give I'm give and you take<br>" +
+            "Give and you take<br>" +
+            "You’re running around and running I’m running away<br>" +
+            "Running away from you, ooh from you<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me out of your life<br>" +
+            "And I’m just a dead man walking tonight<br>" +
+            "But you need it, yeah, you need it all of the time<br>" +
+            "Yeah ooh, ooh, ooh<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me back in your life<br>" +
+            "So I'm just a dead man crawling tonight<br>" +
+            "'Cause I need it, yeah, I need it all of time<br>" +
+            "Yeah ooh, ooh, ooh<br>" +
+            "<br>" +
+            "You're push and push I’m pulling away<br>" +
+            "Pulling away from you<br>" +
+            "I'm give and give I'm give and you take<br>" +
+            "Give and you take<br>" +
+            "<br>" +
+            "Youngblood<br>" +
+            "Say you want me, say you want me out of your life<br>" +
             "And I’m just a dead man walking tonight"
     },
     {
         name: "Another one bites the dust",
-        lyrics: "Uh, let's go\n" +
-            "\n" +
-            "Steve walks warily down the street\n" +
-            "With his brim pulled way down low\n" +
-            "Ain't no sound but the sound of his feet\n" +
-            "Machine guns ready to go\n" +
-            "\n" +
-            "Are you ready, hey, are you ready for this?\n" +
-            "Are you hanging on the edge of your seat?\n" +
-            "Out of the doorway the bullets rip\n" +
-            "To the sound of the beat, yeah\n" +
-            "\n" +
-            "Another one bites the dust\n" +
-            "Another one bites the dust\n" +
-            "And another one gone, and another one gone\n" +
-            "Another one bites the dust\n" +
-            "Hey, I'm gonna get you too\n" +
-            "Another one bites the dust\n" +
-            "\n" +
-            "How do you think I'm going to get along\n" +
-            "Without you when you're gone\n" +
-            "You took me for everything that I had\n" +
-            "And kicked me out on my own\n" +
-            "\n" +
-            "Are you happy, are you satisfied?\n" +
-            "How long can you stand the heat?\n" +
-            "Out of the doorway the bullets rip\n" +
-            "To the sound of the beat, look out\n" +
-            "\n" +
-            "Another one bites the dust\n" +
-            "Another one bites the dust\n" +
-            "And another one gone, and another one gone\n" +
-            "Another one bites the dust\n" +
-            "Hey, I'm gonna get you too\n" +
-            "Another one bites the dust\n" +
-            "\n" +
-            "Hey\n" +
-            "\n" +
-            "Oh, take it, bite the dust, bite the dust\n" +
-            "Hey, another one bites the dust\n" +
-            "Another one bites the dust, ow\n" +
-            "Another one bites the dust, hey, hey\n" +
-            "Another one bites the dust, hah\n" +
-            "Oh, shoot out\n" +
-            "\n" +
-            "There are plenty of ways that you can hurt a man\n" +
-            "And bring him to the ground\n" +
-            "You can beat him, you can cheat him\n" +
-            "You can treat him bad and leave him\n" +
-            "When he's down\n" +
-            "\n" +
-            "But I'm ready, yes I'm ready for you\n" +
-            "I'm standing on my own two feet\n" +
-            "Out of the doorway the bullets rip\n" +
-            "Repeating to the sound of the beat\n" +
-            "\n" +
-            "Another one bites the dust\n" +
-            "Another one bites the dust\n" +
-            "And another one gone, and another one gone\n" +
-            "Another one bites the dust, yeah\n" +
-            "Hey, I'm gonna get you too\n" +
-            "Another one bites the dust\n" +
-            "Shoot out\n" +
-            "\n" +
+        lyrics: "Uh, let's go<br>" +
+            "<br>" +
+            "Steve walks warily down the street<br>" +
+            "With his brim pulled way down low<br>" +
+            "Ain't no sound but the sound of his feet<br>" +
+            "Machine guns ready to go<br>" +
+            "<br>" +
+            "Are you ready, hey, are you ready for this?<br>" +
+            "Are you hanging on the edge of your seat?<br>" +
+            "Out of the doorway the bullets rip<br>" +
+            "To the sound of the beat, yeah<br>" +
+            "<br>" +
+            "Another one bites the dust<br>" +
+            "Another one bites the dust<br>" +
+            "And another one gone, and another one gone<br>" +
+            "Another one bites the dust<br>" +
+            "Hey, I'm gonna get you too<br>" +
+            "Another one bites the dust<br>" +
+            "<br>" +
+            "How do you think I'm going to get along<br>" +
+            "Without you when you're gone<br>" +
+            "You took me for everything that I had<br>" +
+            "And kicked me out on my own<br>" +
+            "<br>" +
+            "Are you happy, are you satisfied?<br>" +
+            "How long can you stand the heat?<br>" +
+            "Out of the doorway the bullets rip<br>" +
+            "To the sound of the beat, look out<br>" +
+            "<br>" +
+            "Another one bites the dust<br>" +
+            "Another one bites the dust<br>" +
+            "And another one gone, and another one gone<br>" +
+            "Another one bites the dust<br>" +
+            "Hey, I'm gonna get you too<br>" +
+            "Another one bites the dust<br>" +
+            "<br>" +
+            "Hey<br>" +
+            "<br>" +
+            "Oh, take it, bite the dust, bite the dust<br>" +
+            "Hey, another one bites the dust<br>" +
+            "Another one bites the dust, ow<br>" +
+            "Another one bites the dust, hey, hey<br>" +
+            "Another one bites the dust, hah<br>" +
+            "Oh, shoot out<br>" +
+            "<br>" +
+            "There are plenty of ways that you can hurt a man<br>" +
+            "And bring him to the ground<br>" +
+            "You can beat him, you can cheat him<br>" +
+            "You can treat him bad and leave him<br>" +
+            "When he's down<br>" +
+            "<br>" +
+            "But I'm ready, yes I'm ready for you<br>" +
+            "I'm standing on my own two feet<br>" +
+            "Out of the doorway the bullets rip<br>" +
+            "Repeating to the sound of the beat<br>" +
+            "<br>" +
+            "Another one bites the dust<br>" +
+            "Another one bites the dust<br>" +
+            "And another one gone, and another one gone<br>" +
+            "Another one bites the dust, yeah<br>" +
+            "Hey, I'm gonna get you too<br>" +
+            "Another one bites the dust<br>" +
+            "Shoot out<br>" +
+            "<br>" +
             "Yeah, alright"
     }
-
 ];
