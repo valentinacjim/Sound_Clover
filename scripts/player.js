@@ -3,6 +3,7 @@
 let shuffle = false;
 let mode_player = "no repeat";
 
+
 // Cargar información de la canción
 function loadMusic(indexNumb){
     let musicImg = document.getElementById("caratula");
@@ -179,14 +180,63 @@ function queue(){
     }
 }
 
-function displaylyrics(){
+async function displaylyrics(){
     let lyrics = document.getElementsByClassName('playlist_content')[1];
     let icono = document.getElementById('lyrics');
+    let musicPlaying = document.getElementById("main_audio");
     // console.log(lyrics);
-    if (lyrics_pag.style.visibility === 'hidden'){
+    let lrc;
+    if (lyrics_pag.style.visibility === 'hidden') {
         icono.style.color = '#8f0fe1'
         lyrics_pag.style.visibility = 'visible';
-        lyrics.innerHTML=allLyrics[musicIndex-1].lyrics + "<br><br><br><br>.";
+
+        // abrir archivo lrc
+        let lrc_file = await fetch(allMusic[musicIndex-1].lrc);
+        lrc = await lrc_file.text();
+        // console.log(lrc);
+        // console.log(lrc_file);
+
+        // convertir lrc a array
+        let lrc_array = lrc.split('\n');
+        // console.log(lrc_array);
+
+        // convertir lrc a objeto
+        let lrc_obj = {};
+        for (let i = 0; i < lrc_array.length; i++) {
+            let time = lrc_array[i].split(']')[0].replace('[', '');
+            let lyric = lrc_array[i].split(']')[1];
+            lrc_obj[time] = lyric;
+        }
+        // console.log(lrc_obj);
+
+        // mostrar lrc
+        let lrc_time = musicPlaying.currentTime;
+        let lrc_time_min = Math.floor(lrc_time / 60);
+
+        let lrc_time_sec = Math.floor(lrc_time % 60);
+        if (lrc_time_sec < 10) {
+            lrc_time_sec = '0' + lrc_time_sec;
+        }
+        let lrc_time_current = '[' + lrc_time_min + ':' + lrc_time_sec + ']';
+        // console.log(lrc_time_current);
+        // console.log(lrc_obj[lrc_time_current]);
+        lyrics.innerHTML = lrc_obj[lrc_time_current];
+        // console.log(lyrics);
+        // console.log(lrc_obj[lrc_time_current]);
+        // console.log(lrc_obj);
+        // console.log(lrc_time_current);
+        // console.log(lrc_time_min);
+        // console.log(lrc_time_sec);
+        // console.log(lrc_time);
+        // console.log(musicPlaying.currentTime);
+        // console.log(musicPlaying.duration);
+        // console.log(musicPlaying.ended);
+        // console.log(musicPlaying.paused);
+        // console.log(musicPlaying);
+        // console.log(allMusic[musicIndex-1].lrc);
+        
+
+
     } else {
         icono.style.color = '#ebe0ff';
         lyrics_pag.style.visibility = 'hidden';
@@ -288,3 +338,5 @@ function queue_content(){
         "<br>" +
         "<br>"
 }
+
+

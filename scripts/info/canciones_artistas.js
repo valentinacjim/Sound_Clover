@@ -6,6 +6,7 @@ let allMusic = [
         artist:"My Chemical Romance",
         img: "images/black_parade.jpg",
         audio:"audio/Welcome_to_the_black_parade.mp3",
+        lrc:"lrc/Welcome_to_the_black_parade.lrc",
         fav:false,
     },
     {
@@ -128,67 +129,76 @@ let allMusic = [
         audio:"audio/",
         fav:false,
     },
-    {
-        name: "Vampires will never hurt you",
+    {   name: "Vampires will never hurt you",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-     },{
+     },
+    {
         name: "Drowning lessons",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-    },{
+    },
+    {
         name: "Our Lady of Sorrows",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-     },{
+     },
+    {
         name: "Headfirst for halos",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-    },{
-        name: "Skylines and turnstiles",
+    },
+    {   name: "Skylines and turnstiles",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-     },{
+     },
+    {
         name: "Early sunsets over Monroeville",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/Early_Sunsets_Over_Monroeville",
         fav:false,
-     },{
+     },
+    {
         name: "This is the best day ever",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-    },{
+    },
+    {
         name: "Cubicles",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-    },{
+    },
+    {
         name: "Demolition Lovers",
         artist:"My Chemical Romance",
         img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
         audio:"audio/",
         fav:false,
-    },{
+    },
+    {
         name: "Helena",
         artist:"My Chemical Romance",
         img: "images/three_cheers.jpg",
         audio:"audio/Helena.mp3",
         fav:false,
-    },{
+    },
+
+    {
         name: "Give 'em hell, kid",
         artist:"My Chemical Romance",
         img: "images/three_cheers.jpg",
