@@ -6,6 +6,7 @@ let allMusic = [
         artist:"My Chemical Romance",
         img: "images/black_parade.jpg",
         audio:"audio/Welcome_to_the_black_parade.mp3",
+        lrc:"lrc/Welcome_to_the_black_parade.lrc",
         fav:false,
     },
     {

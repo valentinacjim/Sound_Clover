@@ -3,6 +3,7 @@
 let shuffle = false;
 let mode_player = "no repeat";
 
+
 // Cargar información de la canción
 function loadMusic(indexNumb){
     let musicImg = document.getElementById("caratula");
@@ -179,14 +180,19 @@ function queue(){
     }
 }
 
-function displaylyrics(){
+async function displaylyrics(){
     let lyrics = document.getElementsByClassName('playlist_content')[1];
     let icono = document.getElementById('lyrics');
+    let musicPlaying = document.getElementById("main_audio");
     // console.log(lyrics);
-    if (lyrics_pag.style.visibility === 'hidden'){
+    let lrc;
+    if (lyrics_pag.style.visibility === 'hidden') {
         icono.style.color = '#8f0fe1'
         lyrics_pag.style.visibility = 'visible';
-        lyrics.innerHTML=allLyrics[musicIndex-1].lyrics + "<br><br><br><br>.";
+        lrc = open(allMusic[musicIndex - 1].lyrics);
+
+
+
     } else {
         icono.style.color = '#ebe0ff';
         lyrics_pag.style.visibility = 'hidden';
@@ -288,3 +294,5 @@ function queue_content(){
         "<br>" +
         "<br>"
 }
+
+
