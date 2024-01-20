@@ -27,17 +27,9 @@ function lista_reproduccion(index) {
         for (let i = 0; i < allMusic.length; i++) {
             let fav = '';
             let index_artist = 0;
-            if (allMusic[i].fav === true) {
-                fav = "fa-solid fa-heart";
-
-            } else {
-                fav = "fa-regular fa-heart";
-            }
-            for(let j=0; j<allArtistas.length; j++){
-                if (allMusic[i].artist === allArtistas[j].name){
-                    index_artist = allArtistas[j].index;
-                }
-            }
+            isFavorite(i, fav);
+            index_artist = indexArtist(i, index_artist);
+            
             if (canciones_favoritas[i].fav === true) {
                 playlist_content.innerHTML += "" +
                     "<div class='busq2' id='busq2'>\n" +
@@ -112,17 +104,8 @@ function playlist_contenido(index, playlist_content) {
     for (let i = 0; i < allMusic.length; i++) {
         let fav = '';
         let index_artist = 0;
-        if (allMusic[i].fav === true) {
-            fav = "fa-solid fa-heart";
-
-        } else {
-            fav = "fa-regular fa-heart";
-        }
-        for (let j = 0; j < allArtistas.length; j++) {
-            if (allMusic[i].artist === allArtistas[j].name) {
-                index_artist = allArtistas[j].index;
-            }
-        }
+        isFavorite(i, fav);
+        index_artist = indexArtist(i, index_artist);
 
         // Si la canción está en la lista de reproducción
         if (misListas[index].canciones.includes(allMusic[i].name)) {
@@ -158,11 +141,6 @@ function playlist_contenido(index, playlist_content) {
     }
 }
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {

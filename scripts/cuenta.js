@@ -23,12 +23,6 @@ let new_inputs = {
 function cuenta() {
 
     // Rellenar los campos de la página de cuenta
-    rellenar_campos_texto();
-
-
-}
-
-function rellenar_campos_texto() {
     let aux = getCookie('Activa');
     let c = getCookie(aux);
     let obj = JSON.parse(c);
@@ -46,7 +40,10 @@ function rellenar_campos_texto() {
     }else{
         inputs.i.style.display = "none";
     }
+
+
 }
+
 
 // Rellenar los campos de la página de editar cuenta
 function rellenar_campos_input() {

@@ -1,7 +1,8 @@
 // Módulo para el reproductor
 
-let shuffle = false;
-let mode_player = "no repeat";
+const SHUFFLE = false;
+const MODES = ["NO_REPEAT", "REPEAT_LIST", "REPEAT_SONG"];
+const MODE_PLAYER = MODES[0];
 
 
 // Cargar información de la canción
@@ -9,7 +10,7 @@ function loadMusic(indexNumb){
     let musicImg = document.getElementById("caratula");
     let musicName = document.getElementById("cancion_actual");
     let musicArtist = document.getElementById("artista");
-    let musicPlaying = document.getElementById("main_audio")
+    let musicPlaying = document.getElementById("main_audio");
 
     if (indexNumb === 0){
         indexNumb = list.length;
@@ -24,15 +25,15 @@ function loadMusic(indexNumb){
 // Función para pasar a la siguiente canción
 function nextMusic() {
 
-    if (shuffle === true){
+    if (SHUFFLE === true){
         musicIndex = Math.floor(Math.random() * list.length) + 1;
     }
     else {
-        if (musicIndex === list.length && mode_player === "repeat list") {
+        if (musicIndex === list.length && MODE_PLAYER === MODES[1]) {
             musicIndex = 1;
-        } else if (musicIndex === list.length && mode_player === "no repeat") {
+        } else if (musicIndex === list.length && MODE_PLAYER === MODES[0]) {
             musicIndex = Math.floor(Math.random() * list.length) + 1;
-        } else if (musicIndex === list.length && mode_player !== "repeat song") {
+        } else if (musicIndex === list.length && MODE_PLAYER !== MODES[2]) {
             musicIndex++;
         } else{
             musicIndex++;
@@ -49,15 +50,15 @@ function nextMusic() {
 
 // Función para pasar a la canción anterior
 function prevMusic() {
-    if (shuffle === true){
+    if (SHUFFLE === true){
         musicIndex = Math.floor(Math.random() * list.length) + 1;
     }else {
-        if (musicIndex === 1 && mode_player === "repeat list") {
+        if (musicIndex === 1 && MODE_PLAYER === MODES[1]) {
             musicIndex = list.length;
-        } else if (musicIndex === 1 && mode_player === "no repeat") {
+        } else if (musicIndex === 1 && MODE_PLAYER === MODES[0]) {
             musicIndex = Math.floor(Math.random() * list.length) + 1;
         }
-        else if (musicIndex === 1 && mode_player !== "repeat song") {
+        else if (musicIndex === 1 && MODE_PLAYER !== MODES[2]) {
             musicIndex--;
         } else {
             musicIndex--;
@@ -83,7 +84,6 @@ function chooseMusic(lista, indexNumb){
     play = false;
     reproduccion();
     musicIndex = indexNumb;
-    console.log(musicIndex);
     queue_content();
     favorito();
 }
@@ -93,6 +93,7 @@ function reproduccion(){
 
     let icono = document.getElementById('estado');
     let musicPlaying = document.getElementById("main_audio");
+
     if((musicPlaying.ended === false) && play===true){
         musicPlaying.pause();
         icono.className = "fa-solid fa-play";
@@ -105,11 +106,11 @@ function reproduccion(){
         document.querySelector(".caratula").classList.add("active");
     }
     if(musicPlaying.ended === true){
-        if (mode_player === 'repeat list'){
+        if (MODE_PLAYER === 'repeat list'){
             nextMusic();
-        } else if (mode_player === 'repeat song'){
+        } else if (MODE_PLAYER === 'repeat song'){
             musicPlaying.play();
-        } else if (mode_player === 'no repeat'){
+        } else if (MODE_PLAYER === 'no repeat'){
             nextMusic();
         }
         queue_content();
@@ -142,28 +143,28 @@ function favorito(){
 
 function shuffle_music(){
     let icono = document.getElementById('shuffle');
-    if(shuffle === false){
+    if(SHUFFLE === false){
         icono.style.color = '#8f0fe1'
-        shuffle = true;
+        SHUFFLE = true;
     }else{
         icono.style.color = '#ebe0ff';
-        shuffle = false;
+        SHUFFLE = false;
     }
 }
 
 function mode(){
     let icono = document.getElementById('repeat');
     let repeat_song = document.getElementById('repeat_song');
-    if (mode_player === 'no repeat'){
+    if (MODE_PLAYER === 'no repeat'){
         icono.style.color = '#8f0fe1'
-        mode_player = 'repeat list';
-    }else if(mode_player === 'repeat list'){
+        MODE_PLAYER = 'repeat list';
+    }else if(MODE_PLAYER === 'repeat list'){
         repeat_song.style.visibility = 'visible';
-        mode_player = 'repeat song';
-    } else if (mode_player === 'repeat song'){
+        MODE_PLAYER = 'repeat song';
+    } else if (MODE_PLAYER === 'repeat song'){
         icono.style.color = '#ebe0ff';
         repeat_song.style.visibility = 'hidden';
-        mode_player = 'no repeat';
+        MODE_PLAYER = 'no repeat';
     }
 }
 
@@ -218,25 +219,7 @@ async function displaylyrics(){
             lrc_time_sec = '0' + lrc_time_sec;
         }
         let lrc_time_current = '[' + lrc_time_min + ':' + lrc_time_sec + ']';
-        // console.log(lrc_time_current);
-        // console.log(lrc_obj[lrc_time_current]);
         lyrics.innerHTML = lrc_obj[lrc_time_current];
-        // console.log(lyrics);
-        // console.log(lrc_obj[lrc_time_current]);
-        // console.log(lrc_obj);
-        // console.log(lrc_time_current);
-        // console.log(lrc_time_min);
-        // console.log(lrc_time_sec);
-        // console.log(lrc_time);
-        // console.log(musicPlaying.currentTime);
-        // console.log(musicPlaying.duration);
-        // console.log(musicPlaying.ended);
-        // console.log(musicPlaying.paused);
-        // console.log(musicPlaying);
-        // console.log(allMusic[musicIndex-1].lrc);
-        
-
-
     } else {
         icono.style.color = '#ebe0ff';
         lyrics_pag.style.visibility = 'hidden';
@@ -249,86 +232,17 @@ function queue_content(){
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
-        if (i === musicIndex-1) {
             let fav = '';
             let index_artist = 0;
-            if (list[i].fav === true) {
-                fav = "fa-solid fa-heart";
-
-            } else {
-                fav = "fa-regular fa-heart";
-            }
-            for (let j = 0; j < allArtistas.length; j++) {
-                if (list[i].artist === allArtistas[j].name) {
-                    index_artist = allArtistas[j].index;
-                }
-            }
+            fav = isFavorite(i, fav);
+            index_artist = indexArtist(i, index_artist);
+        if (i === musicIndex-1) {
             let queue_element = document.getElementById('playing');
-            queue_element.innerHTML = "" +
-                "<div class='queue_element'\n>\n" +
-
-                "<div class='busq3' id='busq3'\n>\n" +
-
-                "    <div class='queue_container'>\n" +
-
-                "    <div class='cancion_container'>" +
-                "        <img alt='cancion' src=" + list[i].img + ">\n" +
-                // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
-                "                    <i class='fa-regular fa-circle-play'></i>\n" +
-                "                </button>\n" +
-                "    </div>\n" +
-                "    </div>\n" +
-                "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +
-                "    </div>\n" +
-                "    <p class='favor'>\n" +
-                "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
-                "    </p>\n" +
-                "</div>" +
-                "</div>"
+            queue_element.innerHTML = queueElementFunction(i, index_artist, fav)
 
 
         } else if( i > musicIndex-1 && i<=50){
-
-
-            let fav = '';
-            let index_artist = 0;
-
-            if (list[i].fav === true) {
-                fav = "fa-solid fa-heart";
-
-            } else {
-                fav = "fa-regular fa-heart";
-            }
-            for (let j = 0; j < allArtistas.length; j++) {
-                if (list[i].artist === allArtistas[j].name) {
-                    index_artist = allArtistas[j].index;
-                }
-            }
-            queue_content.innerHTML += "" +
-                "<div class='queue_element'\n>\n" +
-
-                "<div class='busq3' id='busq3'\n>\n" +
-
-                "    <div class='queue_container'>\n" +
-
-                "    <div class='cancion_container'>" +
-                "        <img alt='cancion' src=" + list[i].img + ">\n" +
-                // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
-                "                    <i class='fa-regular fa-circle-play'></i>\n" +
-                "                </button>\n" +
-                "    </div>\n" +
-                "    </div>\n" +
-                "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +
-                "    </div>\n" +
-                "    <p class='favor'>\n" +
-                "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
-                "    </p>\n" +
-                "</div>" +
-                "</div>"
+            queue_content.innerHTML += queueElementFunction(i, index_artist, fav)
 
         }
     }
@@ -339,4 +253,39 @@ function queue_content(){
         "<br>"
 }
 
+
+function isFavorite(i, fav) {
+    if (list[i].fav === true) {
+        fav = "fa-solid fa-heart";
+
+    } else {
+        fav = "fa-regular fa-heart";
+    }
+    return fav;
+}
+
+function queueElementFunction(i, index_artist, fav) {
+    return "" +
+        "<div class='queue_element'\n>\n" +
+
+        "<div class='busq3' id='busq3'\n>\n" +
+
+        "    <div class='queue_container'>\n" +
+
+        "    <div class='cancion_container'>" +
+        "        <img alt='cancion' src=" + list[i].img + ">\n" +
+        "                <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
+        "                    <i class='fa-regular fa-circle-play'></i>\n" +
+        "                </button>\n" +
+        "    </div>\n" +
+        "    </div>\n" +
+        "    <div class='titulo_artista_busq'>\n" +
+        "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +
+        "    </div>\n" +
+        "    <p class='favor'>\n" +
+        "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
+        "    </p>\n" +
+        "</div>" +
+        "</div>";
+}
 

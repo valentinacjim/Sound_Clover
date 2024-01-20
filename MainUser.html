@@ -23,7 +23,7 @@
   <!--Div que agrupa la columna izquierda-->
   <div class = "ColIzq">
     <!--Grid que contiene el logo junto al nombre de la página-->
-    <div class = "encabezado" onclick="see_page(0)">
+    <div class = "encabezado" onclick=see_page(0)>
       <div class = "logo">
         <i class="fa-solid fa-clover"></i>
       </div>
@@ -35,11 +35,11 @@
     <div class="navbar">
       <ul>
 
-        <li onclick="see_page(0)"><i class="fa-solid fa-house"></i><p data-text="&nbsp;Home">&nbsp;Home</p></li>
+        <li onclick=see_page(0)><i class="fa-solid fa-house"></i><p data-text="&nbsp;Home">&nbsp;Home</p></li>
 
-        <li onclick="see_page(1)"><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>
-        <li onclick="see_page(2)"><i class="fa-solid fa-compact-disc"></i><p data-text="&nbsp;Playlists">&nbsp;Playlists</p></li>
-        <li onclick="see_page(3)"><i class="fa-solid fa-add"></i><p data-text="&nbsp;Create">&nbsp;Create</p></li>
+        <li onclick=see_page(1)><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>
+        <li onclick=see_page(2)><i class="fa-solid fa-compact-disc"></i><p data-text="&nbsp;Playlists">&nbsp;Playlists</p></li>
+        <li onclick=see_page(3)><i class="fa-solid fa-add"></i><p data-text="&nbsp;Create">&nbsp;Create</p></li>
 <!--        <li onclick=""><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>-->
 <!--        <li onclick=""><i class="fa-solid fa-music"></i><p data-text="&nbsp;Discover">&nbsp;Discover</p></li>-->
         <!--elemento del menu lateral, formado por un enlace que cubre todo el elemento
@@ -68,14 +68,14 @@
         <li><div class="subnav">
           <button class="subnavbtn" id="fotoperfil"></button>
           <div class="subnav-content">
-            <button  id = 'cuenta' onclick="see_page(9)">Cuenta</button>
-            <button  id = 'perfil' onclick="see_page(5)">Perfil</button>
+            <button  id = 'cuenta' onclick=see_page(9)>Cuenta</button>
+            <button  id = 'perfil' onclick=see_page(5)>Perfil</button>
             <a href="#" id = 'cerrar_sesion' onclick="cerrar_sesion()">Cerrar sesión </a>
           </div>
         </div>
         </li>
         <li><div class="subnav">
-          <input class="search" oninput="see_page(4)">
+          <input class="search" oninput=see_page(4)>
         </div>
 
         </li>
@@ -333,7 +333,7 @@
     </div>
     <div class="page">
       <div class="pass_pag">
-        <i  onclick="see_page(1)" class="fa-solid fa-chevron-left"></i>
+        <i  onclick=see_page(1) class="fa-solid fa-chevron-left"></i>
       </div>
       <div class="cover"> <img id="cover_genero"  src="" alt="cover_genero"> </div>
       <div class="nombre_genero"></div>
@@ -589,7 +589,7 @@
     <div class="page">
       <!--Lista de reproducción-->
       <div class="pass_pag">
-        <i  onclick="see_page(2)" class="fa-solid fa-chevron-left"></i>
+        <i  onclick=see_page(2) class="fa-solid fa-chevron-left"></i>
       </div>
       <div class="cover_playlist"> <img id="cover_playlist"  src="" alt="cover_playlist"> </div>
       <div class="nombre-playlist"></div>
@@ -744,22 +744,21 @@
 </div>
 
 </body>
-<!--<script src="scripts/no_account.js"></script>-->
-<script src="scripts/info/canciones_artistas.js"></script>
-<script src="scripts/info/genres.js"></script>
-<script src="scripts/info/images.js"></script>
-<script src="scripts/info/lyrics.js"></script>
-<script src="../Sound_Clover/scripts/mainuser.js"></script>
-<script src="../Sound_Clover/scripts/player.js"></script>
-<script src="../Sound_Clover/scripts/ver_listas.js"></script>
-<script src="../Sound_Clover/scripts/crear_listas.js"></script>
-<script src="../Sound_Clover/scripts/search.js"></script>
-<script src="../Sound_Clover/scripts/lista_reproduccion.js"></script>
-<script src="../Sound_Clover/scripts/perfil.js"></script>
-<script src="../Sound_Clover/scripts/drag_and_drop.js"></script>
-<script src="../Sound_Clover/scripts/artista_pagina.js"></script>
-<script src="../Sound_Clover/scripts/cuenta.js"></script>
-<script src="../Sound_Clover/scripts/albumes.js"></script>
+<script type="text/javascript" src="scripts/info/canciones_artistas.js"></script>
+<script type="text/javascript" src="scripts/info/genres.js"></script>
+<script type="text/javascript" src="scripts/info/images.js"></script>
+<script type="text/javascript" src="scripts/info/lyrics.js"></script>
+<script type="text/javascript" src="scripts/mainuser.js"></script>
+<script type="text/javascript" src="scripts/player.js"></script>
+<script type="text/javascript" src="scripts/ver_listas.js"></script>
+<script type="text/javascript" src="scripts/crear_listas.js"></script>
+<script type="text/javascript" src="scripts/search.js"></script>
+<script type="text/javascript" src="scripts/lista_reproduccion.js"></script>
+<script type="text/javascript" src="scripts/perfil.js"></script>
+<script type="text/javascript" src="scripts/drag_and_drop.js"></script>
+<script type="text/javascript" src="scripts/artista_pagina.js"></script>
+<script type="text/javascript" src="scripts/cuenta.js"></script>
+<script type="text/javascript" src="scripts/albumes.js"></script>
 
 
 </html>

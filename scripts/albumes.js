@@ -29,12 +29,7 @@ function album_contenido(artista, album, album_content) {
     for (let i = 0; i < allMusic.length; i++) {
         let fav = '';
         let index_artist = 0;
-        if (allMusic[i].fav === true) {
-            fav = "fa-solid fa-heart";
-
-        } else {
-            fav = "fa-regular fa-heart";
-        }
+        isFavorite(i, fav);
         // Rellenar el contenido del álbum
         if (allArtistas[artista].albumes_foto[album] === allMusic[i].img) {
             album_content.innerHTML += "" +

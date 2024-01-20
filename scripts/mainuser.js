@@ -25,7 +25,7 @@ if (player_cancion.innerHTML === "Canción actual"){
 }
 
 // Funciones de cambiar de página
-function see_page(page) {
+export function see_page(page) {
     for (let i = 0; i < allPages.length; i++) {
         if (i===page){
             allPages[i].style.visibility = 'visible';
