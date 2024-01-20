@@ -68,9 +68,9 @@
         <li><div class="subnav">
           <button class="subnavbtn" id="fotoperfil"></button>
           <div class="subnav-content">
-            <button  id = 'cuenta' onclick=see_page(9)>Cuenta</button>
-            <button  id = 'perfil' onclick=see_page(5)>Perfil</button>
-            <a href="#" id = 'cerrar_sesion' onclick="cerrar_sesion()">Cerrar sesión </a>
+            <button  id = 'cuenta' onclick=see_page(9)>Account</button>
+            <button  id = 'perfil' onclick=see_page(5)>Profile</button>
+            <a href="#" id = 'cerrar_sesion' onclick=cerrar_sesion()>Sign out</a>
           </div>
         </div>
         </li>
@@ -296,6 +296,9 @@
       <div class="spacer-3"></div>
     </div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <main>
         <h1> Genres & Moods </h1>
       </main>
@@ -332,8 +335,9 @@
       <div class="spacer-3"></div>
     </div>
     <div class="page">
+      <!--Lista de género-->
       <div class="pass_pag">
-        <i  onclick=see_page(1) class="fa-solid fa-chevron-left"></i>
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
       </div>
       <div class="cover"> <img id="cover_genero"  src="" alt="cover_genero"> </div>
       <div class="nombre_genero"></div>
@@ -341,10 +345,16 @@
 <!--      <div class="spacer-3"></div>-->
     </div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <div class = "titulos_secciones"> <h1>Playlists</h1></div>
       <div class = 'playlists'></div>
     </div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <h1> New playlist </h1>
 <!--      <form>-->
       <div class="crear_lista">
@@ -392,6 +402,9 @@
         </div>
       </div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <div class="perfil">
       <!--Para los títulos de las secciones se utiliza el encabezado h1-->
       <div class = "titulos_secciones"> <h1>Artistas más escuchados</h1></div>
@@ -589,7 +602,7 @@
     <div class="page">
       <!--Lista de reproducción-->
       <div class="pass_pag">
-        <i  onclick=see_page(2) class="fa-solid fa-chevron-left"></i>
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
       </div>
       <div class="cover_playlist"> <img id="cover_playlist"  src="" alt="cover_playlist"> </div>
       <div class="nombre-playlist"></div>
@@ -608,9 +621,26 @@
 
       </div>
     </div>
-    <div class="page"></div>
+    <div class="page">
+      <!-- <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div> -->
+        <div class="fondo"> 
+          <img id="fondo-artista" src="" alt="fondo-artista">
+        </div>
+        <div class="artista-foto-perfil">
+          <img id="perfil-artista" src="" alt="artista-foto-perfil">
+        </div>
+        <div class="nombre-artista"></div>
+        <div class="artista-albumes-seccion"></div>
+        <div class="artista-canciones"></div>
+
+    </div>
     <div class="page"></div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <div id = formulario >
 
         <div>
@@ -654,10 +684,16 @@
       </div>
     </div>
     <div class="page" id="letra">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <div class="playlist_content"></div>
 <!--      <div class="spacer-3"></div>-->
     </div>
     <div class="page">
+      <div class="pass_pag">
+        <i  onclick=back() class="fa-solid fa-chevron-left"></i>
+      </div>
       <h1>Queue</h1>
       <br>
       <h2>Playing</h2>
@@ -759,6 +795,7 @@
 <script type="text/javascript" src="scripts/artista_pagina.js"></script>
 <script type="text/javascript" src="scripts/cuenta.js"></script>
 <script type="text/javascript" src="scripts/albumes.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
 
 
 </html>

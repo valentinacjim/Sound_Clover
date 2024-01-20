@@ -1,34 +1,33 @@
 let musicIndex = 1;
 let play = false;
-let list;
-let home_pag = document.getElementsByClassName("musica")[0];
-let discover = document.getElementsByClassName("page")[0];
-let genre = document.getElementsByClassName("page")[1];
-let mis_playlists = document.getElementsByClassName("page")[2];
-let crear = document.getElementsByClassName("page")[3];
-let search = document.getElementsByClassName("page")[4];
-let perfil_pag = document.getElementsByClassName("page")[5];
-let playlist = document.getElementsByClassName("page")[6];
-let artista_pag = document.getElementsByClassName("page")[7];
-let usuarios = document.getElementsByClassName("page")[8];
-let cuenta_pag = document.getElementsByClassName("page")[9];
-let lyrics_pag = document.getElementsByClassName("page")[10];
-let queue_pag = document.getElementsByClassName("page")[11];
-let allPages = [home_pag, discover, mis_playlists, crear, search, perfil_pag, playlist, artista_pag, usuarios, cuenta_pag, lyrics_pag, queue_pag];
+const HOME_PAGE = document.getElementsByClassName("musica")[0];
+const DISCOVER_PAGE = document.getElementsByClassName("page")[0];
+const GENRE_PAGE = document.getElementsByClassName("page")[1];
+const PLAYLISTS_PAGE = document.getElementsByClassName("page")[2];
+const CREAR_PAGE = document.getElementsByClassName("page")[3];
+const SEARCH_PAGE = document.getElementsByClassName("page")[4];
+const PERFIL_PAGE = document.getElementsByClassName("page")[5];
+const CONTENT_PLAYLIST_PAGE = document.getElementsByClassName("page")[6];
+const ARTISTA_PAGE = document.getElementsByClassName("page")[7];
+const USUARIO_PAGE = document.getElementsByClassName("page")[8];
+const CUENTA_PAGE = document.getElementsByClassName("page")[9];
+const LYRICS_PAGE = document.getElementsByClassName("page")[10];
+const QUEUE_PAGE = document.getElementsByClassName("page")[11];
+const PAGES = [HOME_PAGE, DISCOVER_PAGE, PLAYLISTS_PAGE, CREAR_PAGE, SEARCH_PAGE, PERFIL_PAGE, CONTENT_PLAYLIST_PAGE, ARTISTA_PAGE, USUARIO_PAGE, CUENTA_PAGE, LYRICS_PAGE, QUEUE_PAGE];
 
 
 let player = document.getElementsByClassName("pie")[0];
 let player_cancion = document.getElementById("cancion_actual");
-console.log(player_cancion.innerHTML);
 if (player_cancion.innerHTML === "Canción actual"){
     player.style.visibility = 'hidden';
 }
 
 // Funciones de cambiar de página
-export function see_page(page) {
-    for (let i = 0; i < allPages.length; i++) {
+function see_page(page) {
+    historial.push(page)
+    for (let i = 0; i < PAGES.length; i++) {
         if (i===page){
-            allPages[i].style.visibility = 'visible';
+            PAGES[i].style.visibility = 'visible';
             if (i===2){
                 listas_display();
             }
@@ -37,7 +36,7 @@ export function see_page(page) {
                 search.innerHTML='';
 
                 // Crear lista de reproducción
-                misListas.push({nombre: "Nueva lista de reproducción " + (misListas.length+1),
+                LISTASREPRODUCCION.push({nombre: "Nueva lista de reproducción " + (LISTASREPRODUCCION.length+1),
                     canciones: [],
                     // audio: [],
                     imagen:'images/playlist.png'});
@@ -63,16 +62,16 @@ export function see_page(page) {
             }
 
         }else {
-            allPages[i].style.visibility = 'hidden';
+            PAGES[i].style.visibility = 'hidden';
         }
     }
-    genre.style.visibility = 'hidden';
+    GENRE_PAGE.style.visibility = 'hidden';
 }
 
 function genre_page(gen) {
-    genre.style.visibility = 'visible';
-    for (let i = 0; i < allPages.length; i++) {
-        allPages[i].style.visibility = 'hidden';
+    GENRE_PAGE.style.visibility = 'visible';
+    for (let i = 0; i < PAGES.length; i++) {
+        PAGES[i].style.visibility = 'hidden';
     }
     genre_content(gen)
 }
@@ -205,17 +204,11 @@ function genre_content(genero){
     let contenido = document.getElementsByClassName("content")[0];
     contenido.innerHTML = "";
     cover.src = allGeneros[genero].imagen;
-    console.log(cover);
     titulo.innerHTML = allGeneros[genero].name;
     for (let i = 0; i < allMusic.length; i++) {
         if (allGeneros[genero].canciones.includes(allMusic[i].name)) {
             contenido.innerHTML += "<div class='cancion'\n>\n" +
-                " <div class='cancion_container'>\n" +
-                "    <img src=" + allMusic[i].img + " alt='cancion_"+ allMusic[i].name +"' onclick='alertas()'>\n" +
-                "<button type='button' onclick='chooseMusic(allMusic"+(i+1)+")'>"+
-                "    <i class='fa-regular fa-circle-play'></i>"+
-                "</button>"+
-                " </div>\n" +
+                cancion_container_script(i)+
                 " <div class='titulo_artista'>\n" +
                 "    <p onclick='alertas()'>" + allMusic[i].name + "<br> "+allMusic[i].artist +" </p>\n" +
                 " </div>\n" +

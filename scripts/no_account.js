@@ -28,7 +28,6 @@ function genre_content(genero){
     let contenido = document.getElementsByClassName("content")[0];
     contenido.innerHTML = "";
     cover.src = allGeneros[genero].imagen;
-    console.log(cover);
     titulo.innerHTML = allGeneros[genero].name;
     for (let i = 0; i < allMusic.length; i++) {
         if (allGeneros[genero].canciones.includes(allMusic[i].name)) {

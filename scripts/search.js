@@ -23,29 +23,14 @@ function buscar(){
     for(let i=0; i<allMusic.length; i++){
         let fav = '';
         let index_artist = 0;
-        if( allMusic[i].fav === true){
-            fav = "fa-solid fa-heart";
+        isFavorite(i, fav);
 
-        }else{
-            fav = "fa-regular fa-heart";
-        }
-
-        for(let j=0; j<allArtistas.length; j++){
-            if (allMusic[i].artist === allArtistas[j].name){
-                index_artist = allArtistas[j].index;
-            }
-        }
+        index_artist = indexArtist(i, index_artist);
 
         if (filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value)){
             search.innerHTML += "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
-                "    <div class='cancion_container'>" +
-                "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
-                // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(allMusic" +(i+1)+ ")'>\n" +
-                "                    <i class='fa-regular fa-circle-play'></i>\n" +
-                "                </button>\n" +
-                "    </div>\n" +
+                cancion_container_script(i) +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
                 "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista_search' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +

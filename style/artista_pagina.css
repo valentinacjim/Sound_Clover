@@ -13,7 +13,7 @@
 .fondo{
     height: 20vh;
     width: 100%;
-    /*background-color: rebeccapurple;*/
+    /* background-color: rebeccapurple; */
 }
 
 /*1220.4 x 216*/
@@ -48,11 +48,12 @@
 
 
 .artista-foto-perfil{
-    /*background-color: white;*/
+    /* background-color: white; */
     width:12.5%;
     height: 25%;
     position: absolute;
-    margin-top: -7%;
+    margin-top: -10%;
+    margin-left: -2em
 }
 
 #perfil-artista{
@@ -60,7 +61,7 @@
     width:100%;
     height: auto;
     margin-left: 25%;
-    /*background-color: white;*/
+    /* background-color: white; */
     position: absolute;
     z-index: 4;
 
@@ -68,16 +69,21 @@
 
 .nombre-artista{
     height: 10vh;
-    background-color: #212121;
+    /* background-color: #212121; */
     font-size: 2em;
     font-family: "Copperplate", fantasy;
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: 1em;
+    right: 0.25em;
     text-align: center;
     z-index: 3;
     text-overflow: ellipsis;
-    overflow: hidden;
-    padding-left: 10%;
+    /* overflow: hidden; */
+    /* padding-left: 10%; */
+    margin-bottom: 0;
+    /* font-style: italic; */
+    /* border: #323232; */
+    
 }
 
 
@@ -100,7 +106,7 @@
 
 .artista-canciones{
     min-height:45%;
-    background-color: #323232;
+    /* background-color: #323232; */
     margin: auto;
     border-top: black solid 1px;
     padding-left: 1em;
@@ -110,4 +116,29 @@
     color: black;
     text-align: center;
 
+}
+
+.album{
+    height: 30vh;
+    width: 15%;
+    transition: transform .2s; /* Animación */
+    /* background-position: center center; */
+    min-width: 100px;
+    padding: 15px;
+    /* background-color: #323232; */
+    margin: 1%;
+    /* border-radius: 30px; */
+    
+}
+
+.album_nombre{
+    font-size: 0.5em;
+    font-family: "Copperplate", fantasy;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* background-color: #323232; */
 }

@@ -49,13 +49,13 @@ function perfil(){
     // Sección listas de reproducción
     let listas_perfil = document.getElementsByClassName('seccion_imagenes_listas')[0];
     listas_perfil.innerHTML = '';
-    for (let index=1; index<=misListas.length; index++) {
+    for (let index=1; index<=LISTASREPRODUCCION.length; index++) {
         listas_perfil.innerHTML += '<div class = "cancion" onclick="lista_reproduccion('+ (index-1) +')">\n' +
             '            <div class="cancion_container" >\n' +
-            '              <img alt="cancion" src=' + misListas[index-1].imagen + '>\n' +
+            '              <img alt="cancion" src=' + LISTASREPRODUCCION[index-1].imagen + '>\n' +
             '             </div>\n' +
             '            <div class = "titulo_artista">\n' +
-            '               <p>' + misListas[index-1].nombre + '</p>' +
+            '               <p>' + LISTASREPRODUCCION[index-1].nombre + '</p>' +
             '            </div>\n' +
             '          </div>';
 

@@ -1,8 +1,8 @@
 // Módulo para el reproductor
 
-const SHUFFLE = false;
+let  shuffle = false;
 const MODES = ["NO_REPEAT", "REPEAT_LIST", "REPEAT_SONG"];
-const MODE_PLAYER = MODES[0];
+let  mode_player = MODES[0];
 
 
 // Cargar información de la canción
@@ -25,15 +25,15 @@ function loadMusic(indexNumb){
 // Función para pasar a la siguiente canción
 function nextMusic() {
 
-    if (SHUFFLE === true){
+    if (shuffle === true){
         musicIndex = Math.floor(Math.random() * list.length) + 1;
     }
     else {
-        if (musicIndex === list.length && MODE_PLAYER === MODES[1]) {
+        if (musicIndex === list.length && mode_player === MODES[1]) {
             musicIndex = 1;
-        } else if (musicIndex === list.length && MODE_PLAYER === MODES[0]) {
+        } else if (musicIndex === list.length && mode_player === MODES[0]) {
             musicIndex = Math.floor(Math.random() * list.length) + 1;
-        } else if (musicIndex === list.length && MODE_PLAYER !== MODES[2]) {
+        } else if (musicIndex === list.length && mode_player !== MODES[2]) {
             musicIndex++;
         } else{
             musicIndex++;
@@ -50,15 +50,15 @@ function nextMusic() {
 
 // Función para pasar a la canción anterior
 function prevMusic() {
-    if (SHUFFLE === true){
+    if (shuffle === true){
         musicIndex = Math.floor(Math.random() * list.length) + 1;
     }else {
-        if (musicIndex === 1 && MODE_PLAYER === MODES[1]) {
+        if (musicIndex === 1 && mode_player === MODES[1]) {
             musicIndex = list.length;
-        } else if (musicIndex === 1 && MODE_PLAYER === MODES[0]) {
+        } else if (musicIndex === 1 && mode_player === MODES[0]) {
             musicIndex = Math.floor(Math.random() * list.length) + 1;
         }
-        else if (musicIndex === 1 && MODE_PLAYER !== MODES[2]) {
+        else if (musicIndex === 1 && mode_player !== MODES[2]) {
             musicIndex--;
         } else {
             musicIndex--;
@@ -75,7 +75,7 @@ function prevMusic() {
 // Función para seleccionar una canción
 function chooseMusic(lista, indexNumb){
     list = lista
-    lyrics_pag.style.visibility = 'hidden';
+    LYRICS_PAGE.style.visibility = 'hidden';
     let player = document.getElementsByClassName("pie")[0];
     player.style.visibility = 'visible';
 
@@ -106,11 +106,11 @@ function reproduccion(){
         document.querySelector(".caratula").classList.add("active");
     }
     if(musicPlaying.ended === true){
-        if (MODE_PLAYER === 'repeat list'){
+        if (mode_player === 'repeat list'){
             nextMusic();
-        } else if (MODE_PLAYER === 'repeat song'){
+        } else if (mode_player === 'repeat song'){
             musicPlaying.play();
-        } else if (MODE_PLAYER === 'no repeat'){
+        } else if (mode_player === 'no repeat'){
             nextMusic();
         }
         queue_content();
@@ -143,28 +143,28 @@ function favorito(){
 
 function shuffle_music(){
     let icono = document.getElementById('shuffle');
-    if(SHUFFLE === false){
+    if(shuffle === false){
         icono.style.color = '#8f0fe1'
-        SHUFFLE = true;
+        shuffle = true;
     }else{
         icono.style.color = '#ebe0ff';
-        SHUFFLE = false;
+        shuffle = false;
     }
 }
 
 function mode(){
     let icono = document.getElementById('repeat');
     let repeat_song = document.getElementById('repeat_song');
-    if (MODE_PLAYER === 'no repeat'){
+    if (mode_player === 'no repeat'){
         icono.style.color = '#8f0fe1'
-        MODE_PLAYER = 'repeat list';
-    }else if(MODE_PLAYER === 'repeat list'){
+        mode_player = 'repeat list';
+    }else if(mode_player === 'repeat list'){
         repeat_song.style.visibility = 'visible';
-        MODE_PLAYER = 'repeat song';
-    } else if (MODE_PLAYER === 'repeat song'){
+        mode_player = 'repeat song';
+    } else if (mode_player === 'repeat song'){
         icono.style.color = '#ebe0ff';
         repeat_song.style.visibility = 'hidden';
-        MODE_PLAYER = 'no repeat';
+        mode_player = 'no repeat';
     }
 }
 
@@ -187,9 +187,9 @@ async function displaylyrics(){
     let musicPlaying = document.getElementById("main_audio");
     // console.log(lyrics);
     let lrc;
-    if (lyrics_pag.style.visibility === 'hidden') {
+    if (LYRICS_PAGE.style.visibility === 'hidden') {
         icono.style.color = '#8f0fe1'
-        lyrics_pag.style.visibility = 'visible';
+        LYRICS_PAGE.style.visibility = 'visible';
 
         // abrir archivo lrc
         let lrc_file = await fetch(allMusic[musicIndex-1].lrc);
@@ -222,7 +222,7 @@ async function displaylyrics(){
         lyrics.innerHTML = lrc_obj[lrc_time_current];
     } else {
         icono.style.color = '#ebe0ff';
-        lyrics_pag.style.visibility = 'hidden';
+        LYRICS_PAGE.style.visibility = 'hidden';
     }
 
 }
@@ -272,12 +272,7 @@ function queueElementFunction(i, index_artist, fav) {
 
         "    <div class='queue_container'>\n" +
 
-        "    <div class='cancion_container'>" +
-        "        <img alt='cancion' src=" + list[i].img + ">\n" +
-        "                <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
-        "                    <i class='fa-regular fa-circle-play'></i>\n" +
-        "                </button>\n" +
-        "    </div>\n" +
+        cancion_container_script(i) +
         "    </div>\n" +
         "    <div class='titulo_artista_busq'>\n" +
         "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +

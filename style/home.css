@@ -414,7 +414,7 @@ input{
     font-size: 15px;
     border: 1px solid #ebe0ff;
     overflow: hidden;
-    background-image: url(../../Sound_Clover/images/search-icon.png);
+    background-image: url(../images/search-icon.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: 45% 50%;

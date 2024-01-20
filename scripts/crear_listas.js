@@ -7,7 +7,7 @@ function anadir_imagen(){
     if (imagen!=='') {
         LISTASREPRODUCCION[LISTASREPRODUCCION.length - 1].imagen = 'images/playlist/' + imagen;
     }
-    // console.log(misListas[misListas.length-1].imagen)
+    // console.log(LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].imagen)
 
 }
 
@@ -50,13 +50,7 @@ function buscar_anadir(){
             (allMusic[i].name !== LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones)){
             search.innerHTML += "<div class='busq1'>\n" +
                 "    <div class='busq_container1'>\n" +
-                "    <div class='cancion_container'>" +
-                "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
-                // "            <div class='overlay_fav'>\n" +
-                "                <button type='button' onclick='chooseMusic(allMusic" +(i+1)+ ")'>\n" +
-                "                    <i class='fa-regular fa-circle-play'></i>\n" +
-                "                </button>\n" +
-                "    </div>\n" +
+                cancion_container_script(i) +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
                 "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
@@ -85,8 +79,8 @@ function agregar_a_lista(index){
     let eliminar = document.getElementById(allMusic[index].name +"_agregar");
     // let agregar = []
     LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones.push(allMusic[index].name);
-    // misListas[misListas.length-1].audio.push(allMusic[index].audio);
-    // console.log(misListas[misListas.length-1].canciones);
+    // LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].audio.push(allMusic[index].audio);
+    // console.log(LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones);
     alert("Song added to the playlist");
     eliminar.className = 'fa-solid fa-check';
 }

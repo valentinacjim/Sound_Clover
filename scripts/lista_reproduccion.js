@@ -6,7 +6,7 @@ function lista_reproduccion(index) {
 
     // let lista_reproduccion = document.getElementsByClassName('lista_reproducción')[0];
 
-    playlist.style.visibility = 'visible';
+    PLAYLISTS_PAGE.style.visibility = 'visible';
 
     let playlist_content = document.getElementsByClassName("playlist_content")[0];
 
@@ -40,13 +40,7 @@ function lista_reproduccion(index) {
                     "</button>" +
                     "    <div class='busq_container1'>\n" +
 
-                    "    <div class='cancion_container'>" +
-                    "        <img alt='cancion' src=" + allMusic[i].img+ ">\n" +
-                    // "            <div class='overlay_fav'>\n" +
-                    "                <button type='button' onclick='chooseMusic(allMusic" +(i+1)+ ")'>\n" +
-                    "                    <i class='fa-regular fa-circle-play'></i>\n" +
-                    "                </button>\n" +
-                    "    </div>\n" +
+                    cancion_container_script(i) +
                     "    </div>\n" +
                     "    <div class='titulo_artista_busq'>\n" +
                     "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
@@ -63,11 +57,11 @@ function lista_reproduccion(index) {
     }else{
 
 
-    cover_playlist.src = misListas[index].imagen;
-    nombre_playlist.innerHTML = misListas[index].nombre;
+    cover_playlist.src = LISTASREPRODUCCION[index].imagen;
+    nombre_playlist.innerHTML = LISTASREPRODUCCION[index].nombre;
     for(let i=0; i<(allImagePlaylists.length-1); i++){
-        // console.log(misListas[index].imagen);
-        if(misListas[index].imagen === allImagePlaylists[i].name){
+        // console.log(LISTASREPRODUCCION[index].imagen);
+        if(LISTASREPRODUCCION[index].imagen === allImagePlaylists[i].name){
 
             background.style.backgroundColor = allImagePlaylists[i].color;
             // crear.style.backgroundColor = allImagePlaylists[i].color;
@@ -91,7 +85,7 @@ function back_listas(){
 // Función para eliminar una canción de una lista de reproducción
 function eliminar_canc(index_list, index_canc){
     //let eliminado = document.getElementById(allMusic[index_canc].name +"_borrar");
-    misListas[index_list].canciones.splice(index_canc, 1);
+    LISTASREPRODUCCION[index_list].canciones.splice(index_canc, 1);
     alert('Song deleted from the playlist');
     //eliminado.display = 'none';
     let playlist_content = document.getElementsByClassName("playlist_content")[0];
@@ -108,7 +102,7 @@ function playlist_contenido(index, playlist_content) {
         index_artist = indexArtist(i, index_artist);
 
         // Si la canción está en la lista de reproducción
-        if (misListas[index].canciones.includes(allMusic[i].name)) {
+        if (LISTASREPRODUCCION[index].canciones.includes(allMusic[i].name)) {
             playlist_content.innerHTML += "" +
                 "<div class='busq2' id='" + allMusic[i].name + "_borrar'\n>\n" +
 
@@ -133,7 +127,7 @@ function playlist_contenido(index, playlist_content) {
                 "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                 "    </p>\n" +
                 "    <p class='minus'>\n" +
-                "        <i class='fa-solid fa-minus' onclick='eliminar_canc(" + index + "," + misListas[index].canciones.indexOf(allMusic[i].name) + ")'></i>\n" +
+                "        <i class='fa-solid fa-minus' onclick='eliminar_canc(" + index + "," + LISTASREPRODUCCION[index].canciones.indexOf(allMusic[i].name) + ")'></i>\n" +
                 "    </p>\n" +
                 "</div>" +
                 "</div>"
@@ -168,7 +162,7 @@ function reproduccion_playlist(){
     }
     else{
     for(let i=0; i<allMusic.length; i++){
-        if(misListas[play_reproducir].canciones.includes(allMusic[i].name)){
+        if(LISTASREPRODUCCION[play_reproducir].canciones.includes(allMusic[i].name)){
             playlist.push(allMusic[i]);
         }
     }
