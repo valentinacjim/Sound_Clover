@@ -596,11 +596,11 @@ main h1{
 }
 
 .music img{
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     /*z-index: 1;*/
     position: absolute;
-    margin: 4em 0 0 0.5em;
+    margin: 3em 0 0 -0.25em;
     opacity: 1;
     transform: rotate(-15deg);
 }

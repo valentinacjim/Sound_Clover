@@ -17,7 +17,7 @@ function artista_pagina(indexFav){
             '<img src=' + allArtistas[indexFav-1].albumes_foto[al-1] + ' alt="cancion">' +
             '</div>  ' +
             '<div class = "album_nombre"> ' +
-            '<p>' + allArtistas[indexFav-1].albumes[al-1] + '<br>' + allArtistas[indexFav-1].name +'</p> ' +
+            '<p>' + allArtistas[indexFav-1].albumes[al-1] +'</p> ' +
             '</div> ' +
             '</div>';
 

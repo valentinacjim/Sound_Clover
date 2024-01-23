@@ -1318,7 +1318,7 @@ let allArtistas = [
     },
     {
         perfil: "images/artist_profile/bad_bunny.jpg",
-        foto_fondo: "images/banner/un_verano_sin_ti.jpg",
+        foto_fondo: "images/banner/bad-bunny.jpeg",
         name: "Bad Bunny",
         albumes: ["Un verano sin ti", "YHLQMDLG", "El último tour del mundo", "X 100pre", "Oasis", "El Conejo Malo",
             "Las que no iban a salir"],
@@ -1352,7 +1352,7 @@ let allArtistas = [
     },
     {
         perfil: "images/artist_profile/harry_styles.jfif",
-        foto_fondo: "images/banner/harry_styles.jpg",
+        foto_fondo: "images/banner/harry_styles.jpeg",
         name: "Harry Styles",
         albumes: ["Harry's House", "Harry Styles", "Fine Line"],
         albumes_foto:["images/harrys_house.jpg", "images/artist_profile/harry_styles.jfif", "images/Harry_Styles_Fine_Line.png"],
@@ -1375,7 +1375,6 @@ let allArtistas = [
         albumes: [],
         albumes_foto:[],
         index:8,
-
 
     },
     {

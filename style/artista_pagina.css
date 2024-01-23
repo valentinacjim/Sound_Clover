@@ -11,15 +11,18 @@
 }
 
 .fondo{
-    height: 20vh;
+    height:35vh;
     width: 100%;
     /* background-color: rebeccapurple; */
 }
 
-/*1220.4 x 216*/
+/*2660 x 737*/
+/*1330 x 368.5*/
+/*1240 x 260*/
 #fondo-artista{
     height: 100%;
     width: 100%;
+    /* box-shadow: 2em 2em 2em 2em rgb(244, 12, 12); */
 }
 
 .pass_pag{
@@ -64,6 +67,7 @@
     /* background-color: white; */
     position: absolute;
     z-index: 4;
+    box-shadow: 0 0 0.25em 0.25em rgb(0, 0, 0, 0.5);
 
 }
 
@@ -73,7 +77,7 @@
     font-size: 2em;
     font-family: "Copperplate", fantasy;
     position: absolute;
-    top: 1em;
+    top: 2.75em;
     right: 0.25em;
     text-align: center;
     z-index: 3;
@@ -83,6 +87,7 @@
     margin-bottom: 0;
     /* font-style: italic; */
     /* border: #323232; */
+    text-shadow: 3px 3px black;
     
 }
 
@@ -95,12 +100,13 @@
     flex-wrap: wrap;
     color: black;
     text-align: center;
+    
 
 }
 
 
 .artista-albumes-seccion img{
-    width: 75%;
+    width: 100%;
     position: inherit;
 }
 
