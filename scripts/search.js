@@ -21,20 +21,16 @@ function buscar(){
     }
 
     for(let i=0; i<allMusic.length; i++){
-        let fav = '';
-        let index_artist = 0;
-        isFavorite(i, fav);
-
-        index_artist = indexArtist(i, index_artist);
-
         if (filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value)){
+            let fav = isFavorite(i, fav);
+            let index_artist = indexArtist(allMusic, i, index_artist);
+
+            
             search.innerHTML += "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
                 cancion_container_script(i) +
                 "    </div>\n" +
-                "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p id='artista_search' onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
-                "    </div>\n" +
+                name_index_artist_script(allMusic, i, index_artist, true) +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +
                 "        <i class='"+fav+"' id='"+ allMusic[i].name+"_search' onclick='agregar_fav("+i+")'>  </i>\n" +

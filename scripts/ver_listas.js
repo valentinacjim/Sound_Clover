@@ -3,11 +3,11 @@
 // Función para mostrar las listas del usuario
 function listas_display() {
     let playlist = document.getElementsByClassName("playlists")[0];
-    playlist.innerHTML = "<div class=\"playlist\" onclick='lista_reproduccion(-1)'>\n" +
-        "          <div class=\"play_canc_container\">\n" +
-        "          <img alt='playlist' src=\"images/playlist_fav.png\">\n" +
+    playlist.innerHTML = "<div class='playlist' onclick='lista_reproduccion(-1)'>\n" +
+        "          <div class='play_canc_container'>\n" +
+        "          <img alt='playlist' src='images/playlist_fav.png'>\n" +
         "          </div>\n" +
-        "          <div class=\"titulo_playlist\">\n" +
+        "          <div class='titulo_playlist'>\n" +
         "            <p>Favorites songs</p>\n" +
         "          </div>\n" +
         "        </div>";

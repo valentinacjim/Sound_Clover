@@ -40,9 +40,7 @@ function buscar_anadir(){
     } 
 
     for(let i=0; i<allMusic.length; i++){
-        let index_artist = 0;
-
-        index_artist = indexArtist(i, index_artist);
+        let index_artist = indexArtist(allMusic, i, index_artist);
 
         // Buscar canciones que coincidan con el valor introducido
         canciones_listas = LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones;
@@ -52,9 +50,7 @@ function buscar_anadir(){
                 "    <div class='busq_container1'>\n" +
                 cancion_container_script(i) +
                 "    </div>\n" +
-                "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist+ ") '>" +allMusic[i].artist+"</p>\n" +
-                "    </div>\n" +
+                name_index_artist_script(allMusic, i, index_artist) +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +
                 "        <i class='fa-solid fa-plus' id='"+ allMusic[i].name+"_agregar' onclick='agregar_a_lista("+i+")'>  </i>\n" +
@@ -65,14 +61,7 @@ function buscar_anadir(){
     }
 }
 
-function indexArtist(i, index_artist) {
-    for (let j = 0; j < allArtistas.length; j++) {
-        if (allMusic[i].artist === allArtistas[j].name) {
-            index_artist = allArtistas[j].index;
-        }
-    }
-    return index_artist;
-}
+
 
 // Función para agregar canciones a la lista de reproducción
 function agregar_a_lista(index){

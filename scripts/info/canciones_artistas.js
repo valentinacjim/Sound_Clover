@@ -46,7 +46,7 @@ let allMusic = [
     },
     {
         name: "Quevedo: Bzrp Music Session",
-        artist:"Bzrp, Quevedo",
+        artist:["Bzrp", "Quevedo"],
         img: "images/quevedo_music_session.jpg",
         audio:"audio/QUEVEDO_BZRP_Music_Sessions_52.mp3",
         fav:false,
@@ -60,7 +60,7 @@ let allMusic = [
     },
     {
         name: "Me Porto Bonito",
-        artist:"Bad Bunny ft. Chencho Corleone",
+        artist:["Bad Bunny","Chencho Corleone"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Bad_Bunny_Me_Porto_Bonito_(ft._Chencho_Corleone).mp3",
         fav:false,
@@ -75,7 +75,7 @@ let allMusic = [
     },
     {
         name: "Ojitos Lindos",
-        artist:"Bad Bunny ft. Bomba Estéreo",
+        artist:["Bad Bunny","Bomba Estéreo"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Ojitos_lindos.mp3",
         fav:false,
@@ -710,13 +710,13 @@ let allMusic = [
         fav:false,
     },{
         name: "Canción Con Yandel",
-        artist:"Bad Bunny ft. Yandel",
+        artist:["Bad Bunny","Yandel"],
         img: "images/las-que-no-iban-a-salir.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Pa’ Romperla",
-        artist:"Bad Bunny ft. Don Omar",
+        artist:["Bad Bunny","Don Omar"],
         img: "images/las-que-no-iban-a-salir.jpg",
         audio:"audio/",
         fav:false,
@@ -746,7 +746,7 @@ let allMusic = [
         fav:false,
     },{
         name: "Tarot",
-        artist:"Bad Bunny ft. Jhay Cortez",
+        artist:["Bad Bunny","Jhay Cortez"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Tarot_BB.mp3",
         fav:false,
@@ -758,7 +758,7 @@ let allMusic = [
         fav:false,
     },{
         name: "La corriente",
-        artist:"Bad Bunny ft. Tony Dize",
+        artist:["Bad Bunny", "Tony Dize"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Corriente_BB.mp3",
         fav:false,
@@ -770,7 +770,7 @@ let allMusic = [
         fav:false,
     },{
         name: "Party",
-        artist:"Bad Bunny ft. Rauw Alejandro",
+        artist:["Bad Bunny","Rauw Alejandro"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Bad_Bunny_Party.mp3",
         fav:false,
@@ -800,7 +800,7 @@ let allMusic = [
         fav:false,
     },{
         name: "Otro atardecer",
-        artist:"Bad Bunny ft. the Marías",
+        artist:["Bad Bunny","the Marías"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Bad_Bunny_Otro_Atardecer.mp3",
         fav:false,
@@ -812,7 +812,7 @@ let allMusic = [
         fav:false,
     },{
         name: "Andrea",
-        artist:"Bad Bunny ft. Buscabulla",
+        artist:["Bad Bunny","Buscabulla"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Bad_Bunny_Andrea.mp3",
         fav:false,
@@ -842,13 +842,13 @@ let allMusic = [
         fav:false,
     },{
         name: "Soltera (Remix)",
-        artist:"Bad Bunny ft. Daddy Yankee & Lunay",
+        artist:["Bad Bunny","Daddy Yankee","Lunay"],
         img: "images/epico.jpg",
         audio:"audio/soltera_remix.mp3",
         fav:false,
     },{
         name: "Tú no vive así",
-        artist:"Arcangel x Bad Bunny X Dj Luian X Mambo Kingz",
+        artist:["Arcangel","Bad Bunny","Dj Luian","Mambo Kingz"],
         img: "images/tu_no_vive_asi.jpg",
         audio:"audio/tu_no_vive_asi.mp3",
         fav:false,
@@ -1034,19 +1034,19 @@ let allMusic = [
         fav:false,
     },{
         name: "Guillotine IV (The Final Chapter)",
-        artist:"Falling In Reverse, Massabo, Jacky Vincent",
+        artist:["Falling In Reverse","Massabo","Jacky Vincent"],
         img: "images/just_like_you.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Stay Away",
-        artist:"Falling In Reverse, Baskette, Thomas Denny",
+        artist:["Falling In Reverse", "Baskette", "Thomas Denny"],
         img: "images/just_like_you.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Wait and See",
-        artist:"Falling In Reverse, Massabo",
+        artist:["Falling In Reverse", "Massabo"],
         img: "images/just_like_you.jpg",
         audio:"audio/",
         fav:false,
@@ -1058,7 +1058,7 @@ let allMusic = [
         fav:false,
     },{
         name: "My Heart's To Blame",
-        artist:"Falling In Reverse, Massabo",
+        artist:["Falling In Reverse", "Massabo"],
         img: "images/just_like_you.jpg",
         audio:"audio/",
         fav:false,
@@ -1160,7 +1160,7 @@ let allMusic = [
         fav:false,
     },{
         name: "Him & I",
-        artist:"G-Eazy, Halsey",
+        artist:["G-Eazy", "Halsey"],
         img: "images/beautiful&damned.jpg",
         audio:"audio/",
         fav:false,
@@ -1208,7 +1208,7 @@ let allMusic = [
         fav:false,
     },{
         name: "11 Minutes",
-        artist:"Yungblud, Halsey",
+        artist:["Yungblud", "Halsey"],
         img: "images/11minutes.jpg",
         audio:"audio/",
         fav:false,
@@ -1293,16 +1293,353 @@ let allMusic = [
     }
 ]
 
+let allAlbumes = [
+    {
+        name: "Three Cheers for Sweet Revenge",
+        artist:"My Chemical Romance",
+        img: "images/three_cheers.jpg",
+        fav:false
+    },{
+        name: "Black Parade",
+        artist:"My Chemical Romance",
+        img: "images/black_parade.jpg",
+        fav:false
+    },{
+        name: "Danger Days: The True Lives of the Fabulous Killjoys",
+        artist:"My Chemical Romance",
+        img: "images/danger_days.jfif",
+        fav:false
+    },{
+        name: "I Brought You My Bullets, You Brought Me Your Love",
+        artist:"My Chemical Romance",
+        img: "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg",
+        fav:false
+    },{
+        name: "Conventional Weapons",
+        artist:"My Chemical Romance",
+        img: "images/Mychemconvweap.jpg",
+        fav:false
+    },{
+        name: "Blurryface",
+        artist:"Twenty Øne Piløts",
+        img: "images/blurryface.jpg",
+        fav:false
+    },{
+        name: "Scaled and Icy",
+        artist:"Twenty Øne Piløts",
+        img: "images/scaled.jpg",
+        fav:false
+    },{
+        name: "Twenty One Pilots",
+        artist:"Twenty Øne Piløts",
+        img: "images/top.jpg",
+        fav:false
+    },{
+        name: "Trench",
+        artist:"Twenty Øne Piløts",
+        img: "images/trench.jpg",
+        fav:false
+    },{
+        name: "Vessel",
+        artist:"Twenty Øne Piløts",
+        img: "images/migraine.png",
+        fav:false
+    },{
+        name: "Regional att Best",
+        artist:"Twenty Øne Piløts",
+        img: "images/twenty-one-pilots-regional-at-best.jpg",
+        fav:false
+    },{
+        name: "Un verano sin ti",
+        artist:"Bad Bunny",
+        img: "images/un_verano_sin_ti.jfif",
+        fav:false
+    },{
+        name: "YHLQMDLG",
+        artist:"Bad Bunny",
+        img: "images/YHLQMDLG.jfif",
+        fav:false
+    },{
+        name: "El último tour del mundo",
+        artist:"Bad Bunny",
+        img: "images/El_Ultimo_Tour_del_Mundo.png",
+        fav:false
+    },{
+        name: "X 100pre",
+        artist:"Bad Bunny",
+        img: "images/X100pre.jpg",
+        fav:false
+    },{
+        name: "Oasis",
+        artist:"Bad Bunny",
+        img: "images/oasis.jfif",
+        fav:false
+    },{
+        name: "El Conejo Malo",
+        artist:"Bad Bunny",
+        img: "images/elconejomalo.jfif",
+        fav:false
+    },{
+        name: "Las que no iban a salir",
+        artist:"Bad Bunny",
+        img: "images/las-que-no-iban-a-salir.jpg",
+        fav:false
+    },{
+        name: "5 Seconds of Summer",
+        artist:"5 Seconds of Summer",
+        img: "images/5_Seconds_of_Summer.jpg",
+        fav:false
+    },{
+        name: "Sounds Good Feels Good",
+        artist:"5 Seconds of Summer",
+        img: "images/Sounds_Good_Feels_Good.png",
+        fav:false
+    },{
+        name: "Youngblood",
+        artist:"5 Seconds of Summer",
+        img: "images/5-seconds-of-summer-youngblood.jpg.opdownload",
+        fav:false
+    },{
+        name: "Calm",
+        artist:"5 Seconds of Summer",
+        img: "images/5_Seconds_of_Summer_Calm.png",
+        fav:false
+    },{
+        name: "5SOS5",
+        artist:"5 Seconds of Summer",
+        img: "images/5_Seconds_of_Summer_-_5SOS5.png",
+        fav:false
+    },{
+        name: "5 Seconds of Summer (B-Sides and Rarities)",
+        artist:"5 Seconds of Summer",
+        img: "images/b_side.jfif",
+        fav:false
+    },{
+        name: "Queen",
+        artist:"Queen",
+        img: "images/LP_Label_Queen.jpg",
+        fav:false
+    },{
+        name: "Queen II",
+        artist:"Queen",
+        img: "images/QueenII.webp",
+        fav:false
+    },{
+        name: "A Night at the Opera",
+        artist:"Queen",
+        img: "images/night_at_the_opera.jpg",
+        fav:false
+    },{
+        name: "News of the World",
+        artist:"Queen",
+        img: "images/news_of_the_world.jpg",
+        fav:false
+    },{
+        name: "The Miracle",
+        artist:"Queen",
+        img: "images/the_miracle.jpg",
+        fav:false
+    },{
+        name: "Jazz",
+        artist:"Queen",
+        img: "images/Queen_Jazz.png",
+        fav:false
+    },{
+        name: "Hot Space",
+        artist:"Queen",
+        img: "images/hot_space.jpg",
+        fav:false
+    },{
+        name: "Innuendo",
+        artist:"Queen",
+        img: "images/innuendo.jpg",
+        fav:false
+    },{
+        name: "Made in Heaven",
+        artist:"Queen",
+        img: "images/made_in_heaven.jpg",
+        fav:false
+    },{
+        name: "A Day at the Races",
+        artist:"Queen",
+        img: "images/A_Day_at_the_Races_(Queen).jpg",
+        fav:false
+    },{
+        name: "A Kind of Magic",
+        artist:"Queen",
+        img: "images/kind_of_magic.jpg",
+        fav:false
+    },{
+        name: "The Works",
+        artist:"Queen",
+        img: "images/works.jpg",
+        fav:false
+    },{
+        name: "Sheer Heart Attack",
+        artist:"Queen",
+        img: "images/sheer_heart_attack.jpg",
+        fav:false
+    },{
+        name: "The Game",
+        artist:"Queen",
+        img: "images/The_Game.webp",
+        fav:false
+    },{
+        name: "Live Killers",
+        artist:"Queen",
+        img: "images/liveKillers.jpg",
+        fav:false
+    },{
+        name: "Live Magic",
+        artist:"Queen",
+        img: "images/live_magic.jpg",
+        fav:false
+    },{
+        name: "Queen at the Beeb",
+        artist:"Queen",
+        img: "images/Queen_At_The_Beeb.png",
+        fav:false
+    },{
+        name: "Harry's House",
+        artist:"Harry Styles",
+        img: "images/harrys_house.jpg",
+        fav:false
+    },{
+        name: "Harry Styles",
+        artist:"Harry Styles",
+        img: "images/artist_profile/harry_styles.jfif",
+        fav:false
+    },{
+        name: "Fine Line",
+        artist:"Harry Styles",
+        img: "images/Harry_Styles_Fine_Line.png",
+        fav:false
+    },{
+        name: "The Drug In Me Is You",
+        artist:"Falling In Reverse",
+        img: "images/The_Drug_in_Me_Is_You.jpg",
+        fav:false
+    },{
+        name: "Fashionably Late",
+        artist:"Falling In Reverse",
+        img: "images/fashionably_late.png",
+        fav:false
+    },{
+        name: "Just Like You",
+        artist:"Falling In Reverse",
+        img: "images/just_like_you.jpg",
+        fav:false
+    },{
+        name: "Coming Home",
+        artist:"Falling In Reverse",
+        img: "images/coming_home.jpg",
+        fav:false
+    },{
+        name: "If I Can't Have Love, I Want Power",
+        artist:"Halsey",
+        img: "images/If_I_Can't_Have_Love,_I_Want_Power_by_Halsey.png",
+        fav:false
+    },{
+        name: "Badlands",
+        artist:"Halsey",
+        img: "images/Badlands.jpg",
+        fav:false
+    },{
+        name: "Hopeless Fountain Kingdom",
+        artist:"Halsey",
+        img: "images/Hopeless_Fountain_Kingdom.png",
+        fav:false
+    },{
+        name: "Manic",
+        artist:"Halsey",
+        img: "images/Manic.jpg",
+        fav:false
+    },{
+        name: "Without Me",
+        artist:"Halsey",
+        img: "images/without_me.jpg",
+        fav:false
+    },{
+        name: "El mal querer",
+        artist:"Rosalía",
+        img: "images/mal_querer.jfif",
+        fav:false
+    },{
+        name: "Los Ángeles",
+        artist:"Rosalía",
+        img: "images/los_angeles.jpg",
+        fav:false
+    },{
+        name: "Motomami",
+        artist:"Rosalía",
+        img: "images/motomami.jpg",
+        fav:false
+    },{
+        name: "Sunset Season",
+        artist:"Conan Gray",
+        img: "images/sunset_season.jpg",
+        fav:false
+    },{
+        name: "Kid Krow",
+        artist:"Conan Gray",
+        img: "images/kid_krow.jpg",
+        fav:false
+    },{
+        name: "Superache",
+        artist:"Conan Gray",
+        img: "images/SUPERACHE.jfif",
+        fav:false
+    },{
+        name: "Impera",
+        artist: "Ghost B.C.",
+        img: "images/imperia.jpg",
+        fav:false
+    },{
+        name: "Infestissumam",
+        artist: "Ghost B.C.",
+        img: "images/infestissumam.jpg",
+        fav:false
+    },{
+        name: "Meliora",
+        artist: "Ghost B.C.",
+        img: "images/meliora.jpg",
+        fav:false
+    },{
+        name: "Prequelle",
+        artist: "Ghost B.C.",
+        img: "images/prequelle.jpg",
+        fav:false
+    },{
+        name: "Opus Eponymous",
+        artist: "Ghost B.C.",
+        img: "images/opus_eponymous.jpg",
+        fav:false
+    },{
+        name: "Ceremony and Devotion",
+        artist: "Ghost B.C.",
+        img: "images/ceremony_and_devotion.jpg",
+        fav:false
+    },{
+        name: "[MESSAGE FROM THE CLERGY]",
+        artist: "Ghost B.C.",
+        img: "images/ghost-message-from-the-clergy-Cover-Art.jpg",
+        fav:false
+    },{
+        name: "Seven Inches of Satanic Panic",
+        artist: "Ghost B.C.",
+        img: "images/mary_on_a_cross.jpg",
+        fav:false
+    }
+]
+
 let allArtistas = [
 
     {
         perfil: "images/artist_profile/mcr.jpg",
         foto_fondo: "images/banner/mcr.jpg",
         name: "My Chemical Romance",
-        albumes: ["Three Cheers for Sweet Revenge", "Black Parade", "Danger Days: The True Lives of the Fabulous Killjoys",
-            "I Brought You My Bullets, You Brought Me Your Love", "Conventional Weapons"],
-        albumes_foto:["images/three_cheers.jpg", "images/black_parade.jpg", "images/danger_days.jfif",
-            "images/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love_cover.jpg", "images/Mychemconvweap.jpg"],
+        albumes: allAlbumes.filter((album) => album.artist === "My Chemical Romance"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "My Chemical Romance" || cancion.artist.includes("My Chemical Romance"))),
         index:1,
 
     },
@@ -1310,9 +1647,8 @@ let allArtistas = [
         perfil: "images/artist_profile/top.png",
         foto_fondo: "images/banner/twenty-one-pilots.jpg",
         name: "Twenty Øne Piløts",
-        albumes: ["Blurryface", "Scaled and Icy", "Twenty One Pilots", "Trench", "Vessel", "Regional att Best"],
-        albumes_foto:["images/blurryface.jpg", "images/scaled.jpg", "images/top.jpg", "images/trench.jpg",
-            "images/migraine.png", "images/twenty-one-pilots-regional-at-best.jpg"],
+        albumes: allAlbumes.filter((album) => album.artist === "Twenty Øne Piløts"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Twenty Øne Piløts" || cancion.artist.includes("Twenty Øne Piløts"))),
         index:2,
 
     },
@@ -1320,19 +1656,16 @@ let allArtistas = [
         perfil: "images/artist_profile/bad_bunny.jpg",
         foto_fondo: "images/banner/bad-bunny.jpeg",
         name: "Bad Bunny",
-        albumes: ["Un verano sin ti", "YHLQMDLG", "El último tour del mundo", "X 100pre", "Oasis", "El Conejo Malo",
-            "Las que no iban a salir"],
-        albumes_foto:["images/un_verano_sin_ti.jfif","images/YHLQMDLG.jfif", "images/El_Ultimo_Tour_del_Mundo.png",
-            "images/X100pre.jpg", "images/oasis.jfif", "images/elconejomalo.jfif", "images/las-que-no-iban-a-salir.jpg"],
+        albumes: allAlbumes.filter((album) => album.artist === "Bad Bunny"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Bad Bunny" || cancion.artist.includes("Bad Bunny"))),
         index:3,
     },
     {
         perfil: "images/artist_profile/5sos.jpg",
         foto_fondo: "images/banner/5sos.jpg",
         name: "5 Seconds of Summer",
-        albumes: ["5 Seconds of Summer", "Sounds Good Feels Good", "Youngblood", "Calm", "5SOS5", "5 Seconds of Summer (B-Sides and Rarities)"],
-        albumes_foto:["images/5_Seconds_of_Summer.jpg", "images/Sounds_Good_Feels_Good.png", "images/5-seconds-of-summer-youngblood.jpg.opdownload",
-            "images/5_Seconds_of_Summer_Calm.png", "images/5_Seconds_of_Summer_-_5SOS5.png", "images/b_side.jfif"],
+        albumes: allAlbumes.filter((album) => album.artist === "5 Seconds of Summer"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "5 Seconds of Summer" || cancion.artist.includes("5 Seconds of Summer"))),
         index:4,
 
     },
@@ -1340,13 +1673,8 @@ let allArtistas = [
         perfil: "images/artist_profile/queen.jpg",
         foto_fondo: "images/banner/queen.jpg",
         name: "Queen",
-        albumes: ["Queen", "Queen II", "A Night at the Opera", "News of the World", "The Miracle", "Jazz", "Hot Space",
-            "Innuendo", "Made in Heaven", "A Day at the Races", "A Kind of Magic", "The Works", "Sheer Heart Attack",
-            "The Game", "Live Killers", "Live Magic", "Queen at the Beeb"],
-        albumes_foto:["images/LP_Label_Queen.jpg", "images/QueenII.webp", "images/night_at_the_opera.jpg", "images/news_of_the_world.jpg",
-            "images/the_miracle.jpg","images/Queen_Jazz.png", "images/hot_space.jpg", "images/innuendo.jpg", "images/made_in_heaven.jpg",
-            "images/A_Day_at_the_Races_(Queen).jpg", "images/kind_of_magic.jpg", "images/works.jpg", "images/sheer_heart_attack.jpg",
-            "images/The_Game.webp", "images/liveKillers.jpg", "images/live_magic.jpg", "images/Queen_At_The_Beeb.png"],
+        albumes: allAlbumes.filter((album) => album.artist === "Queen"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Queen" || cancion.artist.includes("Queen"))),
         index:5,
 
     },
@@ -1354,8 +1682,8 @@ let allArtistas = [
         perfil: "images/artist_profile/harry_styles.jfif",
         foto_fondo: "images/banner/harry_styles.jpeg",
         name: "Harry Styles",
-        albumes: ["Harry's House", "Harry Styles", "Fine Line"],
-        albumes_foto:["images/harrys_house.jpg", "images/artist_profile/harry_styles.jfif", "images/Harry_Styles_Fine_Line.png"],
+        albumes: allAlbumes.filter((album) => album.artist === "Harry Styles"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Harry Styles" || cancion.artist.includes("Harry Styles"))),
         index:6,
 
     },
@@ -1363,8 +1691,8 @@ let allArtistas = [
         perfil: "images/artist_profile/falling_in_reverse.jfif",
         foto_fondo: "images/banner/falling-in-reverse.jpg",
         name: "Falling In Reverse",
-        albumes: ["The Drug In Me Is You", "Fashionably Late", "Just Like You", "Coming Home"],
-        albumes_foto:["images/The_Drug_in_Me_Is_You.jpg", "images/fashionably_late.png", "images/just_like_you.jpg", "images/coming_home.jpg"],
+        albumes: allAlbumes.filter((album) => album.artist === "Falling In Reverse"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Falling In Reverse" || cancion.artist.includes("Falling In Reverse"))),
         index:7,
 
     },
@@ -1372,8 +1700,8 @@ let allArtistas = [
         perfil: "images/artist_profile/quevedo.jpg",
         foto_fondo: "images/banner/quevedo.jpg",
         name: "Quevedo",
-        albumes: [],
-        albumes_foto:[],
+        albumes: allAlbumes.filter((album) => album.artist === "Quevedo"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Quevedo" || cancion.artist.includes("Quevedo"))),
         index:8,
 
     },
@@ -1381,8 +1709,8 @@ let allArtistas = [
         perfil: "images/artist_profile/bizarrap.jpg",
         foto_fondo: "images/banner/bizarrap.jpg",
         name: "Bizarrap",
-        albumes: [],
-        albumes_foto:[],
+        albumes: allAlbumes.filter((album) => album.artist === "Bizarrap"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Bizarrap" || cancion.artist.includes("Bizarrap"))),
         index:9,
 
     },
@@ -1390,9 +1718,8 @@ let allArtistas = [
         perfil: "images/artist_profile/halsey.jfif",
         foto_fondo: "images/banner/halsey.jpg",
         name: "Halsey",
-        albumes: ["If I Can't Have Love, I Want Power", "Manic", "Badlands", "Hopeless Fountain Kingdom"],
-        albumes_foto:["images/If_I_Can't_Have_Love,_I_Want_Power_by_Halsey.png", "images/Manic.jpg",
-            "images/BADLANDS.jpg", "images/Hopeless_Fountain_Kingdom.png"],
+        albumes: allAlbumes.filter((album) => album.artist === "Halsey"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Halsey" || cancion.artist.includes("Halsey"))),
         index:10,
 
     },
@@ -1400,8 +1727,8 @@ let allArtistas = [
         perfil: "images/artist_profile/rosalia.jfif",
         foto_fondo: "images/banner/Rosalia.jpg",
         name: "Rosalía",
-        albumes: ["El mal querer", "Motomami", "Los ángeles"],
-        albumes_foto:["images/mal_querer.jfif","images/motomami.jpg","images/los_angeles.jpg"],
+        albumes: allAlbumes.filter((album) => album.artist === "Rosalía"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Rosalía" || cancion.artist.includes("Rosalía"))),
         index:11,
 
     },
@@ -1409,8 +1736,8 @@ let allArtistas = [
         perfil: "images/artist_profile/conan_gray.jfif",
         foto_fondo: "images/banner/conan_gray.jpg",
         name: "Conan Gray",
-        albumes: ["Sunset Season", "Kid Krow", "Superache"],
-        albumes_foto:["images/Sunset_Season.jpg","images/Kid_Krow.jpg","images/SUPERACHE.jfif"],
+        albumes: allAlbumes.filter((album) => album.artist === "Conan Gray"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Conan Gray" || cancion.artist.includes("Conan Gray"))),
         index:12,
 
     },
@@ -1418,8 +1745,8 @@ let allArtistas = [
         perfil: "images/artist_profile/natalie_jane.jfif",
         foto_fondo: "images/banner/natalie_jane.jpg",
         name: "Natalie Jane",
-        albumes: [],
-        albumes_foto:[],
+        albumes: allAlbumes.filter((album) => album.artist === "Natalie Jane"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Natalie Jane" || cancion.artist.includes("Natalie Jane"))),
         index:13,
 
     },
@@ -1428,11 +1755,8 @@ let allArtistas = [
         perfil: "images/artist_profile/ghost.jfif",
         foto_fondo: "images/banner/ghost.jpg",
         name: "Ghost B.C,",
-        albumes: ["Impera", "Prequelle", "Meliora", "Infestissum", "Opus Eponymous", "Ceremony and Devotion",
-            "[MESSAGE FROM THE CLERGY]", "Seven Inches of Satanic Panic"],
-        albumes_foto:["images/imperia.jpg", "images/meliora.jpg", "images/infestissumam.jpg", "images/infestissumam.jpg",
-            "images/opus_eponymous.jpg", "images/ceremony_and_devotion.jpg",
-            "images/ghost-message-from-the-clergy-Cover-Art.jpg", "images/mary_on_a_cross.jpg"],
+        albumes: allAlbumes.filter((album) => album.artist === "Ghost B.C."),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Ghost B.C." || cancion.artist.includes("Ghost B.C."))),
         index:14,
 
     }

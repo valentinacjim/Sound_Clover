@@ -25,10 +25,8 @@ function lista_reproduccion(index) {
         // crear.style.backgroundColor = "#9396B0";
 
         for (let i = 0; i < allMusic.length; i++) {
-            let fav = '';
-            let index_artist = 0;
-            isFavorite(i, fav);
-            index_artist = indexArtist(i, index_artist);
+            let fav = isFavorite(i, fav);
+            let index_artist = indexArtist(allMusic, i, index_artist);
             
             if (canciones_favoritas[i].fav === true) {
                 playlist_content.innerHTML += "" +
@@ -42,9 +40,7 @@ function lista_reproduccion(index) {
 
                     cancion_container_script(i) +
                     "    </div>\n" +
-                    "    <div class='titulo_artista_busq'>\n" +
-                    "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
-                    "    </div >\n" +
+                    name_index_artist_script(allMusic, i, index_artist) +
                     "    <p class='favor'>\n" +
                     "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                     "    </p>\n" +
@@ -120,9 +116,7 @@ function playlist_contenido(index, playlist_content) {
                 "                </button>\n" +
                 "    </div>\n" +
                 "    </div>\n" +
-                "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
-                "    </div>\n" +
+                name_index_artist_script(allMusic, i, index_artist) +
                 "    <p class='favor'>\n" +
                 "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                 "    </p>\n" +

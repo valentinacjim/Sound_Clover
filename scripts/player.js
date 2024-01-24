@@ -232,10 +232,8 @@ function queue_content(){
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
-            let fav = '';
-            let index_artist = 0;
-            fav = isFavorite(i, fav);
-            index_artist = indexArtist(i, index_artist);
+            let fav = isFavorite(i, fav);
+            let index_artist = indexArtist(i, index_artist);
         if (i === musicIndex-1) {
             let queue_element = document.getElementById('playing');
             queue_element.innerHTML = queueElementFunction(i, index_artist, fav)
@@ -253,17 +251,6 @@ function queue_content(){
         "<br>"
 }
 
-
-function isFavorite(i, fav) {
-    if (list[i].fav === true) {
-        fav = "fa-solid fa-heart";
-
-    } else {
-        fav = "fa-regular fa-heart";
-    }
-    return fav;
-}
-
 function queueElementFunction(i, index_artist, fav) {
     return "" +
         "<div class='queue_element'\n>\n" +
@@ -275,7 +262,7 @@ function queueElementFunction(i, index_artist, fav) {
         cancion_container_script(i) +
         "    </div>\n" +
         "    <div class='titulo_artista_busq'>\n" +
-        "        <p><b>" + list[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + list[i].artist + "</p>\n" +
+        name_index_artist_script(list, i, index_artist) +
         "    </div>\n" +
         "    <p class='favor'>\n" +
         "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +

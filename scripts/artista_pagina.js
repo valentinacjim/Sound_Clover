@@ -1,5 +1,5 @@
 // Módulo de la página del artista
-function artista_pagina(indexFav){
+function artista_pagina(indexFav){ 
     ARTISTA_PAGE.style.visibility = 'visible';
 
     // Crear la estructura
