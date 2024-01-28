@@ -2,10 +2,19 @@
 
 // Función para filtrar los caracteres especiales
 function filter(text) {
-    text = text.toLowerCase();
-    text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    text = text.replace(/\s/g, '');
-    text = text.trim();
+    if (Array.isArray(text)){
+        for(let i=0; i<text.length; i++){
+            text[i] = text[i].toLowerCase();
+            text[i] = text[i].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            text[i] = text[i].replace(/\s/g, '');
+            text[i] = text[i].trim();
+        }
+    }else{
+        text = text.toLowerCase();
+        text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        text = text.replace(/\s/g, '');
+        text = text.trim();
+    }
     return text;
 }
 
@@ -22,15 +31,15 @@ function buscar(){
 
     for(let i=0; i<allMusic.length; i++){
         if (filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value)){
-            let fav = isFavorite(i, fav);
-            let index_artist = indexArtist(allMusic, i, index_artist);
-
-            
+            let fav = isFavorite(i);
             search.innerHTML += "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
                 cancion_container_script(i) +
                 "    </div>\n" +
-                name_index_artist_script(allMusic, i, index_artist, true) +
+                "    <div class='titulo_artista_busq'>\n" +
+                "        <p><b>" + allMusic[i].name + "</b></p>\n" +
+                artists(allMusic[i].artist) +
+                "    </div>\n" +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +
                 "        <i class='"+fav+"' id='"+ allMusic[i].name+"_search' onclick='agregar_fav("+i+")'>  </i>\n" +
@@ -39,6 +48,19 @@ function buscar(){
                 "</div>"
         }
     }
+}
+
+function artists(artistas){
+    let script = '<p>';
+    if(Array.isArray(artistas)){
+        for(let i=0; i<artistas.length; i++){
+            script += "<div id='artista_search' onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ", </div>"
+        }
+        script = script.slice(0, -8);
+        script += '</div></p>'
+        return script;
+    }
+    return "<p id='artista_search' onclick='artista_pagina(" + indexArtist(artistas) + ") '>" + artistas + "</p>\n"
 }
 
 function agregar_fav(index){

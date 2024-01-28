@@ -27,8 +27,8 @@ function back_albumes() {
 function album_contenido(artista, album, album_content) {
     album_content.innerHTML = "";
     for (let i = 0; i < allMusic.length; i++) {
-        let index_artist = indexArtist(allMusic, i, index_artist);
-        let fav = isFavorite(i, fav);
+        let index_artist = indexArtist(allMusic, i);
+        let fav = isFavorite(i);
         // Rellenar el contenido del álbum
         if (allArtistas[artista].albumes_foto[album] === allMusic[i].img) {
             album_content.innerHTML += "" +
@@ -41,7 +41,9 @@ function album_contenido(artista, album, album_content) {
                 "                </button>\n" +
                 "            </div>\n" +
                 "    </div>\n" +
-                name_index_artist_script(allMusic, i, index_artist) +
+                "    <div class='titulo_artista_busq'>\n" +
+                artist_script(list, i, index_artist) +
+                "    </div>\n" +
                 "    <p class='favor'>\n" +
                 "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                 "</div>"

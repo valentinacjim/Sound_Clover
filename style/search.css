@@ -103,6 +103,12 @@
     cursor: pointer;
 }
 
+.titulo_artista_busq div{
+    display: inline-block;
+    color: black;
+    font-size: 1.5em;
+}
+
 /*.info{*/
 /*    width : 10%;*/
 /*    margin-top: 1em;*/

@@ -232,7 +232,7 @@ function queue_content(){
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
-            let fav = isFavorite(i, fav);
+            let fav = isFavorite(i);
             let index_artist = indexArtist(i, index_artist);
         if (i === musicIndex-1) {
             let queue_element = document.getElementById('playing');
@@ -258,11 +258,12 @@ function queueElementFunction(i, index_artist, fav) {
         "<div class='busq3' id='busq3'\n>\n" +
 
         "    <div class='queue_container'>\n" +
+        "<p><b>" + list[i].name + "</b></p>\n" +
 
         cancion_container_script(i) +
         "    </div>\n" +
         "    <div class='titulo_artista_busq'>\n" +
-        name_index_artist_script(list, i, index_artist) +
+        artist_script(list, i, index_artist) +
         "    </div>\n" +
         "    <p class='favor'>\n" +
         "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +

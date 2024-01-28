@@ -25,7 +25,7 @@ function lista_reproduccion(index) {
         // crear.style.backgroundColor = "#9396B0";
 
         for (let i = 0; i < allMusic.length; i++) {
-            let fav = isFavorite(i, fav);
+            let fav = isFavorite(i);
             let index_artist = indexArtist(allMusic, i, index_artist);
             
             if (canciones_favoritas[i].fav === true) {
@@ -94,7 +94,7 @@ function playlist_contenido(index, playlist_content) {
     for (let i = 0; i < allMusic.length; i++) {
         let fav = '';
         let index_artist = 0;
-        isFavorite(i, fav);
+        isFavorite(i);
         index_artist = indexArtist(i, index_artist);
 
         // Si la canción está en la lista de reproducción
@@ -116,7 +116,9 @@ function playlist_contenido(index, playlist_content) {
                 "                </button>\n" +
                 "    </div>\n" +
                 "    </div>\n" +
-                name_index_artist_script(allMusic, i, index_artist) +
+                "    <div class='titulo_artista_busq'>\n" +
+                artist_script(list, i, index_artist) +
+                "    </div>\n" +
                 "    <p class='favor'>\n" +
                 "        <i class='" + fav + "' id='" + allMusic[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
                 "    </p>\n" +
