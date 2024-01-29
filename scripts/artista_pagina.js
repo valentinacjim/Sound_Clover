@@ -8,9 +8,8 @@ function artista_pagina(indexFav){
     let artista = document.getElementsByClassName('nombre-artista')[0];
     let albumes = document.getElementsByClassName('artista-albumes-seccion')[0];
     let canciones = document.getElementsByClassName('artista-canciones')[0];
-
+    
     // Rellenar álbumes
-    console.log(allArtistas[indexFav].albumes)
     albumes.innerHTML='<div class="titulos_secciones"><h1> Álbumes </h1> </div>';
     for(let al=0; al<allArtistas[indexFav].albumes.length; al++) {
         albumes.innerHTML += '<div class = "album" onclick="albumes('+ (indexFav) +',' + (al) +')"> ' +
@@ -29,23 +28,35 @@ function artista_pagina(indexFav){
 
     // Rellenar canciones
     canciones.innerHTML = '<div class="titulos_secciones"><h1> Canciones </h1> </div>';
-    for (let index=0; index<allMusic.length; index++) {
-        if (allMusic[index].artist.includes(allArtistas[indexFav].name)){
-            canciones.innerHTML += '<div class = "cancion" >\n' +
-                '            <div class="cancion_container">\n' +
-                '              <img alt="cancion" src=' + allMusic[index].img + ' class = "can_fav">\n' +
-                // '              <div class="overlay">\n' +
-                // '                <button type = "button" onclick= "chooseMusic(allMusic'+ index +')">\n' +
-                // '                  <i class="fa-regular fa-circle-play"></i>\n' +
-                // '                </button>\n' +
-                // '              </div>\n' +
-                '            </div>\n' +
-                '            <div class = "titulo_artista">\n' +
-                '               <p>' + allMusic[index].name + '</p>' +
-                '            </div>\n' +
-                '          </div>'
+    for (let index=0; index<allArtistas[indexFav].canciones.length; index++) {
+        if (index > 9){
+            break;
         }
+        let fav = isFavorite(allArtistas, index);
+        canciones.innerHTML+= '<div>'+
+            '<div class="cancion_artista">' +
+                '<div class="info">' +
+                    '<div class="img_cancion">' +
+                    '<img src=' + allArtistas[indexFav].canciones[index].img + ' alt="cancion">' +
+                    '</div>' +
+                    '<div class="nombre_cancion">' +
+                    '<p>' + allArtistas[indexFav].canciones[index].name + '</p>' + 
+                    '</div>' +  
+                '</div>' +
+                '<div class="config">' +
+                    '<i class="'+fav+'" onclick="agregar_fav('+ index +')"></i>' +
+                    '<i class="fa-regular fa-circle-play" onclick="chooseMusic(allMusic'+ (index+1) +')"></i>' +
+                '</div>' +
+            '</div>' +
+        '</div>'
     }
-
+    
     
 }
+
+// let artistBar = document.getElementsByClassName('artist-bar')[0];
+// ARTISTA_PAGE.addEventListener('scroll', () => {
+//     const scrollPosition = window.scrollY;
+//     console.log(scrollPosition)
+//     artistBar.style.opacity = 1 - scrollPosition / 100;
+// });

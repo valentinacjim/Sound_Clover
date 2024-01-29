@@ -31,7 +31,7 @@ function buscar(){
 
     for(let i=0; i<allMusic.length; i++){
         if (filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value)){
-            let fav = isFavorite(i);
+            let fav = isFavorite(allMusic, i);
             search.innerHTML += "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
                 cancion_container_script(i) +
@@ -48,19 +48,6 @@ function buscar(){
                 "</div>"
         }
     }
-}
-
-function artists(artistas){
-    let script = '<p>';
-    if(Array.isArray(artistas)){
-        for(let i=0; i<artistas.length; i++){
-            script += "<div id='artista_search' onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ", </div>"
-        }
-        script = script.slice(0, -8);
-        script += '</div></p>'
-        return script;
-    }
-    return "<p id='artista_search' onclick='artista_pagina(" + indexArtist(artistas) + ") '>" + artistas + "</p>\n"
 }
 
 function agregar_fav(index){

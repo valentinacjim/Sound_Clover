@@ -26,13 +26,13 @@ function loadMusic(indexNumb){
 function nextMusic() {
 
     if (shuffle === true){
-        musicIndex = Math.floor(Math.random() * list.length) + 1;
+        musicIndex = Math.ceil(Math.random() * list.length);
     }
     else {
         if (musicIndex === list.length && mode_player === MODES[1]) {
             musicIndex = 1;
         } else if (musicIndex === list.length && mode_player === MODES[0]) {
-            musicIndex = Math.floor(Math.random() * list.length) + 1;
+            musicIndex = Math.ceil(Math.random() * list.length);
         } else if (musicIndex === list.length && mode_player !== MODES[2]) {
             musicIndex++;
         } else{
@@ -232,15 +232,14 @@ function queue_content(){
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
-            let fav = isFavorite(i);
-            let index_artist = indexArtist(i, index_artist);
+            let fav = isFavorite(list, i);
         if (i === musicIndex-1) {
             let queue_element = document.getElementById('playing');
-            queue_element.innerHTML = queueElementFunction(i, index_artist, fav)
+            queue_element.innerHTML = queueElementFunction(i, fav)
 
 
         } else if( i > musicIndex-1 && i<=50){
-            queue_content.innerHTML += queueElementFunction(i, index_artist, fav)
+            queue_content.innerHTML += queueElementFunction(i, fav)
 
         }
     }
@@ -251,7 +250,7 @@ function queue_content(){
         "<br>"
 }
 
-function queueElementFunction(i, index_artist, fav) {
+function queueElementFunction(i, fav) {
     return "" +
         "<div class='queue_element'\n>\n" +
 
@@ -263,7 +262,7 @@ function queueElementFunction(i, index_artist, fav) {
         cancion_container_script(i) +
         "    </div>\n" +
         "    <div class='titulo_artista_busq'>\n" +
-        artist_script(list, i, index_artist) +
+        artist(list[i].artist) +
         "    </div>\n" +
         "    <p class='favor'>\n" +
         "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +

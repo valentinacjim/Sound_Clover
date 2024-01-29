@@ -28,7 +28,7 @@ function album_contenido(artista, album, album_content) {
     album_content.innerHTML = "";
     for (let i = 0; i < allMusic.length; i++) {
         let index_artist = indexArtist(allMusic, i);
-        let fav = isFavorite(i);
+        let fav = isFavorite(allMusic, i);
         // Rellenar el contenido del álbum
         if (allArtistas[artista].albumes_foto[album] === allMusic[i].img) {
             album_content.innerHTML += "" +

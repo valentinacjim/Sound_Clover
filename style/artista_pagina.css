@@ -153,3 +153,71 @@
     padding-bottom: 0;
     /* background-color: #323232; */
 }
+
+.cancion_artista{
+    height: 10vh;
+    width: 78vw;
+    background-color: #323232;
+    margin: 0.25%;
+    margin-left: 0.75em;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cancion_artista i{
+    text-align: right;
+    margin: auto 0.5em;
+    /* color: white; */
+    font-size: 0.5em;
+
+}
+
+/* .artist-bar {
+    position: fixed;
+    top: 7.75vh;
+    left: 15vw;
+    width: 84vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .artist-name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  } */
+
+.img_cancion img{
+    margin: 0.5vh;
+    /* left: -50%; */
+    height: 9vh;
+    width: 9vh;
+    /* margin: 0.5em; */
+    /* border-radius: 50%; */
+    background-color: #323232;
+    /* box-shadow: 0 0 0.25em 0.25em rgb(0, 0, 0, 0.5); */
+}
+
+.nombre_cancion{
+    font-size: 0.5em;
+    margin: 0.65em 1em;
+    font-family: "Copperplate", fantasy;
+    color: #ebe0ff;
+}
+
+.info{
+    text-align: left;
+    margin: 0;
+    /* font-size: 0.5em; */
+    display: flex;
+}
+
+.config{
+    margin: -0.15em 0.25em;
+    /* color: white; */
+    /* font-size: 0.5em; */
+    text-align: right;
+}

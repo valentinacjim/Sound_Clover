@@ -18,29 +18,6 @@ function back(){
 
 
 
-//"<p><b>" + allMusic[i].name + "</b></p> <p onclick='artista_pagina(" + index_artist + ") '>" + allMusic[i].artist + "</p>\n" +
-function artist_script(artista) {
-    let script = '<p>';
-    if(search){
-        if(Array.isArray(artista)){
-            for(let j=0; j<artista.length; j++){
-                script += "<div onclick='artista_pagina(" + indexArtist(artista[i]) + ") '>" + artista[i] + ", </div>"
-            }
-            script = script.slice(0, -8);
-            script += '</div></p>'
-            return script;
-        }
-        return "<p id='artista_search' onclick='artista_pagina(" + indexArtist(artista) + ") '>" + artista + "</p>\n"
-    }
-}
-
-
-
-
-
-
-
-
 
 function indexArtist(artista) {
     for (let i = 0; i < allArtistas.length; i++) {
@@ -54,10 +31,21 @@ function indexArtist(artista) {
 }
 
 
+function artists(artistas){
+    let script = '<p>';
+    if(Array.isArray(artistas)){
+        for(let i=0; i<artistas.length; i++){
+            script += "<div onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ", </div>"
+        }
+        script = script.slice(0, -8);
+        script += '</div></p>'
+        return script;
+    }
+    return "<p onclick='artista_pagina(" + indexArtist(artistas) + ") '>" + artistas + "</p>\n"
+}
 
 
-
-function isFavorite(i) {
+function isFavorite(list, i) {
     if (list[i].fav === true) {
         return "fa-solid fa-heart";
 
