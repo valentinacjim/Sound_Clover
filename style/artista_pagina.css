@@ -100,7 +100,7 @@
     flex-wrap: wrap;
     color: black;
     text-align: center;
-    
+    cursor: pointer;
 
 }
 
@@ -108,6 +108,11 @@
 .artista-albumes-seccion img{
     width: 100%;
     position: inherit;
+}
+
+.album:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .artista-canciones{

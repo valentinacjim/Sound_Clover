@@ -1345,7 +1345,7 @@ let allAlbumes = [
         img: "images/migraine.png",
         fav:false
     },{
-        name: "Regional att Best",
+        name: "Regional at Best",
         artist:"Twenty Øne Piløts",
         img: "images/twenty-one-pilots-regional-at-best.jpg",
         fav:false

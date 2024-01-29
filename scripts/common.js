@@ -44,7 +44,8 @@ function artist_script(artista) {
 
 function indexArtist(artista) {
     for (let i = 0; i < allArtistas.length; i++) {
-        if (allArtistas.name === artista) {
+        // console.log(allArtistas[i].name)
+        if (allArtistas[i].name === artista) {
             return i;
         }
     }

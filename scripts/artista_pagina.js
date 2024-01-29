@@ -10,39 +10,42 @@ function artista_pagina(indexFav){
     let canciones = document.getElementsByClassName('artista-canciones')[0];
 
     // Rellenar álbumes
+    console.log(allArtistas[indexFav].albumes)
     albumes.innerHTML='<div class="titulos_secciones"><h1> Álbumes </h1> </div>';
-    for(let al=1; al<=allArtistas[indexFav-1].albumes.length; al++) {
-        albumes.innerHTML += '<div class = "album" onclick="albumes('+ (indexFav-1) +',' + (al-1) +')"> ' +
+    for(let al=0; al<allArtistas[indexFav].albumes.length; al++) {
+        albumes.innerHTML += '<div class = "album" onclick="albumes('+ (indexFav) +',' + (al) +')"> ' +
             '<div class="cancion_container">' +
-            '<img src=' + allArtistas[indexFav-1].albumes_foto[al-1] + ' alt="cancion">' +
+            '<img src=' + allArtistas[indexFav].albumes[al].img + ' alt="cancion">' +
             '</div>  ' +
             '<div class = "album_nombre"> ' +
-            '<p>' + allArtistas[indexFav-1].albumes[al-1] +'</p> ' +
+            '<p>' + allArtistas[indexFav].albumes[al].name +'</p> ' +
             '</div> ' +
             '</div>';
 
     }
-    fondo.src = allArtistas[indexFav-1].foto_fondo;
-    foto_perfil.src = allArtistas[indexFav-1].perfil;
-    artista.innerHTML = allArtistas[indexFav-1].name;
+    fondo.src = allArtistas[indexFav].foto_fondo;
+    foto_perfil.src = allArtistas[indexFav].perfil;
+    artista.innerHTML = allArtistas[indexFav].name;
 
-    // // Rellenar canciones
-    // canciones.innerHTML = '<div class="titulos_secciones"><h1> Canciones </h1> </div>';
-    // for (let index=1; index<=allMusic.length; index++) {
-    //     if (allMusic[index - 1].artist.includes(allArtistas[indexFav-1].name)){
-    //         canciones.innerHTML += '<div class = "cancion_favorita" >\n' +
-    //             '            <div class="favorita_container">\n' +
-    //             '              <img alt="cancion" src=' + allMusic[index-1].img + ' class = "can_fav">\n' +
-    //             '              <div class="overlay">\n' +
-    //             '                <button type = "button" onclick= "chooseMusic(allMusic'+ index +')">\n' +
-    //             '                  <i class="fa-regular fa-circle-play"></i>\n' +
-    //             '                </button>\n' +
-    //             '              </div>\n' +
-    //             '            </div>\n' +
-    //             '            <div class = "titulo_artista">\n' +
-    //             '               <p>' + allMusic[index-1].name + '<br>' + allMusic[index-1].artist +'</p>' +
-    //             '            </div>\n' +
-    //             '          </div>'
-    //     }
-    // }
+    // Rellenar canciones
+    canciones.innerHTML = '<div class="titulos_secciones"><h1> Canciones </h1> </div>';
+    for (let index=0; index<allMusic.length; index++) {
+        if (allMusic[index].artist.includes(allArtistas[indexFav].name)){
+            canciones.innerHTML += '<div class = "cancion" >\n' +
+                '            <div class="cancion_container">\n' +
+                '              <img alt="cancion" src=' + allMusic[index].img + ' class = "can_fav">\n' +
+                // '              <div class="overlay">\n' +
+                // '                <button type = "button" onclick= "chooseMusic(allMusic'+ index +')">\n' +
+                // '                  <i class="fa-regular fa-circle-play"></i>\n' +
+                // '                </button>\n' +
+                // '              </div>\n' +
+                '            </div>\n' +
+                '            <div class = "titulo_artista">\n' +
+                '               <p>' + allMusic[index].name + '</p>' +
+                '            </div>\n' +
+                '          </div>'
+        }
+    }
+
+    
 }
