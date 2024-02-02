@@ -27,25 +27,29 @@ function artista_pagina(indexFav){
     artista.innerHTML = allArtistas[indexFav].name;
 
     // Rellenar canciones
-    canciones.innerHTML = '<div class="titulos_secciones"><h1> Canciones </h1> </div>';
+    canciones.innerHTML = '<div class="titulos_secciones"><h1> Canciones populares </h1> </div>';
     for (let index=0; index<allArtistas[indexFav].canciones.length; index++) {
         if (index > 9){
             break;
         }
         let fav = isFavorite(allArtistas, index);
+        let random_song = Math.floor(Math.random() * allArtistas[indexFav].canciones.length);
+        let eq_random_song = allMusic.find(element => element.name == allArtistas[indexFav].canciones[random_song].name);
         canciones.innerHTML+= '<div>'+
             '<div class="cancion_artista">' +
                 '<div class="info">' +
                     '<div class="img_cancion">' +
-                    '<img src=' + allArtistas[indexFav].canciones[index].img + ' alt="cancion">' +
+                    '<img src=' + allArtistas[indexFav].canciones[random_song].img + ' alt="cancion">' +
                     '</div>' +
                     '<div class="nombre_cancion">' +
-                    '<p>' + allArtistas[indexFav].canciones[index].name + '</p>' + 
+                    '<p>' + allArtistas[indexFav].canciones[random_song].name + '</p>' + 
                     '</div>' +  
                 '</div>' +
                 '<div class="config">' +
-                    '<i class="'+fav+'" onclick="agregar_fav('+ index +')"></i>' +
-                    '<i class="fa-regular fa-circle-play" onclick="chooseMusic(allMusic'+ (index+1) +')"></i>' +
+                    '<i class="'+fav+'" onclick="agregar_fav('+ eq_random_song +')"></i>' +
+                    '<i class="fa-regular fa-circle-play" onclick="chooseMusic(allMusic, '+ (eq_random_song+1) +')"></i>' +
+                    '<button class="fa-regular fa-ellipsis-h"></button>' +
+                    '<i class="fa-solid fa-bars"></i>'+
                 '</div>' +
             '</div>' +
         '</div>'

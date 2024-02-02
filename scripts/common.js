@@ -21,7 +21,9 @@ function back(){
 
 function indexArtist(artista) {
     for (let i = 0; i < allArtistas.length; i++) {
-        // console.log(allArtistas[i].name)
+        if (artista == "Azaelia"){
+            artista = "Complicated Broken"
+        }
         if (allArtistas[i].name === artista) {
             return i;
         }

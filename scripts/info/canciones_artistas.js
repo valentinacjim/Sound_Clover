@@ -75,7 +75,7 @@ let allMusic = [
     },
     {
         name: "Ojitos Lindos",
-        artist:["Bad Bunny","Bomba Estéreo"],
+        artist:["Bad Bunny","Azaelia"],
         img: "images/un_verano_sin_ti.jfif",
         audio:"audio/Ojitos_lindos.mp3",
         fav:false,
@@ -89,8 +89,8 @@ let allMusic = [
     },
     {
         name: "Seven",
-        artist:"Natalie Jane",
-        img: "images/seven.jpg",
+        artist:"Azaelia",
+        img: "images/things_I_wanted_to_say_but_never_did.jpg",
         audio:"audio/natalie-jane-seven.mp3",
         fav:false,
     },
@@ -1166,14 +1166,14 @@ let allMusic = [
         fav:false,
     },{
         name: "Walls Could Talk",
-        artist:"Halsey",
-        img: "images/Hopeless_Fountain_Kingdom.png",
+        artist:"Complicated Broken",
+        img: "images/complicated_broken.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Control",
-        artist:"Halsey",
-        img: "images/Badlands.jpg",
+        artist:"Complicated Broken",
+        img: "images/new_therapy.jpg",
         audio:"audio/",
         fav:false,
     },{
@@ -1184,44 +1184,44 @@ let allMusic = [
         fav:false,
     },{
         name: "Without Me",
-        artist:"Halsey",
-        img: "images/without_me.jpg",
+        artist:"Complicated Broken",
+        img: "images/fuck_me_im_famous.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Gasoline",
-        artist:"Halsey",
-        img: "images/Badlands.jpg",
+        artist:"Complicated Broken",
+        img: "images/new_therapy.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Colors",
-        artist:"Halsey",
-        img: "images/Badlands.jpg",
+        artist:"Complicated Broken",
+        img: "images/new_therapy.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Nightmare",
-        artist:"Halsey",
-        img: "images/If_I_Can't_Have_Love,_I_Want_Power_by_Halsey.png",
+        artist:"Complicated Broken",
+        img: "images/life_happens.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "11 Minutes",
-        artist:["Yungblud", "Halsey"],
+        artist:["Yungblud", "Azaelia"],
         img: "images/11minutes.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "3 am",
-        artist:"Halsey",
-        img: "images/Manic.jpg",
+        artist:"Complicated Broken",
+        img: "images/future_nostalgia.jpg",
         audio:"audio/",
         fav:false,
     },{
         name: "Hurricane",
-        artist:"Halsey",
-        img: "images/Badlands.jpg",
+        artist:"Complicated Broken",
+        img: "images/new_therapy.jpg",
         audio:"audio/",
         fav:false,
     },{
@@ -1556,7 +1556,7 @@ let allAlbumes = [
         fav:false
     },{
         name: "Without Me",
-        artist:"Halsey",
+        artist:"Complicated Broken",
         img: "images/without_me.jpg",
         fav:false
     },{
@@ -1629,7 +1629,62 @@ let allAlbumes = [
         artist: "Ghost B.C.",
         img: "images/mary_on_a_cross.jpg",
         fav:false
+    },
+    {
+        name: "Born This Way",
+        artist: "Complicated Broken",
+        img: "images/born_this_way.jpg",
+        fav:false
+    },
+    {
+        name: "New Therapy",
+        artist: "Complicated Broken",
+        img: "images/new_therapy.jpg",
+        fav:false
+    },
+    {
+        name: "Complicated Broken",
+        artist: "Complicated Broken",
+        img: "images/complicated_broken.jpg",
+        fav:false
+    },
+    {
+        name: "Fuck Me, I'm Famous",
+        artist: "Complicated Broken",
+        img: "images/fuck_me_im_famous.jpg",
+        fav:false
+    },
+    {
+        name: "Future Nostalgia",
+        artist: "Complicated Broken",
+        img: "images/future_nostalgia.jpg",
+        fav:false
+    },
+    {
+        name: "Life happens",
+        artist: "Complicated Broken",
+        img: "images/life_happens.jpg",
+        fav:false 
+    },
+    {
+        name: "Mirror",
+        artist: "Complicated Broken",
+        img: "images/mirror.jpg",
+        fav:false
+    },
+    {
+        name: "The Things I Wanted To Scream",
+        artist: "Complicated Broken",
+        img: "images/the_things_i_wanted_to_scream.jpg",
+        fav:false
+    },
+    {
+        name: "Things I Wanted To Say But Never Did",
+        artist: "Complicated Broken",
+        img: "images/things_I_wanted_to_say_but_never_did.jpg",
+        fav:false
     }
+    
 ]
 
 let allArtistas = [
@@ -1640,8 +1695,6 @@ let allArtistas = [
         name: "My Chemical Romance",
         albumes: allAlbumes.filter((album) => album.artist === "My Chemical Romance"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "My Chemical Romance" || cancion.artist.includes("My Chemical Romance"))),
-        index:1,
-
     },
     {
         perfil: "images/artist_profile/top.png",
@@ -1649,8 +1702,6 @@ let allArtistas = [
         name: "Twenty Øne Piløts",
         albumes: allAlbumes.filter((album) => album.artist === "Twenty Øne Piløts"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Twenty Øne Piløts" || cancion.artist.includes("Twenty Øne Piløts"))),
-        index:2,
-
     },
     {
         perfil: "images/artist_profile/bad_bunny.jpg",
@@ -1658,7 +1709,6 @@ let allArtistas = [
         name: "Bad Bunny",
         albumes: allAlbumes.filter((album) => album.artist === "Bad Bunny"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Bad Bunny" || cancion.artist.includes("Bad Bunny"))),
-        index:3,
     },
     {
         perfil: "images/artist_profile/5sos.jpg",
@@ -1666,8 +1716,6 @@ let allArtistas = [
         name: "5 Seconds of Summer",
         albumes: allAlbumes.filter((album) => album.artist === "5 Seconds of Summer"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "5 Seconds of Summer" || cancion.artist.includes("5 Seconds of Summer"))),
-        index:4,
-
     },
     {
         perfil: "images/artist_profile/queen.jpg",
@@ -1675,8 +1723,6 @@ let allArtistas = [
         name: "Queen",
         albumes: allAlbumes.filter((album) => album.artist === "Queen"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Queen" || cancion.artist.includes("Queen"))),
-        index:5,
-
     },
     {
         perfil: "images/artist_profile/harry_styles.jfif",
@@ -1684,8 +1730,6 @@ let allArtistas = [
         name: "Harry Styles",
         albumes: allAlbumes.filter((album) => album.artist === "Harry Styles"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Harry Styles" || cancion.artist.includes("Harry Styles"))),
-        index:6,
-
     },
     {
         perfil: "images/artist_profile/falling_in_reverse.jfif",
@@ -1693,8 +1737,6 @@ let allArtistas = [
         name: "Falling In Reverse",
         albumes: allAlbumes.filter((album) => album.artist === "Falling In Reverse"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Falling In Reverse" || cancion.artist.includes("Falling In Reverse"))),
-        index:7,
-
     },
     {
         perfil: "images/artist_profile/quevedo.jpg",
@@ -1702,8 +1744,6 @@ let allArtistas = [
         name: "Quevedo",
         albumes: allAlbumes.filter((album) => album.artist === "Quevedo"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Quevedo" || cancion.artist.includes("Quevedo"))),
-        index:8,
-
     },
     {
         perfil: "images/artist_profile/bizarrap.jpg",
@@ -1711,8 +1751,6 @@ let allArtistas = [
         name: "Bizarrap",
         albumes: allAlbumes.filter((album) => album.artist === "Bizarrap"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Bizarrap" || cancion.artist.includes("Bizarrap"))),
-        index:9,
-
     },
     {
         perfil: "images/artist_profile/halsey.jfif",
@@ -1720,8 +1758,6 @@ let allArtistas = [
         name: "Halsey",
         albumes: allAlbumes.filter((album) => album.artist === "Halsey"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Halsey" || cancion.artist.includes("Halsey"))),
-        index:10,
-
     },
     {
         perfil: "images/artist_profile/rosalia.jfif",
@@ -1729,8 +1765,6 @@ let allArtistas = [
         name: "Rosalía",
         albumes: allAlbumes.filter((album) => album.artist === "Rosalía"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Rosalía" || cancion.artist.includes("Rosalía"))),
-        index:11,
-
     },
     {
         perfil: "images/artist_profile/conan_gray.jfif",
@@ -1738,8 +1772,6 @@ let allArtistas = [
         name: "Conan Gray",
         albumes: allAlbumes.filter((album) => album.artist === "Conan Gray"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Conan Gray" || cancion.artist.includes("Conan Gray"))),
-        index:12,
-
     },
     {
         perfil: "images/artist_profile/natalie_jane.jfif",
@@ -1747,18 +1779,20 @@ let allArtistas = [
         name: "Natalie Jane",
         albumes: allAlbumes.filter((album) => album.artist === "Natalie Jane"),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Natalie Jane" || cancion.artist.includes("Natalie Jane"))),
-        index:13,
-
     },
-
     {
         perfil: "images/artist_profile/ghost.jfif",
         foto_fondo: "images/banner/ghost.jpg",
         name: "Ghost B.C,",
         albumes: allAlbumes.filter((album) => album.artist === "Ghost B.C."),
         canciones: allMusic.filter((cancion) => (cancion.artist === "Ghost B.C." || cancion.artist.includes("Ghost B.C."))),
-        index:14,
-
+    },
+    {
+        perfil: "images/artist_profile/complicated_broken.jpg",
+        foto_fondo: "images/banner/complicated_broken.jpg",
+        name: "Complicated Broken",
+        albumes: allAlbumes.filter((album) => album.artist === "Complicated Broken" || album.artist == "Azaelia"),
+        canciones: allMusic.filter((cancion) => (cancion.artist === "Complicated Broken" || cancion.artist.includes("Complicated Broken") || cancion.artist.includes("Azaelia") || cancion.artist.includes("Azaelia"))),
     }
 ]
 
