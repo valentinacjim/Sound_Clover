@@ -10,7 +10,7 @@ function artista_pagina(indexFav){
     let canciones = document.getElementsByClassName('artista-canciones')[0];
     
     // Rellenar álbumes
-    albumes.innerHTML='<div class="titulos_secciones"><h1> Álbumes </h1> </div>';
+    albumes.innerHTML='<div class="titulos_secciones"><h1> Albums </h1> </div>';
     for(let al=0; al<allArtistas[indexFav].albumes.length; al++) {
         albumes.innerHTML += '<div class = "album" onclick="albumes('+ (indexFav) +',' + (al) +')"> ' +
             '<div class="cancion_container">' +
@@ -27,7 +27,7 @@ function artista_pagina(indexFav){
     artista.innerHTML = allArtistas[indexFav].name;
 
     // Rellenar canciones
-    canciones.innerHTML = '<div class="titulos_secciones"><h1> Canciones populares </h1> </div>';
+    canciones.innerHTML = '<div class="titulos_secciones"><h1> Popular songs </h1> </div>';
     for (let index=0; index<allArtistas[indexFav].canciones.length; index++) {
         if (index > 9){
             break;
@@ -45,10 +45,11 @@ function artista_pagina(indexFav){
                     '<p>' + allArtistas[indexFav].canciones[random_song].name + '</p>' + 
                     '</div>' +  
                 '</div>' +
+                '<p class="duracion">' + allArtistas[indexFav].canciones[random_song].duracion + '</p>' +
                 '<div class="config">' +
                     '<i class="'+fav+'" onclick="agregar_fav('+ eq_random_song +')"></i>' +
                     '<i class="fa-regular fa-circle-play" onclick="chooseMusic(allMusic, '+ (eq_random_song+1) +')"></i>' +
-                    '<button class="fa-regular fa-ellipsis-h"></button>' +
+                    // '<i class="fa-solid fa-ellipsis-vertical"></i>' +
                     '<i class="fa-solid fa-bars"></i>'+
                 '</div>' +
             '</div>' +
@@ -57,6 +58,8 @@ function artista_pagina(indexFav){
     
     
 }
+
+
 
 // let artistBar = document.getElementsByClassName('artist-bar')[0];
 // ARTISTA_PAGE.addEventListener('scroll', () => {

@@ -181,7 +181,7 @@ input{
 /*-Enlaces de interés-*/
 
 .politicas{
-    margin-top: -30%;
+    margin-top: -8vh;
 }
 
 .politicas p {
@@ -499,8 +499,8 @@ input{
 
 /*Cada canción por separado tiene su propio div*/
 .cancion{
-    height: 30vh;
-    width: 15%;
+    height: 25vh;
+    width: 7.75vw;
     transition: transform .2s; /* Animación */
     background-position: center center;
     min-width: 100px;
@@ -518,7 +518,7 @@ input{
 
 /*Título de la canción y nombre del artista*/
 .titulo_artista{
-    font-size: 37%;
+    font-size: 35%;
     text-align: center;
     line-height: 1.5em;
     margin-left: 4%;
@@ -527,18 +527,26 @@ input{
 
 .cancion_container button{
     position: absolute;
-    top: 65%;
-    left: 65%;
+    top: 1.25em;
+    left: 1.35em;
     /*transform: translate(-50%, -50%);*/
     background-color: #3c005d;
     /*circle size*/
-    width: 67px;
-    height: 66px;
+    width: 0.65em;
+    height: 0.65em;
     border-radius: 50%;
     font-size: 200%;
     opacity: 0;
     transition: opacity .2s;
     cursor: pointer;
+}
+
+.cancion_container button i{
+    /* color: #000; */
+    position: absolute;
+    font-size: 0.5em;
+    margin-top: -0.47em;
+    margin-left: -0.5em;
 }
 
 
@@ -859,9 +867,6 @@ main h1{
     justify-content: center;
 }
 
-.controles i{
-    /*color: #6d00a2;*/
-}
 
 .controles .prev{
     text-decoration: none;

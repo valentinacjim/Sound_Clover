@@ -21,7 +21,7 @@
 }
 
 .busq{
-    height: 18.75%;
+    height: 10vh;
     width: 98%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -41,7 +41,7 @@
 
 .busq p{
     color: black;
-    font-size: 1.5em;
+    /* font-size: 1em; */
 }
 
 .busq .busq_container1 .cancion_container{
@@ -93,20 +93,18 @@
 
 .titulo_artista_busq{
     width: 100%;
-    font-size: 75%;
+    font-size: 0.65em;
     margin-left: 3em;
-    /*text-align: left;*/
+    /* text-align: left; */
     padding-top: 1%;
-}
-
-.titulo_artista_busq #artista_search{
     cursor: pointer;
 }
+
 
 .titulo_artista_busq div{
     display: inline-block;
     color: black;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 
 /*.info{*/

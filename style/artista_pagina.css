@@ -162,7 +162,7 @@
     margin-left: 0.75em;
     font-size: 2em;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 25% 25%;
 }
 
 .cancion_artista i{
@@ -220,4 +220,12 @@
     /* color: white; */
     /* font-size: 0.5em; */
     text-align: right;
+}
+
+.duracion{
+    margin: 0.5em 0.25em;
+    color: white;
+    font-size: 0.5em;
+    width: 2vw;;    
+    /* text-align: right; */
 }

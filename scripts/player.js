@@ -251,23 +251,23 @@ function queue_content(){
 }
 
 function queueElementFunction(i, fav) {
-    return "" +
-        "<div class='queue_element'\n>\n" +
+    // return "" +
+    //     "<div class='queue_element'\n>\n" +
 
-        "<div class='busq3' id='busq3'\n>\n" +
+    //     "<div class='busq3' id='busq3'\n>\n" +
 
-        "    <div class='queue_container'>\n" +
-        "<p><b>" + list[i].name + "</b></p>\n" +
+    //     "    <div class='queue_container'>\n" +
+    //     "<p><b>" + list[i].name + "</b></p>\n" +
 
-        cancion_container_script(i) +
-        "    </div>\n" +
-        "    <div class='titulo_artista_busq'>\n" +
-        artist(list[i].artist) +
-        "    </div>\n" +
-        "    <p class='favor'>\n" +
-        "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
-        "    </p>\n" +
-        "</div>" +
-        "</div>";
+    //     cancion_container_script(i) +
+    //     "    </div>\n" +
+    //     "    <div class='titulo_artista_busq'>\n" +
+    //     artist(list[i].artist) +
+    //     "    </div>\n" +
+    //     "    <p class='favor'>\n" +
+    //     "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
+    //     "    </p>\n" +
+    //     "</div>" +
+    //     "</div>";
 }
 

@@ -21,7 +21,7 @@ function back(){
 
 function indexArtist(artista) {
     for (let i = 0; i < allArtistas.length; i++) {
-        if (artista == "Azaelia"){
+        if (artista == "Azaelia" || artista == "Zoe Johnson" || artista == "Shannon"){
             artista = "Complicated Broken"
         }
         if (allArtistas[i].name === artista) {
@@ -37,13 +37,17 @@ function artists(artistas){
     let script = '<p>';
     if(Array.isArray(artistas)){
         for(let i=0; i<artistas.length; i++){
-            script += "<div onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ", </div>"
+            if (i == 0){
+                script += "<div class='artista_search' onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + " ft.</div>"
+            } else{
+                script += " <div class='artista_search' onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ",</div>"
+            }
         }
-        script = script.slice(0, -8);
+        script = script.slice(0, -7);
         script += '</div></p>'
         return script;
     }
-    return "<p onclick='artista_pagina(" + indexArtist(artistas) + ") '>" + artistas + "</p>\n"
+    return "<p class='artista_search' onclick='artista_pagina(" + indexArtist(artistas) + ") '>" + artistas + "</p>\n"
 }
 
 

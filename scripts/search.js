@@ -17,9 +17,8 @@ function filter(text) {
     }
     return text;
 }
-
 function buscar(){
-
+    console.log(allMusic);
     let search = document.getElementsByClassName("resultados")[0];
     let value = document.getElementsByClassName("search")[0];
     search.innerHTML='';
@@ -29,25 +28,27 @@ function buscar(){
         value = '';
     }
 
-    for(let i=0; i<allMusic.length; i++){
-        if (filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value)){
+    search.innerHTML += allMusic.map((music, i) => {            
+        if (filter(music.name).includes(value) || filter(music.artist).includes(value)){
+            console.log(music.artist);
             let fav = isFavorite(allMusic, i);
-            search.innerHTML += "<div class='busq'>\n" +
+            return "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
                 cancion_container_script(i) +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                "        <p><b>" + allMusic[i].name + "</b></p>\n" +
-                artists(allMusic[i].artist) +
+                "        <p><b>" + music.name + "</b></p>\n" +
+                artists(music.artist) +
                 "    </div>\n" +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +
-                "        <i class='"+fav+"' id='"+ allMusic[i].name+"_search' onclick='agregar_fav("+i+")'>  </i>\n" +
+                "        <i class='"+fav+"' id='"+ music.name+"_search' onclick='agregar_fav("+i+")'>  </i>\n" +
                 "    </p>\n" +
                 "    </div>\n" +
                 "</div>"
         }
-    }
+    }).join('');
+    
 }
 
 function agregar_fav(index){
