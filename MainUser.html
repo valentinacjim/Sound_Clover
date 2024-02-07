@@ -13,6 +13,7 @@
     <link rel = "stylesheet" href="style/perfil.css">
     <link rel = "stylesheet" href="style/cuenta.css">
     <link rel = "stylesheet" href="style/queue.css">
+    <link rel = "stylesheet" href="style/player.css">
   <script src="https://kit.fontawesome.com/cb1b141342.js" crossorigin="anonymous"></script>
   <meta name = "viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -818,11 +819,13 @@
           <div class="controles">
             <ul>
               <!-- Botón de repetir-->
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
               <li class="prev"> <i class="fa-solid fa-backward-step"></i></li>
               <!-- Botón de play/pause-->
               <li class="max"> <i class="fa-solid fa-play" id="estado"></i></li>
               <!-- Botón de siguiente-->
               <li class="forw"> <i class="fa-solid fa-forward-step"></i></li>
+            <i class="fa-solid fa-repeat" id="repeat"></i> <p id="repeat_song">1</p>
 
             </ul>
 
@@ -831,17 +834,15 @@
             <i class="fa-regular fa-heart" id="fav"></i>
           </p>
           <div id="options">
-            <div>
-            <i class="fa-solid fa-shuffle" id="shuffle"></i>
-            <br>
+            <!-- <div> -->
+            <!-- <br> -->
             <i class="fa-solid fa-microphone" id="lyrics" onclick="displaylyrics()"></i>
-            </div>
+            <!-- </div> -->
 <!--            <br>-->
-            <div id="options2">
+            <!-- <div id="options2"> -->
             <i class="fa-solid fa-bars-staggered" id="queue" onclick="queue()"></i>
-            <br>
-            <i class="fa-solid fa-repeat" id="repeat"></i> <p id="repeat_song">1</p>
-            </div>
+            <!-- <br> -->
+            <!-- </div> -->
           </div>
         </div>
         <div class="controls">
