@@ -25,7 +25,7 @@ function lista_reproduccion(index) {
         // crear.style.backgroundColor = "#9396B0";
 
         for (let i = 0; i < allMusic.length; i++) {
-            let fav = isFavorite(allMusic, i);
+            let fav = isFavorite(allMusic[i]);
             let index_artist = indexArtist(allMusic, i, index_artist);
             
             if (canciones_favoritas[i].fav === true) {
@@ -94,7 +94,7 @@ function playlist_contenido(index, playlist_content) {
     for (let i = 0; i < allMusic.length; i++) {
         let fav = '';
         let index_artist = 0;
-        isFavorite(allMusic, i);
+        isFavorite(allMusic[i]);
         index_artist = indexArtist(i, index_artist);
 
         // Si la canción está en la lista de reproducción

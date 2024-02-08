@@ -31,7 +31,7 @@ function buscar(){
     search.innerHTML += allMusic.map((music, i) => {            
         if (filter(music.name).includes(value) || filter(music.artist).includes(value)){
             console.log(music.artist);
-            let fav = isFavorite(allMusic, i);
+            let fav = isFavorite(allMusic[i]);
             return "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
                 cancion_container_script(i) +
@@ -51,20 +51,6 @@ function buscar(){
     
 }
 
-function agregar_fav(index){
-    let fav = document.getElementById(allMusic[index].name +"_search");
-    // console.log(document.getElementsByClassName(allMusic[index].name +"_search"))
-    if(allMusic[index].fav === true){
-        fav.className = "fa-regular fa-heart";
-        allMusic[index].fav = false;
-        alert('Removed from favorites');
 
-    }else{
-        fav.className = "fa-solid fa-heart";
-        allMusic[index].fav = true;
-        alert('Added to favorites');
-
-    }
-}
 
 

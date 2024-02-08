@@ -105,7 +105,7 @@ function elementos(){
 
 
     estado.addEventListener('click', reproduccion);
-    favorito.addEventListener('click', agregar);
+    favorito.addEventListener('click', ()=>{agregar_fav(musicIndex-1)});
     shuffle.addEventListener('click', shuffle_music);
     repeat.addEventListener('click', mode);
     // lyrics.addEventListener('click', see_page(10));

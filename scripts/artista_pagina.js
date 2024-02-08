@@ -28,13 +28,19 @@ function artista_pagina(indexFav){
 
     // Rellenar canciones
     canciones.innerHTML = '<div class="titulos_secciones"><h1> Popular songs </h1> </div>';
+    let list = [];
     for (let index=0; index<allArtistas[indexFav].canciones.length; index++) {
         if (index > 9){
             break;
         }
-        let fav = isFavorite(allArtistas, index);
+        let fav = isFavorite(allArtistas[index]);
         let random_song = Math.floor(Math.random() * allArtistas[indexFav].canciones.length);
         let eq_random_song = allMusic.find(element => element.name == allArtistas[indexFav].canciones[random_song].name);
+        list.push(eq_random_song);
+        while (list.includes(eq_random_song)){
+            random_song = Math.floor(Math.random() * allArtistas[indexFav].canciones.length);
+            eq_random_song = allMusic.find(element => element.name == allArtistas[indexFav].canciones[random_song].name);
+        }
         canciones.innerHTML+= '<div>'+
             '<div class="cancion_artista">' +
                 '<div class="info">' +

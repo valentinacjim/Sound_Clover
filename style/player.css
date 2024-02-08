@@ -9,7 +9,7 @@
     right: 2vw;
     /* transform: translate(-50%, -50%); */
     border: solid #ebe0ff 1px;
-    z-index: 999;
+    z-index: 10;
 
 }
 .player ul {
@@ -220,8 +220,10 @@
 
 .controles .max{
     text-decoration: none;
-    font-size: 1em;
+    /* font-size: 1.25em; */
     cursor: pointer;
+    /* margin: 0.1em; */
+    max-width: 0.75vw;
 }
 
 .barra p{

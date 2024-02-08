@@ -479,7 +479,7 @@ input{
 .titulos_secciones{
     /* background-color: #212121; */
     /* max-height: 10%; */
-    /* width: 95%; */
+    width: 95%;
     text-align: left;
     margin-left: 1em;
     margin-top: 0.5vh;

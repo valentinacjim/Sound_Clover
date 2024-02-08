@@ -51,11 +51,23 @@ function artists(artistas){
 }
 
 
-function isFavorite(list, i) {
-    if (list[i].fav === true) {
+function isFavorite(song) {
+    if (song.fav === true) {
         return "fa-solid fa-heart";
 
     }
     return "fa-regular fa-heart";
 }
 
+function agregar_fav(index){
+    allMusic[index].fav = !allMusic[index].fav;
+    let fav = isFavorite(allMusic[index]);
+    if (index === musicIndex-1){
+    let favorite_icon = document.getElementById("fav");
+    favorite_icon.className = fav;
+    }
+    if (document.getElementById(allMusic[index].name+"_search") !== null){
+        let favorite_icon = document.getElementById(allMusic[index].name+"_search");
+        favorite_icon.className = fav;
+    }
+}

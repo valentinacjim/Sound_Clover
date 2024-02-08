@@ -106,11 +106,11 @@ function reproduccion(){
         document.querySelector(".caratula").classList.add("active");
     }
     if(musicPlaying.ended === true){
-        if (mode_player === 'repeat list'){
+        if (mode_player === MODES[1]){
             nextMusic();
-        } else if (mode_player === 'repeat song'){
+        } else if (mode_player === MODES[2]){
             musicPlaying.play();
-        } else if (mode_player === 'no repeat'){
+        } else if (mode_player === MODES[0] && shuffle === false){
             nextMusic();
         }
         queue_content();
@@ -143,28 +143,23 @@ function favorito(){
 
 function shuffle_music(){
     let icono = document.getElementById('shuffle');
-    if(shuffle === false){
-        icono.style.color = '#8f0fe1'
-        shuffle = true;
-    }else{
-        icono.style.color = '#ebe0ff';
-        shuffle = false;
-    }
+    suffle = !suffle;
+    icono.style.color = shuffle ? '#8f0fe1' : '#ebe0ff';
 }
 
 function mode(){
     let icono = document.getElementById('repeat');
     let repeat_song = document.getElementById('repeat_song');
-    if (mode_player === 'no repeat'){
+    if (mode_player === MODES[0]){
         icono.style.color = '#8f0fe1'
-        mode_player = 'repeat list';
-    }else if(mode_player === 'repeat list'){
+        mode_player = MODES[1];
+    }else if(mode_player === MODES[1]){
         repeat_song.style.visibility = 'visible';
-        mode_player = 'repeat song';
-    } else if (mode_player === 'repeat song'){
+        mode_player = MODES[2];
+    } else if (mode_player === MODES[2]){
         icono.style.color = '#ebe0ff';
         repeat_song.style.visibility = 'hidden';
-        mode_player = 'no repeat';
+        mode_player = MODES[0];
     }
 }
 
@@ -232,7 +227,7 @@ function queue_content(){
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
-            let fav = isFavorite(list, i);
+            let fav = isFavorite(list[i]);
         if (i === musicIndex-1) {
             let queue_element = document.getElementById('playing');
             queue_element.innerHTML = queueElementFunction(i, fav)
