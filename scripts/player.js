@@ -117,19 +117,19 @@ function reproduccion(){
     }
 }
 // Función para agregar canciones a favoritos
-function agregar(){
-    if( allMusic[musicIndex-1].fav === true){
-        fav.className = "fa-regular fa-heart";
-        allMusic[musicIndex-1].fav = false;
-        alert('Removed from favorite');
+// function agregar(){
+//     if( allMusic[musicIndex-1].fav === true){
+//         fav.className = "fa-regular fa-heart";
+//         allMusic[musicIndex-1].fav = false;
+//         alert('Removed from favorite');
 
-    }else{
-        fav.className = "fa-solid fa-heart";
-        allMusic[musicIndex-1].fav = true;
-        alert('Added to favorite');
+//     }else{
+//         fav.className = "fa-solid fa-heart";
+//         allMusic[musicIndex-1].fav = true;
+//         alert('Added to favorite');
 
-    }
-}
+//     }
+// }
 
 // Función para mostrar favorito
 function favorito(){
@@ -227,6 +227,7 @@ function queue_content(){
     let queue_content = document.getElementById('queue_content');
     queue_content.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
+        console.log(i, musicIndex-1)
             let fav = isFavorite(list[i]);
         if (i === musicIndex-1) {
             let queue_element = document.getElementById('playing');
@@ -246,23 +247,24 @@ function queue_content(){
 }
 
 function queueElementFunction(i, fav) {
-    // return "" +
-    //     "<div class='queue_element'\n>\n" +
+    return "" +
+        "<div class='queue_element'\n>\n" +
 
-    //     "<div class='busq3' id='busq3'\n>\n" +
+        "<div class='busq3' id='busq3'\n>\n" +
 
-    //     "    <div class='queue_container'>\n" +
-    //     "<p><b>" + list[i].name + "</b></p>\n" +
+        "    <div class='queue_container'>\n" +
 
-    //     cancion_container_script(i) +
-    //     "    </div>\n" +
-    //     "    <div class='titulo_artista_busq'>\n" +
-    //     artist(list[i].artist) +
-    //     "    </div>\n" +
-    //     "    <p class='favor'>\n" +
-    //     "        <i class='" + fav + "' id='" + list[i].name + "_search' onclick='agregar_fav(" + (i) + ")'></i>\n" +
-    //     "    </p>\n" +
-    //     "</div>" +
-    //     "</div>";
+        cancion_container_script(i) +
+        "    </div>\n" +
+        "    <div class='titulo_artista_queue'>\n" +
+                "<p><b>" + list[i].name + "</b></p>\n" +
+        artists(list[i].artist) +
+        "    </div>\n" +
+        "    <p class='favor_queue'>\n" +
+        "        <i class='" + fav + "' id='" + list[i].name + "_queue' onclick='agregar_fav(" + (i) + ")'></i>\n" +
+        "    </p>\n" +
+        "</div>" +
+        "</div>";
 }
+
 

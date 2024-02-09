@@ -70,4 +70,8 @@ function agregar_fav(index){
         let favorite_icon = document.getElementById(allMusic[index].name+"_search");
         favorite_icon.className = fav;
     }
+    if (document.getElementById(allMusic[index].name+"_queue") !== null){
+        let favorite_icon = document.getElementById(allMusic[index].name+"_queue");
+        favorite_icon.className = fav;
+    }
 }

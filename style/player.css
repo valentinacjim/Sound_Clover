@@ -85,7 +85,7 @@
     right: 0;
     width: 50px;
     height: 1em;
-    margin-top: 0.25em;
+    margin-top: 0.2em;
     background: linear-gradient(to right, transparent, #212121);
 }
 
@@ -108,7 +108,7 @@
     /* padding-left: 0.5em; */
     margin-left: 2vw;
     font-size: 1em;
-    padding-top: 0.5em;
+    padding-top: 0.6em;
 }
 /* 
 .favorito i{
@@ -124,7 +124,7 @@
     font-size: 1em;
     /* padding-top: 0.75em; */
     /* line-height: 1.5em; */
-    padding-top: 0.5em;
+    padding-top: 0.6em;
 
 }
 
@@ -195,9 +195,9 @@
     width: 30vw;
     text-align: left;
     /* margin-top: 1em; */
-    margin-bottom: 1.25em;
+    margin-bottom: 1.15em;
     clear: left;
-    margin-left: 12.5em;
+    margin-left: 12.65em;
     /*font-size: 100%;*/
     justify-content: center;
 }
@@ -237,7 +237,7 @@
     position: absolute;
     /* margin-top: em; */
     /*color: #ebe0ff;*/
-    top: 4.5em;
+    top: 4em;
     font-size: 0.5em;
 }
 
@@ -246,14 +246,14 @@
     position: absolute;
     margin-left: 43.5em;
     /*color: #ebe0ff;*/
-    top: 4.5em;
+    top: 4em;
     font-size: 0.5em;
 
 }
 
 .barra_volumen{
     width: 150px;
-    margin-top: -2.25em;
+    margin-top: -2em;
     margin-left: -12vw;
 }
 
