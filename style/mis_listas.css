@@ -20,7 +20,7 @@
 }
 
 .playlist {
-    height: 18.75%;
+    height: 10vh;
     width: 96%;
     background-color: #ebe0ff;
     border-top: black 1px solid;
@@ -42,10 +42,10 @@
 }
 
 .playlist .titulo_playlist{
-    font-size: 1.5em;
+    font-size: 1em;
     color: black;
     font-weight: bold;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 .play_canc_container{
@@ -74,7 +74,7 @@
     padding-top: 1%;
     cursor: pointer;
     float: left;
-    left:0;
+    /* left:-5w; */
 }
 
 /*.titulo_playlist:hover{*/

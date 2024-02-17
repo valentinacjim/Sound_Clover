@@ -9,17 +9,34 @@
 .busq1 .titulo_artista_busq{
     text-overflow: ellipsis;
     /*overflow: auto;*/
-    font-size: 1em;
-    margin-top: 0.25em;
+    /* font-size: 1em; */
+    /* margin-top: 0.25em; */
 }
 
 .crear_lista{
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 25% 65%;
 
 }
 
+#titulo_crear{
+    /* margin-top: 1em; */
+    margin-left: 2.5em;
+    /* font-size: 2em; */
+    font-weight: bold;
 
+}
+
+#imagen_playlist_prev{
+    max-height: 14.75vh;
+}
+
+#imagen_playlist{
+    margin-left: 7vw;
+    /* top: 11vh; */
+    /* position:absolute; */
+
+}
 
 .nombre_listas{
     /*float: left;*/
@@ -120,8 +137,9 @@
 
 .resultados_1{
     /*margin-top: 5vh;*/
-    height: 52%;
+    height: 60vh;
     margin-left: 2%;
+    /* padding-bottom: 1em; */
     /*background-color: #323232;*/
     width: 98%;
     /*margin-bottom: 10%;*/
@@ -142,14 +160,13 @@
 
 
 .busq1{
-    height: 35%;
+    height: 10vh;
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 2%;
     background-color: #ebe0ff;
     border-top: black 1px solid;
     display: flex;
-    transition: transform .2s; /* Animación */
     width: 97%;
     position: relative;
 }

@@ -30,11 +30,10 @@ function buscar(){
 
     search.innerHTML += allMusic.map((music, i) => {            
         if (filter(music.name).includes(value) || filter(music.artist).includes(value)){
-            console.log(music.artist);
             let fav = isFavorite(allMusic[i]);
             return "<div class='busq'>\n" +
                 "    <div class='busq_container1'>\n" +
-                cancion_container_script(i) +
+                cancion_container_busq_script(i) +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
                 "        <p><b>" + music.name + "</b></p>\n" +

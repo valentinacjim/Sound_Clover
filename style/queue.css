@@ -30,7 +30,7 @@
     position: relative;
     color: #000;
     margin-top: 3vh;
-    margin-left: 4em;
+    margin-left: 3em;
     /* top: -5em; */
     /* font-size: 0.5em; */
     /*height: 20%;*/
@@ -38,10 +38,22 @@
 
 .titulo_artista_queue{
     /* height: 8vh; */
-    width: 50vw;
+    width: 50vw;    
     /*background-color: red;*/
     margin-left: 3.75em;
     margin-top: 1vh;
     font-size: 0.75em;
+    /*margin-right: 1em;*/
+}
+
+.artista_search{
+    /* height: 8vh; */
+    /* width: 10vw;  */
+    display: inline-block;
+
+    /*background-color: red;*/
+    /* margin-left: 3.75em;
+    margin-top: 1vh;
+    font-size: 0.75em; */
     /*margin-right: 1em;*/
 }

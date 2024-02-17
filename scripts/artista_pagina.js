@@ -1,7 +1,7 @@
 // Módulo de la página del artista
 function artista_pagina(indexFav){ 
     ARTISTA_PAGE.style.visibility = 'visible';
-
+    console.log("AAAAAAAAAAA")
     // Crear la estructura
     let fondo = document.getElementById('fondo-artista');
     let foto_perfil = document.getElementById('perfil-artista');

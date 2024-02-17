@@ -251,15 +251,20 @@ function queueElementFunction(i, fav) {
         "<div class='queue_element'\n>\n" +
 
         "<div class='busq3' id='busq3'\n>\n" +
-
+        "<button class='drag_and_drop'>\n" +
+        "<i class='fa-solid fa-ellipsis-vertical'></i>" +
+        "</button>" +
         "    <div class='queue_container'>\n" +
 
-        cancion_container_script(i) +
-        "    </div>\n" +
+        "<div class='cancion_container'>" +
+        "   <img alt='cancion' src=" + list[i].img + ">\n" +
+        "</div>\n" +
+                "    </div>\n" +
         "    <div class='titulo_artista_queue'>\n" +
                 "<p><b>" + list[i].name + "</b></p>\n" +
         artists(list[i].artist) +
         "    </div>\n" +
+        "       <i class='fa-solid fa-play'></i>\n" +
         "    <p class='favor_queue'>\n" +
         "        <i class='" + fav + "' id='" + list[i].name + "_queue' onclick='agregar_fav(" + (i) + ")'></i>\n" +
         "    </p>\n" +

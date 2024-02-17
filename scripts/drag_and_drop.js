@@ -5,7 +5,8 @@ document.addEventListener('mousedown', (e) => {
     const button = e.target.closest('.drag_and_drop');
     if (!button) return;
     if (button !== e.target && !button.contains(e.target)) return;
-    const titles = button.parentElement.querySelector('.titulo_artista_busq');
+    const titles = button.parentElement.querySelector('.artista_search');
+    console.log(titles);
     const name = titles.children[0].textContent;
     const artist = titles.children[1].textContent;
 

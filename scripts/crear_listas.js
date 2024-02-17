@@ -6,6 +6,8 @@ function anadir_imagen(){
     let imagen = document.getElementById("imagen_playlist").value.substring(12);
     if (imagen!=='') {
         LISTASREPRODUCCION[LISTASREPRODUCCION.length - 1].imagen = 'images/playlist/' + imagen;
+        let preview = document.getElementById("imagen_playlist_prev");
+        preview.src = 'images/playlist/' + imagen;
     }
     // console.log(LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].imagen)
 
@@ -38,29 +40,49 @@ function buscar_anadir(){
     if(["*"].includes(value) || value === ''){
         value = '';
     } 
-
-    for(let i=0; i<allMusic.length; i++){
-        let index_artist = indexArtist(allMusic, i);
-
-        // Buscar canciones que coincidan con el valor introducido
-        canciones_listas = LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones;
+    search.innerHTML += allMusic.map((music, i) => {
         if ((filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value))&&
             (allMusic[i].name !== LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones)){
-            search.innerHTML += "<div class='busq1'>\n" +
+            return "<div class='busq1'>\n" +
                 "    <div class='busq_container1'>\n" +
-                cancion_container_script(i) +
+                cancion_container_busq_script(i) +
                 "    </div>\n" +
                 "    <div class='titulo_artista_busq'>\n" +
-                artist_script(list, i, index_artist) +
+                "        <p><b>" + music.name + "</b></p>\n" +
+                artists(music.artist) +
                 "    </div>\n" +
                 "    <div class='guardar_lista'>\n" +
                 "    <p>\n" +
-                "        <i class='fa-solid fa-plus' id='"+ allMusic[i].name+"_agregar' onclick='agregar_a_lista("+i+")'>  </i>\n" +
+                "        <i class='fa-solid fa-plus' id='"+ music.name+"_agregar' onclick='agregar_a_lista("+i+")'>  </i>\n" +
                 "    </p>\n" +
                 "    </div>\n" +
                 "</div>"
         }
-    }
+    }).join('');
+    search.innerHTML += "<div class='spacer-3'>\n</div>"
+
+    // for(let i=0; i<allMusic.length; i++){
+    //     let index_artist = indexArtist(allMusic, i);
+
+    //     // Buscar canciones que coincidan con el valor introducido
+    //     canciones_listas = LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones;
+    //     if ((filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value))&&
+    //         (allMusic[i].name !== LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones)){
+    //         search.innerHTML += "<div class='busq1'>\n" +
+    //             "    <div class='busq_container1'>\n" +
+    //             cancion_container_script(i) +
+    //             "    </div>\n" +
+    //             "    <div class='titulo_artista_busq'>\n" +
+    //             artist_script(list, i, index_artist) +
+    //             "    </div>\n" +
+    //             "    <div class='guardar_lista'>\n" +
+    //             "    <p>\n" +
+    //             "        <i class='fa-solid fa-plus' id='"+ allMusic[i].name+"_agregar' onclick='agregar_a_lista("+i+")'>  </i>\n" +
+    //             "    </p>\n" +
+    //             "    </div>\n" +
+    //             "</div>"
+    //     }
+    // }
 }
 
 

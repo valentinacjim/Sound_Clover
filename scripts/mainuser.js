@@ -207,10 +207,15 @@ function genre_content(genero){
     titulo.innerHTML = allGeneros[genero].name;
     for (let i = 0; i < allMusic.length; i++) {
         if (allGeneros[genero].canciones.includes(allMusic[i].name)) {
-            contenido.innerHTML += "<div class='cancion'\n>\n" +
+            contenido.innerHTML += "<div class='busq1'>\n" +
+                "    <div class='busq_container1'>\n" +
                 cancion_container_script(i)+
-                " <div class='titulo_artista'>\n" +
-                "    <p onclick='alertas()'>" + allMusic[i].name + "<br> "+allMusic[i].artist +" </p>\n" +
+                "    </div>\n" +
+                " <div class='titulo_artista_busq'>\n" +
+                "    <p><b>" + allMusic[i].name + "</b></p>\n" +
+                artists(allMusic[i].artist) +
+                // " </div>\n" +
+                // "    <p onclick='alertas()'>" + allMusic[i].name + "<br> "+allMusic[i].artist +" </p>\n" +
                 " </div>\n" +
                 "</div>"
         }

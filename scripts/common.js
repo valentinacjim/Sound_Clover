@@ -10,6 +10,15 @@ function cancion_container_script(i) {
     "</div>\n"
 }
 
+function cancion_container_busq_script(i) {
+    return "<div class='cancion_container'>" +
+    "   <img alt='cancion' src=" + list[i].img + ">\n" +
+    // "   <button type='button' onclick='chooseMusic(list" + (i + 1) + ")'>\n" +
+    // "       <i class='fa-regular fa-circle-play'></i>\n" +
+    // "   </button>\n" +
+    "</div>\n"
+}
+
 function back(){
     historial.pop();
     see_page(historial[historial.length-1]);
@@ -23,6 +32,8 @@ function indexArtist(artista) {
     for (let i = 0; i < allArtistas.length; i++) {
         if (artista == "Azaelia" || artista == "Zoe Johnson" || artista == "Shannon"){
             artista = "Complicated Broken"
+        } else if (artista == "Bzrp"){
+            artista = "Bizarrap"
         }
         if (allArtistas[i].name === artista) {
             return i;
@@ -34,16 +45,17 @@ function indexArtist(artista) {
 
 
 function artists(artistas){
-    let script = '<p>';
+    let script = '';
     if(Array.isArray(artistas)){
+        script += "<p><div class='artista_search'>"
         for(let i=0; i<artistas.length; i++){
             if (i == 0){
-                script += "<div class='artista_search' onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + " ft.</div>"
+                script += "<p onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + " ft.</p>"
             } else{
-                script += " <div class='artista_search' onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ",</div>"
+                script += " <p  onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + ",</p>"
             }
         }
-        script = script.slice(0, -7);
+        script = script.slice(0, -5);
         script += '</div></p>'
         return script;
     }

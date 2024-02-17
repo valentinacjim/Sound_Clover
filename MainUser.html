@@ -426,13 +426,21 @@
       <div class="pass_pag">
         <i  onclick=back() class="fa-solid fa-chevron-left"></i>
       </div>
-      <h1> New playlist </h1>
+      <h1 id="titulo_crear"> New playlist </h1>
 <!--      <form>-->
       <div class="crear_lista">
+         <div>
+          <div class="imagen_playlist">
+            <img id="imagen_playlist_prev" src="images/playlist.png" alt="playlist">
+          </div>
+          <input type="file" id="imagen_playlist" oninput="anadir_imagen()">
+        </div>
+        <div>
         <div class = nombre_listas>
           <div>
           <input id="nombre_lista"
                  name="Name of playlist"
+                 placeholder="Name of playlist"
                  autocomplete="off"
                  type="text"
                  value=""
@@ -447,20 +455,18 @@
           </div>
         </div>
 
-        <div>
-          <label for="imagen_playlist"> Add image: </label> <br>
-          <input type="file" id="imagen_playlist" oninput="anadir_imagen()">
-        </div>
+       
         <div class="buscador_canciones">
           <!-- <form class="buscador_canciones_btn"> -->
           <div>
           <label for="search_for_list"> Add songs: </label>
             </div>
             <div>
-          <input type="search" value="" placeholder="Search.." id="search_for_list" oninput="buscar_anadir()"><br>
+          <input type="search" value="" placeholder="Search..." id="search_for_list" oninput="buscar_anadir()"><br>
             </div>
           <!-- </form> -->
         </div>
+      </div>
       </div>
 <!--      </form>-->
       <!-- Div que contiene las canciones que se pueden añadir a la lista-->
