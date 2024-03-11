@@ -437,7 +437,11 @@
         </div>
         <div>
         <div class = nombre_listas>
-          <div>
+         
+          <label for="nombre_lista">
+            <span class="label-text">Playlist name:</span>
+          </label>
+            <button onclick="anadir_nombre_lista()">Create</button>
           <input id="nombre_lista"
                  name="Name of playlist"
                  placeholder="Name of playlist"
@@ -446,20 +450,13 @@
                  value=""
                  required>
 
-          </div>
-          <div>
-          <label for="nombre_lista">
-            <span class="label-text">Playlist name:</span>
-          </label>
-            <button onclick="anadir_nombre_lista()">Create</button>
-          </div>
         </div>
 
        
         <div class="buscador_canciones">
           <!-- <form class="buscador_canciones_btn"> -->
           <div>
-          <label for="search_for_list"> Add songs: </label>
+          <label for="search_for_list" id="search_for_list_text"> Add songs: </label>
             </div>
             <div>
           <input type="search" value="" placeholder="Search..." id="search_for_list" oninput="buscar_anadir()"><br>

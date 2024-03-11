@@ -20,6 +20,10 @@
 
 }
 
+.guardar_lista{
+    cursor: pointer;
+}
+
 .busq{
     height: 10vh;
     width: 98%;
@@ -47,7 +51,8 @@
 .busq .busq_container1 .cancion_container{
     height: 90%;
     margin: 7%;
-    width: 160%;
+    margin-left: 0.4em;
+    width: 120%;
     float: left;
     vertical-align: middle;
 
@@ -94,10 +99,10 @@
 .titulo_artista_busq{
     width: 100%;
     font-size: 0.65em;
-    margin-left: 3em;
-    /* text-align: left; */
+    margin-left: 2em;
+    text-align: left;
     padding-top: 1%;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 

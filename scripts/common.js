@@ -47,8 +47,10 @@ function indexArtist(artista) {
 function artists(artistas){
     let script = '';
     if(Array.isArray(artistas)){
+        console.log(artistas)
         script += "<p><div class='artista_search'>"
         for(let i=0; i<artistas.length; i++){
+            artistas[i][0] = artistas[i][0].toUpperCase();
             if (i == 0){
                 script += "<p onclick='artista_pagina(" + indexArtist(artistas[i]) + ") '>" + artistas[i] + " ft.</p>"
             } else{
@@ -66,7 +68,6 @@ function artists(artistas){
 function isFavorite(song) {
     if (song.fav === true) {
         return "fa-solid fa-heart";
-
     }
     return "fa-regular fa-heart";
 }

@@ -60,29 +60,6 @@ function buscar_anadir(){
         }
     }).join('');
     search.innerHTML += "<div class='spacer-3'>\n</div>"
-
-    // for(let i=0; i<allMusic.length; i++){
-    //     let index_artist = indexArtist(allMusic, i);
-
-    //     // Buscar canciones que coincidan con el valor introducido
-    //     canciones_listas = LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones;
-    //     if ((filter(allMusic[i].name).includes(value)||filter(allMusic[i].artist).includes(value))&&
-    //         (allMusic[i].name !== LISTASREPRODUCCION[LISTASREPRODUCCION.length-1].canciones)){
-    //         search.innerHTML += "<div class='busq1'>\n" +
-    //             "    <div class='busq_container1'>\n" +
-    //             cancion_container_script(i) +
-    //             "    </div>\n" +
-    //             "    <div class='titulo_artista_busq'>\n" +
-    //             artist_script(list, i, index_artist) +
-    //             "    </div>\n" +
-    //             "    <div class='guardar_lista'>\n" +
-    //             "    <p>\n" +
-    //             "        <i class='fa-solid fa-plus' id='"+ allMusic[i].name+"_agregar' onclick='agregar_a_lista("+i+")'>  </i>\n" +
-    //             "    </p>\n" +
-    //             "    </div>\n" +
-    //             "</div>"
-    //     }
-    // }
 }
 
 

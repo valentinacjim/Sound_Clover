@@ -1,13 +1,6 @@
-@media only screen and (min-width: 768px) {
-    .guardar_lista{
-        margin-right: 1em;
-        margin-left: 3em;
-    }
-
-}
-
 .busq1 .titulo_artista_busq{
     text-overflow: ellipsis;
+    /* text-align: left; */
     /*overflow: auto;*/
     /* font-size: 1em; */
     /* margin-top: 0.25em; */
@@ -16,6 +9,7 @@
 .crear_lista{
     display: grid;
     grid-template-columns: 25% 65%;
+    padding: 0.5em 0;
 
 }
 
@@ -43,48 +37,52 @@
     margin-left: 1em;
     width: 100%;
     max-width: 2000px;
-    height: 52px;
+    height: 30px;
     position: relative;
     /*overflow: hidden;*/
     /*color: #6d00a2;*/
-    display: grid;
-    grid-template-columns: 10% 80%;
 }
 
 .nombre_listas input{
     position: absolute;
     /*height: 100%;*/
-    width: 75%;
+    width: 71.5%;
     box-sizing: border-box;
     /*line-height: 52px;*/
     outline: 0;
     background-color: #ebe0ff;
     border: none;
+    padding: 1em;
     /*color: ;*/
     /*margin-top: -50px;*/
     /*padding-top: -55px;*/
-    margin-left: 15em;
+    margin-left: -13.5em;
     bottom: 6px;
+    top: 5px;
+    box-shadow: #6a4da1 2px 3px 2px 0;
+}
+
+.buscador_canciones input{
+    box-shadow: #6a4da1 2px 3px 2px 0;
+
 }
 
 .nombre_listas .label-text{
     position:absolute;
     bottom: 0;
+    top: 0;
     left: 0;
+    font-size: 0.75em;
     /*transition: all 0.2s ease;*/
 }
 
-.nombre_listas button{
-    padding: 10px;
-    background-color: #ebe0ff;
-    cursor: pointer;
-    margin-top: 7.5em;
-    margin-left: 70em;
-}
+
 
 .nombre_listas button:hover{
-    background-color: #b4c7f3;
-    color: white;
+    box-shadow:  4px 4px 6px 0 rgba(2, 2, 2, 0.5),
+    -1px -1px 6px 0 #7358a6, 
+inset -1px -1px 6px 0 #7358a6,
+inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
 /*#nombre_lista{*/
@@ -96,9 +94,16 @@
 #search_for_list{
     width: 100%;
     background-color: #ebe0ff;
+    font-size: 0.4em;
+    padding: 0.5em;
+    /* margin-left: -1em; */
     /*margin-top: -2em;*/
     /*bottom: 50px;*/
     /*margin-left: -1em;*/
+}
+
+#search_for_list_text{
+    font-size: 0.75em;
 }
 
 .buscador_canciones{
@@ -112,13 +117,13 @@
     /*float: left;*/
     margin-left: 1em;
     /*width: 100%;*/
-    max-width: 2000px;
+    /* max-width: 2000px; */
     height: 52px;
     /*position: relative;*/
     /*overflow: hidden;*/
     /*color: #6d00a2;*/
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 29% 71%;
 
 }
 
@@ -137,7 +142,7 @@
 
 .resultados_1{
     /*margin-top: 5vh;*/
-    height: 60vh;
+    height: 55vh;
     margin-left: 2%;
     /* padding-bottom: 1em; */
     /*background-color: #323232;*/
@@ -148,9 +153,9 @@
 }
 
 .guardar_lista{
-    margin-top: 0.75em;
+    margin-top: 0.65em;
     cursor: pointer;
-    width: 30%;
+    width: 10%;
 }
 
 .guardar_lista button{
@@ -192,7 +197,8 @@
 .busq1 .busq_container1 .cancion_container{
     height: 90%;
     margin: 5%;
-    width: 160%;
+    margin-left: 0.3em;
+    width: 110%;
     float: left;
     vertical-align: middle;
 
@@ -215,3 +221,31 @@
     /*margin-right: 1em;*/
     color: black;
 }
+
+.nombre_listas button{
+    position: absolute;
+    top: 8em;
+    right: 0;
+    padding: 10px;
+    /* background-color: #ebe0ff; */
+    cursor: pointer;
+    border-radius: 20%;
+    /* border: black 1px solid; */
+    /* border: #6d00a2 1px solid; */
+    /* margin-top: 7.5em; */
+    /* margin-left: 70em; */
+    color: white;
+    background: #b393ee;
+    background: linear-gradient(0deg, #b393ee 0%, #b393ee 100%);
+    border: none;
+    box-shadow:  4px 4px 6px 0 rgba(2, 2, 2, 0.5),
+    -1px -1px 6px 0 #7358a6, 
+     -1px -1px 6px 0 #000000,
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+   
+}
+
+.nombre_listas button:before {
+    height: 0%;
+    width: 2px;
+  }
