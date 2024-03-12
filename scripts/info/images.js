@@ -244,4 +244,3 @@ let allImagePlaylists = [
         color: "#f5ad9f"
     }
 ]
-
