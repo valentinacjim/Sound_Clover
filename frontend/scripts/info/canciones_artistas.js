@@ -1180,1968 +1180,1958 @@ let allMusic = [
     //     "audio": "audio/",
     //     "duracion": ""
     // },
-    {
-        "name": "Walls Could Talk",
-        "artist":"Complicated Broken",
-        "img": "images/complicated_broken.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Control",
-        "artist":"Complicated Broken",
-        "img": "images/new_therapy.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "You Should Be Sad",
-        "artist":"Halsey",
-        "img": "images/Manic.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Without Me",
-        "artist":"Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Gasoline",
-        "artist":"Complicated Broken",
-        "img": "images/new_therapy.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Colors",
-        "artist":"Complicated Broken",
-        "img": "images/new_therapy.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Nightmare",
-        "artist":"Complicated Broken",
-        "img": "images/life_happens.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "11 Minutes",
-        "artist":["Yungblud", "Halsey"],
-        "img": "images/11minutes.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "3 am",
-        "artist":"Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Hurricane",
-        "artist":"Complicated Broken",
-        "img": "images/new_therapy.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Sorry",
-        "artist":"Halsey",
-        "img": "images/Hopeless_Fountain_Kingdom.png",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "We Will Rock You",
-        "artist":"Queen",
-        "img": "images/news_of_the_world.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Bohemian Rhapsody",
-        "artist":"Queen",
-        "img": "images/night_at_the_opera.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Don't Stop Me Now",
-        "artist":"Queen",
-        "img": "images/Queen_Jazz.png",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "I Want to Break Free",
-        "artist":"Queen",
-        "img": "images/made_in_heaven.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Killer Queen",
-        "artist":"Queen",
-        "img": "images/sheer_heart_attack.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Love of My Life",
-        "artist":"Queen",
-        "img": "images/night_at_the_opera.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Radio Ga Ga",
-        "artist":"Queen",
-        "img": "images/works.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "The Show Must Go On",
-        "artist":"Queen",
-        "img": "images/innuendo.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "Somebody to Love",
-        "artist":"Queen",
-        "img": "images/A_Day_at_the_Races_(Queen).jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },{
-        "name": "We Are the Champions",
-        "artist":"Queen",
-        "img": "images/news_of_the_world.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Here",
-        "artist":"Alessia Cara",
-        "img": "images/here.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Scars to Your Beautiful",
-        "artist":"Alessia Cara",
-        "img": "images/scars_to_your_beautiful.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Funhouse",
-        "artist":"Azaelia",
-        "img": "images/funhouse.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Little Girl Gone",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Hot Gum",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Bigger Person",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Fantasy",
-        "artist":["Azaelia", "Shannon", "Zoe Johnson"],
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Aftermath",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Too Hurt To Fall In Love",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Hey",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "That Part",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Ily",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Do It All Again",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "If He Want To He Would",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Good Grief",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Dopamine",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
+    // {
+    //     "name": "Walls Could Talk",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/complicated_broken.jpg" : "images/Hopeless_Fountain_Kingdom.png",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Control",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/new_therapy.jpg": "images/badlands.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "You Should Be Sad",
+    //     "artist":"Halsey",
+    //     "img": "images/Manic.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Without Me",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/without_me.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Gasoline",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/new_therapy.jpg": "images/badlands.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Colors",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/new_therapy.jpg" : "images/badlands.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Nightmare",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/life_happens.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "11 Minutes",
+    //     "artist":["Yungblud", "Halsey"],
+    //     "img": "images/11minutes.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "3 am",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/manic.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Hurricane",
+    //     "artist":isAzaelia ? "Complicated Broken": "Halsey",
+    //     "img": isAzaelia ? "images/new_therapy.jpg" : "images/badlands.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Sorry",
+    //     "artist":"Halsey",
+    //     "img": "images/Hopeless_Fountain_Kingdom.png",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "We Will Rock You",
+    //     "artist":"Queen",
+    //     "img": "images/news_of_the_world.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Bohemian Rhapsody",
+    //     "artist":"Queen",
+    //     "img": "images/night_at_the_opera.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Don't Stop Me Now",
+    //     "artist":"Queen",
+    //     "img": "images/Queen_Jazz.png",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "I Want to Break Free",
+    //     "artist":"Queen",
+    //     "img": "images/made_in_heaven.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Killer Queen",
+    //     "artist":"Queen",
+    //     "img": "images/sheer_heart_attack.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Love of My Life",
+    //     "artist":"Queen",
+    //     "img": "images/night_at_the_opera.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Radio Ga Ga",
+    //     "artist":"Queen",
+    //     "img": "images/works.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "The Show Must Go On",
+    //     "artist":"Queen",
+    //     "img": "images/innuendo.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "Somebody to Love",
+    //     "artist":"Queen",
+    //     "img": "images/A_Day_at_the_Races_(Queen).jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },{
+    //     "name": "We Are the Champions",
+    //     "artist":"Queen",
+    //     "img": "images/news_of_the_world.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Here",
+    //     "artist":"Alessia Cara",
+    //     "img": "images/here.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Scars to Your Beautiful",
+    //     "artist":"Alessia Cara",
+    //     "img": "images/scars_to_your_beautiful.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Funhouse",
+    //     "artist":isAzaelia ? "Azaelia" : "P!nk",
+    //     "img": isAzaelia ? "images/funhouse.jpg" : "images/funhouse_pink.jpg",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Little Girl Gone",
+    //     "artist": isAzaelia ? "Complicated Broken" : "CHINCHILLA",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Hot Gum",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Sofía Isella",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Bigger Person",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Fantasy",
+    //     "artist": isAzaelia ? ["Azaelia", "Shannon", "Zoe Johnson"] : ["Lauren Spencer-Smith", "GAYLE", "Em Beihold"],
+    //     "img": isAzaelia ?  "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Aftermath",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Too Hurt To Fall In Love",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Hey",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "That Part",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Ily",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "Do It All Again",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer-Smith",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+    // {
+    //     "name": "If He Wanted To He Would",
+    //     "artist": isAzaelia ? "Complicated Broken" : "Kylie Morgan",
+    //     "img": isAzaelia ? "images/mirror.jpg" : "images/",
+    //     "audio": "audio/",
+    //     "duracion": ""
+    // },
+//     {
+//         "name": "Good Grief",
+//         "artist": isAzaelia ? "Complicated Broken" : "Leanna Firestone",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Dopamine",
+//         "artist": isAzaelia ? "Complicated Broken" : "Madelline",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
 
-    {
-        "name": "Just Because",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Ok with it",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Classified XY",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Grave",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "ESOEMOEHOED",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Can't Break Up",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "I Wouldn't Love Me",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "I'm Good",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "God Give Me A Car",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Bad Again",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Good Girl Era",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "People Like Me",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Best Friends With Your Girlfriend",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Pretty Distraction",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Underwater",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Show Me Off",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Villain",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Knives Out",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "We're Not Alike",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Houdini",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Tell On You",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "If You're Gonna Break My Heart",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Numb Little Girl",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "You Tell Me To Shush",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Cynical",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "That Girl",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Better People To Left On Read",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "5015",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Break Me!",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "American Horror Show",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Critical Trust Issues",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "I'm Her",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Torture",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Do Or Die",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Pieces",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Show Me Off",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Oscar Worthy",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Project Ex",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "10 20 30",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Right?",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Tattoos",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Unfinished Business",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Lego Blocks",
-        "artist":"Complicated Broken",
-        "img": "images/mirror.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Victoris's Secret",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Ex Appeal",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "The Audacity",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-
-// 38. Spicy
-// 39. Numb little bug
-    {
-        "name": "Dead Man Don't Rape",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "My Best Friend's Ex",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Strut",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Maybe you're the problem",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Triggered",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Make It Me",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Antagonista",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Labour",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "If I Died Last Night",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "End of an Era",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Over Her Over Here",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Math",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "You Should Be Scared of Me",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "You Just Didn't Like Me That Much",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Don't Talk About It",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Die 4 Me",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Fat Funny Friend",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Angry",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Us and Pigs",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Death of a Predator",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Yes All Men",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "When Will I Be Mine?",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "27 Days",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "28",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "29",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "AVA",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Self Sabotage",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Best Friend Breakup",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Escapism",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Darkside",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Dying on the Inside",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Placeholder",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "G.O.A.T",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Spicy",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Numb Little Bug",
-        "artist":"Complicated Broken",
-        "img": "images/things_I_wanted_to_say_but_never_did.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Not Like I'm In Love With You",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "God Sent Me As Karma",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Rapunzel",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "B.O.M.B",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Look Who's Cryin' Now",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Found You On The Internet",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
- {
-        "name": "abcdefu",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
- {
-        "name": "Dirty Thoughts",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "She's All I Wanna Be",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "10 Things I Hate About You",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "YES MOM",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Cinderella's Dead",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "RN",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Swimming In Your Feelings",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Friends Don't Fuck",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "God Is A Freak",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "I Hope",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Thank Me Later",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Back To Friends",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "God Must Hate Me",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Plot Line",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Ur Just Horny",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Queen",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Fboy Anonymous",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
- {
-        "name": "Bad For Me",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Fingers Crossed",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Fuck Up The Friendship",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Backseat Rider",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
- {
-        "name": "Flowers",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Counting The Days",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Mad At Disney",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "For Granted",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
- {
-        "name": "Why You Gotta Be Like That",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Liar Liar",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Prom Dress",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Dictator",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "About Damn Time",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Deal With It",
-        "artist": "Complicated Broken",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "POSTER KID",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Not My Ex",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
- {
-        "name": "Whatshisface",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Easy",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "She Is Mine",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Missing You",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "What A Shame",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Make Up Is Expensive",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Violent",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Don't Miss Me",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "What It Means To Be A Girl",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "No One Can Fix Me",
-        "artist": "Azaelia",
-        "img": "images/the_things_i_wanted_to_scream.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "Bad Girlfriend",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "S.L.U.T.",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
-    {
-        "name": "I'm a Mess",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
-        "audio": "audio/",
-        "duracion": ""
-    },
+//     {
+//         "name": "Just Because",
+//         "artist": isAzaelia ? "Complicated Broken" : "Sadie Jean",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Ok with it",
+//         "artist": isAzaelia ? "Complicated Broken" : "Lyn Lapid",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Classified (XY)",
+//         "artist": isAzaelia ? "Complicated Broken" : "Laura Davidson",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Grave",
+//         "artist": isAzaelia ? "Complicated Broken" : "Nessa Barrett",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "ESOEMOEHOED",
+//         "artist": isAzaelia ? "Complicated Broken" : "Leanna Firestone",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Can't Break Up",
+//         "artist": isAzaelia ? "Complicated Broken" : "Andi",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "I Wouldn't Love Me",
+//         "artist": isAzaelia ? "Complicated Broken" : "Sam Short",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "I'm Good",
+//         "artist": isAzaelia ? "Complicated Broken" : ["David Guetta", "Bebe Rexha"],
+//         "img": isAzaelia ? "images/" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "God Give Me A Car",
+//         "artist": isAzaelia ? "Complicated Broken" : "DAMONA",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Bad Again",
+//         "artist": isAzaelia ? "Complicated Broken" : "Anna Clendening",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Good Girl Era",
+//         "artist": isAzaelia ? "Complicated Broken" : "UPAH",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "People Like Me",
+//         "artist": isAzaelia ? "Complicated Broken" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Best Friends With Your Girlfriend",
+//         "artist": isAzaelia ? "Complicated Broken" : "Jessica Baio",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Pretty Distraction",
+//         "artist": isAzaelia ? "Complicated Broken" : "SkyDxddy",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Underwater",
+//         "artist": isAzaelia ? "Complicated Broken" : "Mackenzie Arromba",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Show Me Off",
+//         "artist": isAzaelia ? "Complicated Broken" : "Sara Kays",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Villain",
+//         "artist": isAzaelia ? "Complicated Broken" : "Neoni",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Knives Out",
+//         "artist": isAzaelia ? "Complicated Broken" : "Neoni x Savage",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "We're Not Alike",
+//         "artist": isAzaelia ? "Complicated Broken" : "Tate Mcrae",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Houdini",
+//         "artist": isAzaelia ? "Complicated Broken" : "Dua Lipa",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Tell On You",
+//         "artist": isAzaelia ? "Complicated Broken" : "Zoe Clark",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "If You're Gonna Break My Heart",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+   
+//     // {
+//     //     "name": "You Tell Me To Shush",
+//     //     "artist": isAzaelia ? "Complicated Broken" : "Emei",
+//     //     "img": isAzaelia ? "images/" : "images/",
+//     //     "audio": "audio/",
+//     //     "duracion": ""
+//     // },
+//     {
+//         "name": "Cynical",
+//         "artist": isAzaelia ? "Complicated Broken" : "Emei",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "That Girl",
+//         "artist": isAzaelia ? "Complicated Broken" : "Emei",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Better People To Left On Read",
+//         "artist": isAzaelia ? "Complicated Broken" : "Emei",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "5015",
+//         "artist": isAzaelia ? "Complicated Broken" : "Irene Corcoles",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Break Me!",
+//         "artist": isAzaelia ? "Complicated Broken" : "Maggie Lindemann",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "American Horror Show",
+//         "artist": isAzaelia ? "Complicated Broken" : "SNOW WIFE",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Critical Trust Issues",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "I'm Her",
+//         "artist": isAzaelia ? "Complicated Broken" : "Natalie Jane",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Torture",
+//         "artist": isAzaelia ? "Complicated Broken" : "Natalie Jane",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Do Or Die",
+//         "artist": isAzaelia ? "Complicated Broken" : "Natalie Jane",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Pieces",
+//         "artist": isAzaelia ? "Complicated Broken" : "Dylan Conrique",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Oscar Worthy",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Project Ex",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "10 20 30",
+//         "artist": isAzaelia ? "Complicated Broken" : "emlyn",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Right?",
+//         "artist": isAzaelia ? "Complicated Broken" : "emlyn",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Tattoos",
+//         "artist": isAzaelia ? "Complicated Broken" : "Natalie Jane",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Unfinished Business",
+//         "artist": isAzaelia ? "Complicated Broken" : "NERIAH",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Lego Blocks",
+//         "artist": isAzaelia ? "Complicated Broken" : "NERIAH",
+//         "img": isAzaelia ? "images/mirror.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Victoria's Secret",
+//         "artist": isAzaelia ? "Complicated Broken" : "Jax",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Ex Appeal",
+//         "artist": isAzaelia ? "Complicated Broken" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "The Audacity",
+//         "artist": isAzaelia ? "Complicated Broken" : "emlyn",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Dead Man Don't Rape",
+//         "artist": isAzaelia ? "Complicated Broken" : "Delilah Bon",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "My Best Friend's Ex",
+//         "artist": isAzaelia ? "Complicated Broken" : "emlyn",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "STRUT",
+//         "artist": isAzaelia ? "Complicated Broken" : "EMELINE",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Maybe you're the problem",
+//         "artist": isAzaelia ? "Complicated Broken" : "Ava Max",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Triggered",
+//         "artist": isAzaelia ? "Complicated Broken" : "SkyDxddy",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "MAKE IT MINE",
+//         "artist": isAzaelia ? "Complicated Broken" : "REI AMI",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Antagonista",
+//         "artist": isAzaelia ? "Complicated Broken" : "Belén Aguilera",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Labour",
+//         "artist": isAzaelia ? "Complicated Broken" : "Paris Paloma",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "If I Died Last Night",
+//         "artist": isAzaelia ? "Complicated Broken" : "Jessie Murph",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "End of an Era",
+//         "artist": isAzaelia ? "Complicated Broken" : "Emei",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Over Her Over Here",
+//         "artist": isAzaelia ? "Complicated Broken" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Math",
+//         "artist": isAzaelia ? "Complicated Broken" : "Sara Kays",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "You Should Be Scared of Me",
+//         "artist": isAzaelia ? "Complicated Broken" : "DAMONA",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "You Just Didn't Like Me That Much",
+//         "artist": isAzaelia ? "Complicated Broken" : "Leanna Firestone",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Don't Talk About It",
+//         "artist": isAzaelia ? "Complicated Broken" : "SkyDxddy",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Die 4 Me",
+//         "artist": isAzaelia ? "Complicated Broken" : "Halsey",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Fat Funny Friend",
+//         "artist": isAzaelia ? "Complicated Broken" : "Maddie Zahm",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Angry",
+//         "artist": isAzaelia ? "Complicated Broken" : "Paravi",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Us and Pigs",
+//         "artist": isAzaelia ? "Complicated Broken" : "SOFIA ISELLA",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Death of a Predator",
+//         "artist": isAzaelia ? "Complicated Broken" : "Banshee",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Yes All Men",
+//         "artist": isAzaelia ? "Complicated Broken" : "Banshee",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "When Will I Be Mine?",
+//         "artist": isAzaelia ? "Complicated Broken" : "Hailey Orion",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "27 Days",
+//         "artist": isAzaelia ? "Complicated Broken" : "Blanca Vergara",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "28",
+//         "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer Smith",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "29",
+//         "artist": isAzaelia ? "Complicated Broken" : "Demi Lovato",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "AVA",
+//         "artist": isAzaelia ? "Complicated Broken" : "Natalie Jane",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Self Sabotage",
+//         "artist": isAzaelia ? "Complicated Broken" : "Maggie Lindemann",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Best Friend Breakup",
+//         "artist": isAzaelia ? "Complicated Broken" : "Lauren Spencer Smith",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Escapism",
+//         "artist": isAzaelia ? "Complicated Broken" : ["RAYE","070 Shake"],
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Darkside",
+//         "artist": isAzaelia ? "Complicated Broken" : "Neoni",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Dying on the Inside",
+//         "artist": isAzaelia ? "Complicated Broken" : "Nessa Barrett",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Placeholder",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "G.O.A.T",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Spicy",
+//         "artist": isAzaelia ? "Complicated Broken" : "HAVEN",
+//         "img": isAzaelia ? "images/things_I_wanted_to_say_but_never_did.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Numb Little Bug",
+//         "artist": isAzaelia ? "Complicated Broken" : "Em Beihold",
+//         "img": isAzaelia ? "images/" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Not Like I'm In Love With You",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "God Sent Me As Karma",
+//         "artist": isAzaelia ?  "Azaelia" : "emlyn",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Rapunzel",
+//         "artist": isAzaelia ?  "Azaelia" : "emlyn",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "B.O.M.B",
+//         "artist": isAzaelia ?  "Azaelia" : "emlyn",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Look Who's Cryin' Now",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Jessie Murph",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Found You On The Internet",
+//         "artist": isAzaelia ?  "Azaelia" : "HAVEN",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//  {
+//         "name": "abcdefu",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Gayle",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//  {
+//         "name": "Dirty Thoughts",
+//         "artist": isAzaelia ?  "Azaelia" : "Chloe Adams",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "She's All I Wanna Be",
+//         "artist": isAzaelia ?  "Azaelia" : "Tate McRae",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "10 Things I Hate About You",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Leah Kate",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "YES MOM",
+//         "artist": isAzaelia ?  "Azaelia" : "Tessa Violet",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Cinderella's Dead",
+//         "artist": isAzaelia ?  "Azaelia" : "emeline",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "RN",
+//         "artist": isAzaelia ?  "Azaelia" : "HAVEN",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Swimming In Your Feelings",
+//         "artist": isAzaelia ?  "Azaelia" : "HAVEN",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Friends Don't Fuck",
+//         "artist": isAzaelia ?  "Azaelia" : "HAVEN",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "God Is A Freak",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Peach PRC",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "I Hope",
+//         "artist": isAzaelia ?  "Azaelia" : "Gabby Barrett",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Thank Me Later",
+//         "artist": isAzaelia ?  "Azaelia" : "KINGS",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Back To Friends",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Spencer Smith",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "God Must Hate Me",
+//         "artist": isAzaelia ?  "Azaelia" : "Catie Turner",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Plot Line",
+//         "artist": isAzaelia ?  "Azaelia" : "emlyn",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Ur Just Horny",
+//         "artist": isAzaelia ?  "Azaelia" : "Gayle",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Queen",
+//         "artist": isAzaelia ?  "Azaelia" : "Loren Gray",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Fboy Anonymous",
+//         "artist": isAzaelia ?  "Complicated Broken" : "poutyface",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//  {
+//         "name": "Bad For Me",
+//         "artist": isAzaelia ?  "Azaelia" : "Med DeAngelis",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Fingers Crossed",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Spencer-Smith",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Fuck Up The Friendship",
+//         "artist": isAzaelia ?  "Azaelia" : "Leah Kate",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Backseat Rider",
+//         "artist": isAzaelia ?  "Azaelia" : "Sara Kays",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//  {
+//         "name": "Flowers",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Spencer-Smith",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Counting The Days",
+//         "artist": isAzaelia ?  "Azaelia" : "We are in the dirt",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Mad At Disney",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Salem Ilese",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "For Granted",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Spencer-Smith",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//  {
+//         "name": "Why You Gotta Be Like That",
+//         "artist": isAzaelia ?  "Azaelia" : "HAVEN",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Liar Liar",
+//         "artist": isAzaelia ?  "Azaelia" : "Just Stef",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Prom Dress",
+//         "artist": isAzaelia ?  "Azaelia" : "mxmtoon",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Dictator",
+//         "artist": isAzaelia ?  "Azaelia" : "REI AMI",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "About Damn Time",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Lizzo",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Deal With It",
+//         "artist": isAzaelia ?  "Complicated Broken" :["Ashnikko", "Kelis"],
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "POSTER KID",
+//         "artist": isAzaelia ?  "Azaelia" : "PEACH MARTINE",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Not My Ex",
+//         "artist": isAzaelia ?  "Azaelia" : "katie MAC",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//  {
+//         "name": "Whatshisface",
+//         "artist": isAzaelia ?  "Azaelia" : "OSTON",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Easy",
+//         "artist": isAzaelia ?  "Azaelia" : "Camila Cabello",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "She Is Mine",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Missing You",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "What A Shame",
+//         "artist": isAzaelia ?  "Azaelia" : "Leyla Blue",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Make Up Is Expensive",
+//         "artist": isAzaelia ?  "Azaelia" : "Lauren Weintraub",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Violent",
+//         "artist": isAzaelia ?  "Azaelia" : "carolesdaughter",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Don't Miss Me",
+//         "artist": isAzaelia ?  "Azaelia" : "Claire Rosinkranz",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "What It Means To Be A Girl",
+//         "artist": isAzaelia ?  "Azaelia" : "EMELINE",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "No One Can Fix Me",
+//         "artist": isAzaelia ?  "Azaelia" : "Frawley",
+//         "img": isAzaelia ? "images/the_things_i_wanted_to_scream.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "Bad Girlfriend",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Anne-Marie",
+//         "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "S.L.U.T.",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Bea Miller",
+//         "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
+//     {
+//         "name": "I'm a Mess",
+//         "artist": isAzaelia ?  "Complicated Broken" : "Bebe Rexha",
+//         "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
+//         "audio": "audio/",
+//         "duracion": ""
+//     },
     {
         "name": "Don't Leave Me Alone",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "Anne Marie",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Trust Me Lonely",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "IDGAF",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Venom",
-        "artist": ["Eminem", "Azaelia"],
-        "img": "images/venom.jpg",
+        "artist": isAzaelia ?  ["Eminem", "Azaelia"] : "",
+        "img": isAzaelia ? "images/venom.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "My Way",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Friends",
-        "artist": ["Marshmello", "Azaelia"],
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  ["Marshmello", "Azaelia"] : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "High Hopes",
-        "artist": ["Complicated Broken", "Brendon Urie"],
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  ["Complicated Broken", "Brendon Urie"] : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Older",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Not Your Barbie Girl",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Without Me",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Don't Call Me Up",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Youngblood",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Rise",
-        "artist": "Complicated Broken",
-        "img": "images/fuck_me_im_famous.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/fuck_me_im_famous.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Absolutely Anything",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Grace",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "New Rules",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Blow Your Mind",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Guys My Age",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Walls Could Talk",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Instruction",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Mama",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Back To You",
-        "artist": ["Complicated Broken", "Louis Tomlinson"],
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  ["Complicated Broken", "Louis Tomlinson"] : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Prom Queen",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Princesses Don't Cry",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "What About Us",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Faking It",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Answer The Call",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "1-800",
-        "artist": ["Complicated Broken", "Logic"],
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  ["Complicated Broken", "Logic"] : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "I Did Something Bad",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Such A Boy",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "F.F.F.",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Sorry",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Stay",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Dirty Dirty",
-        "artist": "Complicated Broken",
-        "img": "images/complicated_broken.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/complicated_broken.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Moments",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "This Is Not An Apology",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "I'm Gonna Show You Crazy",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "We're Taking Over",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "R U Crazy",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Castle",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Hearbeat Song",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Paper Doll",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "New",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Just Like Me",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "LGBT",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Pretty Girl",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Wolf In Sheep's Clothing",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Never Forget You",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Ain't My Fault",
-        "artist": "Complicated Broken",
-        "img": "images/new_therapy.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/new_therapy.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Born This Way",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Everytime We Touch (Nightcore)",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Cool Kids",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "I Love It (I Don't Care)",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "ODD",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "How To Be A Heartbreaker",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Can't Hold Us",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Just Give Me A Reason",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Who's Laughing Now",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Do It Like a Dude",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Sarcasm",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Invisible",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Stronger (What Doesn't Kill You)",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Sit Still, Look Pretty",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Potential Breakup Song",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Pompei",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Fight Song",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Looking Like This",
-        "artist": "Complicated Broken",
-        "img": "images/born_this_way.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/born_this_way.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Alarm",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Ciao Adios",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Moral Of The Story",
-        "artist": ["Complicated Broken", "Niall Horan"],
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  ["Complicated Broken", "Niall Horan"] : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "STUPID",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Knees",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Bisexual Anthem",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Instagram",
-        "artist": ["Azaelia", "David Guetta", "Dimitri Vegas & Like Mike", "Daddy Yankee", "Afro Bros"],
+        "artist": isAzaelia ?  ["Azaelia", "David Guetta", "Dimitri Vegas & Like Mike", "Daddy Yankee", "Afro Bros"] : "",
         "img": "images/Instagram.jpg",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Cry For Help",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Me!",
-        "artist": ["Complicated Broken", "Brendon Urie"],
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  ["Complicated Broken", "Brendon Urie"] : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Last Hurrah",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "You & Jeniffer",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Walk Me Home",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Thank God",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "You Need To Calm Down",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Don't Worry Bout Me",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "She's Not Me",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "OKAY OKAY",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Get Stüpid",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Why Do You Love Me",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Genius",
-        "artist": ["LSD", "Azaelia", "Diplo", "Labrinth"],
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  ["LSD", "Azaelia", "Diplo", "Labrinth"] : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "This Baby Don't Cry",
-        "artist": "Complicated Broken",
-        "img": "images/life_happens.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/life_happens.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Future Nostalgia",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Don't Start Now",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Cool",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Physical",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Levitating",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Pretty Please",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Hallucinate",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Love Again",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Break My Heart",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Good in Bed",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Boys Will Be Boys",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Dance Dance Dance",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Ur So Fucking Cool",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "A Little Messed Up",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "You Broke Me First",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Psycho",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Problems",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Sweet but Psycho",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "...And To Those I Love, Thanks For Sticking Around",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Kings and Queens",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "So Am I",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "That Bitch",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "I Hate Everybody",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     },
     {
         "name": "Friends Don't Look At Friend That Way",
-        "artist": "Complicated Broken",
-        "img": "images/future_nostalgia.jpg",
+        "artist": isAzaelia ?  "Complicated Broken" : "",
+        "img": isAzaelia ? "images/future_nostalgia.jpg" : "images/",
         "audio": "audio/",
         "duracion": ""
     }    

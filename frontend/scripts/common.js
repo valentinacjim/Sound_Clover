@@ -91,13 +91,12 @@ function agregar_fav(index){
 
 
 function converToQuery(cancion){
-    let query = "INSERT INTO `canciones` (`id`, `name`, `artist`, `length`, `image`, `audio`) VALUES ('" + generateUUID() + "', '" + cancion.name + "', '" + cancion.artist +  "', '" + cancion.duracion + "', '" + cancion.img + "', '" + cancion.audio + "');\n";
+    let query = "('" + generateUUID() + "', '" + cancion.name + "', '" + cancion.artist +  "', '" + cancion.duracion + "', '" + cancion.img + "', '" + cancion.audio + "')\n";
     return query;
 }
 
-// allMusic.forEach(cancion => {
-//     console.log(converToQuery(cancion));
-// });
+console.log("INSERT INTO `canciones` (`id`, `name`, `artist`, `length`, `image`, `audio`) VALUES " + allMusic.map(converToQuery).join(", "));
+
 
 
 function generateUUID() {
